@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,10 +12,10 @@
 
     <title>{{ title | default: site.title }}</title>
   </head>
-  <body>
-    <div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-md-8 offset-md-2">
+  <body class="d-flex flex-column h-100">
+    <div class="container-fluid h-100 d-flex flex-column">
+		<div class="row my-auto">
+			<div class="col-12 col-md-8 offset-md-2 text-center">
 				{{ content | markdownify }}
 			</div>
 		</div>
