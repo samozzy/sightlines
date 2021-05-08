@@ -55,13 +55,13 @@ jobs:
         with:
           path: _site
 
-    ### DEPLOY ###
-    - name: Publish to GH Pages 🚀
-      if: ${{ github.event_name == 'push' || github.event_name == 'schedule' && github.ref == 'refs/heads/main' }}
-      uses: JamesIves/github-pages-deploy-action@4.1.0
-      with:
-        BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: _site # The folder the action should deploy.
-        CLEAN: true # Automatically remove deleted files from the deploy branch
+      ### DEPLOY ###
+      - name: Publish to GH Pages 🚀
+        if: ${{ github.event_name == 'push' || github.event_name == 'schedule' && github.ref == 'refs/heads/main' }}
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: _site # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
 
-    ### SUCCESS ### 
+      ### SUCCESS ### 
