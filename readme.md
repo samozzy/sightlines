@@ -1,10 +1,8 @@
-# Jekyll Starter Template
+# Sightlines Festival
 
-A basic Jekyll installation with some sensible config flags.
+Website for Sightlines Festival, taking place in July 2021.
 
-Set up to use Bootstrap and be deployed using GitHub Pages and/or Netlify. GH Pages and Netlify handle the bundle install directories differently so they're included in the `load_paths` sass flag in `_config.yml`.
-
-## Installation
+## Local Installation
 
 This has been tested to work on macOS or Ubuntu. Other Linux systems should 'just work'. Requires Ruby and Bundler as per (https://jekyllrb.com/docs/)[Jekyll's specification]
 
