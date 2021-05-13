@@ -4,6 +4,15 @@
 @import "bootstrap_variables";
 
 
+// Category colours (below because we can't do Liquid in _colours.scss)
+$sightlines-event-categories: (
+	{% for category in site.data.event-categories %}
+	"{{ category.title | slugify }}": {{ category.color }},
+	{% endfor %}
+);
+@import "colours";
+
+
 /*!
  // Comment out the ones you're not using to save on render size and time 
  */

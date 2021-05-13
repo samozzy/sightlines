@@ -1,0 +1,55 @@
+$sightlines-brand: (
+	"yellow": #FEE12B,
+	"kobi": #DD99BB,
+	"lavendar": #7B506F,
+	"purple": #1F1A38,
+	"aquamarine": #5DFDCB,
+	"white": #eeefff,
+);
+
+$primary: map-get($sightlines-brand, "yellow");
+$secondary: map-get($sightlines-brand, "navy");
+
+@each $name, $color in $sightlines-brand {
+  .text-sightlines-#{$name} {
+    color: $color; 
+    &:hover, &:focus, &:active {
+    	color: lighten($color, 15%);
+    }
+  }
+  .bg-sightlines-#{$name} {
+    background-color: $color !important;
+  }
+  .border-sightlines-#{$name} {
+    border-color: $color !important;
+  }
+  .btn-sightlines-#{$name} {
+    border-color: $color !important;
+    background-color: $color;
+  }
+
+  @each $nextname, $nextcolor in $sightlines-brand {
+  	.stripe-#{$name}-#{$nextname} {
+  		background: linear-gradient(177deg, $color 0%, $color 49%, $nextcolor 50%);
+  	}
+  }
+}
+
+@each $name, $color in $sightlines-event-categories {
+  .text-event-category-#{$name} {
+    color: $color; 
+    &:hover, &:focus, &:active {
+    	color: lighten($color, 15%);
+    }
+  }
+  .bg-event-category-#{$name} {
+    background-color: $color !important;
+  }
+  .border-event-category-#{$name} {
+    border-color: $color !important;
+  }
+  .btn-event-category-#{$name} {
+    border-color: $color !important;
+    background-color: $color;
+  }
+}
