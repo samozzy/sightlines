@@ -47,6 +47,12 @@ collections:
   content:
     output: true
     permalink: :path/
+  events:
+    output: true 
+    permalink: events/:path/
+  posts: 
+    output: true 
+    permalink: blog/:path/
 permalink: pretty 
 
 defaults:
@@ -55,3 +61,11 @@ defaults:
       type: content
     values:
       layout: default
+  - scope:
+      type: event
+    values: 
+      layout: event 
+  - scope: 
+      type: posts
+    values: 
+      layout: blog-post 
