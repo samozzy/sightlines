@@ -4,7 +4,8 @@ $sightlines-brand: (
 	"lavendar": #7B506F,
 	"purple": #1F1A38,
 	"aquamarine": #5DFDCB,
-	"white": #eeefff,
+	"white": white,
+	"transparent": transparent,
 );
 
 $primary: map-get($sightlines-brand, "yellow");
@@ -30,7 +31,7 @@ $secondary: map-get($sightlines-brand, "navy");
 
   @each $nextname, $nextcolor in $sightlines-brand {
   	.stripe-#{$name}-#{$nextname} {
-  		background: linear-gradient(177deg, $color 0%, $color 49%, $nextcolor 50%);
+  		background: linear-gradient(178deg, $color 0%, $color 49%, $nextcolor 50%);
   	}
   }
 }
