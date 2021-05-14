@@ -33,6 +33,7 @@ livereload: true
 
 plugins:
   - bootstrap 
+  - jekyll-contentblocks
 
 sass:
     sass_dir: _sass
