@@ -1,0 +1,79 @@
+---
+layout: outer
+carousel: "true"
+background_color: purple
+---
+
+<div class="container-fluid">
+	<div class="row pb-4 bg-sightlines-yellow">
+		<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-3 col-xl-6">
+			<img class="img-fluid w-50 d-block text-center mx-auto my-5" src="{{ '/static/img/placeholder/logo.png' | prepend: site.baseurl }}">
+			<h1 class="display-5 text-center mb-4 lh-sm"><strong>Welcome to Sightlines Festival</strong>
+				<small class="text-muted"><br>13th - 25th July 2021</small>
+			</h1>
+		</div>
+		<div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 lead-content text-center">
+			{{ content | markdownify }}
+		</div>
+	</div>
+	<div class="row py-5 stripe-yellow-kobi"></div>
+	<div class="row pt-5 pb-1 bg-sightlines-kobi">
+		<div class="col-12 text-center">
+			<h2 class="text-center text-sightlines-white display-6">Featured Events</h2>
+		</div>
+	</div>
+	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center bg-sightlines-kobi">
+		{% assign events = site.events | sort: "start_date" | slice: 0, 4 %}
+		{% include events/event-card.html events=events %}
+	</div>
+	<div class="row bg-sightlines-kobi">
+		<div class="block-button-wrapper pt-3 pb-5">
+			<a class="btn btn-primary" role="button" href="#">View All Events</a>
+		</div>
+	</div>
+	<div class="row py-5 stripe-kobi-lavendar"></div>
+	<div class="row py-4 bg-sightlines-lavendar">
+		<div class="col-12 text-center text-light">
+			<h2 class="display-6">From the Blog</h2>
+		</div>
+	</div>
+	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 bg-sightlines-lavendar">
+		{% for i in (1..4) %}
+			<div class="col mb-4 px-4 pt-4" id="event-{{i}}">
+				<div class="card card-body shadow-sm">
+					<h4>Blog Post {{ i }}</h4>
+					<small class="fw-light"><i class="fa fa-calendar"></i>&nbsp;17th July</small>
+					<p class="fw-light mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt...</p>
+					<a class="btn btn-secondary">Read more</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="row bg-sightlines-lavendar pt-5">
+		<div class="block-button-wrapper pb-5">
+			<a class="btn btn-primary" role="button" href="#">Go to the Blog</a>
+		</div>
+	</div>
+	<div class="row py-5 stripe-lavendar-purple"></div>
+
+	<div class="row pt-4 row-cols-1 row-cols-md-2 bg-sightlines-purple text-light">
+		<div class="col-12 col-md-12 pb-2">
+			<h2 class="text-center">Stay in Touch</h2>
+		</div>
+		<div class="col col-lg-5 mx-auto">
+			<h3>Find us on Twitter</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<div class="col col-lg-5 mx-auto">
+			<h3>Contact Us</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+	</div>
+</div>
