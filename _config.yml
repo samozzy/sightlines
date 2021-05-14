@@ -52,7 +52,7 @@ collections:
     permalink: events/:path/
   posts: 
     output: true 
-    permalink: blog/:path/
+    permalink: articles/:path/
 permalink: pretty 
 
 defaults:
@@ -62,10 +62,10 @@ defaults:
     values:
       layout: default
   - scope:
-      type: event
+      type: events
     values: 
       layout: event 
   - scope: 
       type: posts
     values: 
-      layout: blog-post 
+      layout: article

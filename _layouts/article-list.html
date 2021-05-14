@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% assign list_of = page.list_of %}
+{{ list_of }}
+{{ site.events }}
+{% for item in site.list_of %}
+	<p>{{ item.title }}</p>
+{% endfor %}
