@@ -1,0 +1,16 @@
+{% assign event = include.event %}
+<div class="row g-0 m-0 p-0">
+	{% if event.duration %}
+	<div class="col-6 small">
+		<i class="fa fa-stopwatch"></i>&nbsp;{{ event.duration }}
+	</div>
+	{% endif %}
+	<div class="col-6 small text-end">
+		{% if event.captions %}
+		<i class="fa fa-lg fa-closed-captioning" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top" title="This event has closed captions"></i><span class="visually-hidden">This event has closed captions</span>
+		{% endif %}
+		{% if event.bsl %}
+		<i class="fa fa-lg fa-sign-language" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top" title="This event has a British Sign Language interpeter"></i><span class="visually-hidden">This event has a British Sign Language interpeter</span>
+		{% endif %}
+	</div>
+</div>

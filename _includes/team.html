@@ -1,0 +1,18 @@
+<div class="row">
+	{% for person in site.data.team %}
+		<div class="col-12 {% unless person.bio %}col-md-6 col-lg-4 col-xl-3{% endunless %}">
+			<div class="row">
+				{% if person.image %}
+					<div class="col-4">
+						<img class="rounded-circle img-fluid" src="{{ person.image | prepend: site.baseurl }}" alt="{{ person.name }}">
+					</div>
+				{% endif %}
+				<div class="col">
+					<p class="fs-4 mb-0">{{ person.name }}</p>
+					<p class="lead">{{ person.role }}</p>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
