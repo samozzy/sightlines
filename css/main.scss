@@ -4,7 +4,13 @@
 @import "bootstrap_variables";
 
 .content-center {
-	@extend .col-12, .col-md-10, .offset-md-1, .col-lg-8, .offset-lg-2;
+	@extend .col-12, .col-md-10, .col-lg-8;
+}
+.content-center-offset {
+	@extend .offset-md-1, .offset-lg-2;
+}
+.toc {
+	@extend .col-12, .col-lg-2, .sticky-top, .mb-4;
 }
 
 .lead-content p {
@@ -96,6 +102,27 @@ $sightlines-event-categories: (
 	}
 }
 
+// ToC
+.sightlines-toc {
+	@extend .nav, .flex-column;
+	li {
+		@extend .nav-item, .p-0;
+		margin-left: -1rem;
+		a {
+			@extend .text-decoration-none, .nav-link;
+			&:hover, &:focus, &:active {
+				color: map-get($sightlines-brand, "purple") !important;
+			}
+		}
+		&.active {
+			margin-left: 2rem;
+			border-left: 3px solid map-get($sightlines-brand, "yellow");
+		}
+	}
+}
+
+
+@import "content-layout";
 
 /*!
  // Comment out the ones you're not using to save on render size and time 

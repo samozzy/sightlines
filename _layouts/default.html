@@ -7,7 +7,15 @@ layout: outer
 	{% contentblock full_width_top %}
 
 	<div class="row my-auto pt-5 {% ifhascontent full_width_bottom %}pb-5{% endifhascontent %}">
-		<div class="content-center">
+		{% if page.toc and page.toc != empty %}
+			<div class="toc">
+				<div class="card card-body bg-sightlines-purple shadow-sm">
+					<h3 class="fs-4 text-primary">On this page</h3>
+					{% include toc.html html=content class="sightlines-toc" %}
+				</div>
+			</div>
+		{% endif %}
+		<div class="content-center {% unless page.toc %}content-center-offset{% endunless %}">
 			{{ content }}
 		</div>
 	</div>
