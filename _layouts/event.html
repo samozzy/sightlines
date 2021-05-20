@@ -19,11 +19,15 @@ background_color: kobi
 					{% if event.company %}
 						<h2 class="fs-4 fw-light">Presented by {{ event.company }}</h2>
 					{% endif %}
+					{% if event.capacity and event.capacity != empty %}
+						<p class="lead fw-light"><i class="fa fa-users"></i>&nbsp;Capacity: {{ event.capacity }}</p>
+					{% endif %}
 				</div>
 				<div class="col-6 col-md-5 col-lg-4 offset-lg-2 offset-xl-0">
 					<div class="my-2 event-page-meta border-event-category-{{ event.category | slugify }}">
 						<p class="text-start text-lg-center"><strong>{{ event.category | upcase }}</strong></p>
 						{% include events/event-meta.html event=event %}
+						<p class="text-sm-center small fw-light"><a href="{{ '/access/' | prepend: site.baseurl }}" class="link-dark text-decoration-none">Access Information <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
 					</div>
 				</div>
 			</div>
