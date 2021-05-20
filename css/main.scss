@@ -82,6 +82,10 @@ $sightlines-event-categories: (
 );
 @import "colours";
 
+.bg-sightlines-white .content-center a {
+	@extend .link-dark;
+}
+
 .nav-link {
 	&:hover {
 		background-color: darken(map-get($sightlines-brand, "yellow"), 7.5%) !important;
