@@ -24,7 +24,7 @@
 							{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
 							{% for item in nav_pages %}
 								<li class="nav-item">
-									<a class="nav-link {% if item.url == page.url %}active{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a>
+									<a class="nav-link {% if item.url == page.url %}active{% endif %} py-lg-4" href="{{ item.url | prepend: site.baseurl }}">{% if item.icon and item.icon != empty %}<i class="fa fa-lg fa-{{ item.icon }}"></i><br>{% endif %}{{ item.nav_title | default: item.title }}</a>
 								</li>
 							{% endfor %}
 						</ul>

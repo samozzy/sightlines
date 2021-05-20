@@ -2,6 +2,8 @@
 title: About
 nav_order: 4
 background_color: lavendar
+icon: info-circle
+toc: true
 ---
 
 # Sightlines Festival
@@ -43,5 +45,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 {% contentfor full_width_bottom %}
+
 {% include partner-list.html title="Festival Partners" full_width="true" %}
+
 {% endcontentfor %}
