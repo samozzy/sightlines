@@ -11,6 +11,8 @@
 
 
 		<title>{{ page.title | append: " | " | append: site.title | default: site.title }}</title>
+
+		<link rel="icon" type="image/png" href="{{ '/static/img/logo/favicon.png' | prepend: site.baseurl }}">
 	</head>
 	<body class="d-flex flex-column h-100 {{ page.background_color | default: layout.background_color | prepend: 'bg-sightlines-' }}">
 		<div class="container-fluid p-0 bg-sightlines-yellow">
