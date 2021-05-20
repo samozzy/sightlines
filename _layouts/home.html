@@ -7,9 +7,10 @@ background_color: purple
 <div class="container-fluid">
 	<div class="row pb-4 bg-sightlines-yellow">
 		<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-3 col-xl-6">
-			<img class="img-fluid w-50 d-block text-center mx-auto my-5" src="{{ '/static/img/placeholder/logo.png' | prepend: site.baseurl }}">
-			<h1 class="display-5 text-center mb-4 lh-sm"><strong>Welcome to Sightlines Festival</strong>
-				<small class="text-muted"><br>13th - 25th July 2021</small>
+			<img class="img-fluid w-75 d-block text-center mx-auto mt-5" src="{{ '/static/img/logo/logo.png' | prepend: site.baseurl }}" alt="Sightlines: A festival of performance and well-being">
+			<h1 class="display-5 text-center mb-4 lh-sm">
+				{% comment %}<strong>Welcome to Sightlines Festival</strong>{% endcomment %}
+				<small class="text-muted">{{ site.festival_start_date | date: "%d" }} &ndash; {{ site.festival_end_date | date: "%d %B %Y" }}</small>
 			</h1>
 		</div>
 		<div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 lead-content text-center">

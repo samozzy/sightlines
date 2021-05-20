@@ -7,6 +7,8 @@ twitter_username:
 github_username:  samozzy
 timezone: Europe/London
 
+festival_start_date: 2021-07-13
+festival_end_date: 2021-07-25
 
 # Exclude from processing.
 # The following items will not be processed, by default.
