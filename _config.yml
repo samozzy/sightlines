@@ -51,7 +51,7 @@ collections:
   events:
     output: true 
     permalink: events/:path/
-  posts: 
+  articles: 
     output: true 
     permalink: articles/:path/
 permalink: pretty 
@@ -67,6 +67,6 @@ defaults:
     values: 
       layout: event 
   - scope: 
-      type: posts
+      type: articles
     values: 
       layout: article
