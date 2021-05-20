@@ -28,31 +28,22 @@ background_color: purple
 	</div>
 	<div class="row bg-sightlines-kobi">
 		<div class="block-button-wrapper pt-3 pb-5">
-			<a class="btn btn-primary" role="button" href="#">View All Events</a>
+			<a class="btn btn-primary" role="button" href="{{ '/events/' | prepend: site.baseurl }}">View All Events</a>
 		</div>
 	</div>
 	<div class="row py-5 stripe-kobi-lavendar"></div>
 	<div class="row py-4 bg-sightlines-lavendar">
 		<div class="col-12 text-center text-light">
-			<h2 class="display-6">From the Blog</h2>
+			<h2 class="display-6">Featured Articles</h2>
 		</div>
 	</div>
 	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 bg-sightlines-lavendar">
-		{% for i in (1..4) %}
-			<div class="col mb-4 px-4 pt-4" id="event-{{i}}">
-				<div class="card card-body shadow-sm">
-					<h4>Blog Post {{ i }}</h4>
-					<small class="fw-light"><i class="fa fa-calendar"></i>&nbsp;17th July</small>
-					<p class="fw-light mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt...</p>
-					<a class="btn btn-secondary">Read more</a>
-				</div>
-			</div>
-		{% endfor %}
+		{% assign articles = site.articles | sort: date | reverse | slice: 0, 4 %}
+		{% include articles/article-card.html articles=articles %}
 	</div>
 	<div class="row bg-sightlines-lavendar pt-5">
 		<div class="block-button-wrapper pb-5">
-			<a class="btn btn-primary" role="button" href="#">Go to the Blog</a>
+			<a class="btn btn-primary" role="button" href="{{ '/articles/' | prepend: site.baseurl }}">View all articles</a>
 		</div>
 	</div>
 	<div class="row py-5 stripe-lavendar-purple"></div>
