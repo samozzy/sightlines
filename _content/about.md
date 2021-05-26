@@ -84,14 +84,14 @@ Big Mind’s work expands beyond the stage - from creating the “Anxiety-Free F
 
 ## Praise for past performances 
 
-> “It’s live, properly live, and I love it […] this is a bright spot in a world of dark theatres.”
-Bouquets and Brickbats
+> “It’s live, properly live, and I love it […] this is a bright spot in a world of dark theatres.” 
+-- Bouquets and Brickbats
  
-> “rare double achievement of not only tackling taboos surrounding sectioning in this country, but doing so with a warm-hearted vigour that ultimately treated its characters with kindness.”
-The Rattlecap
+> “rare double achievement of not only tackling taboos surrounding sectioning in this country, but doing so with a warm-hearted vigour that ultimately treated its characters with kindness.” 
+-- The Rattlecap
  
 > “Using theatre within university as a medium to remove stigma, initiate conversation, and change perception is a thing to be celebrated.”
-The Student
+-- The Student
 
 ### _The Garden Party_
 
