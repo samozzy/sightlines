@@ -8,3 +8,6 @@
 - name: Battersea Arts Centre 
   image: /static/img/partners/bac.jpg 
   website: https://bac.org.uk/
+- name: Real Talk
+  image: /static/img/partners/rt.png 
+  website: https://realtalkproject.org/
