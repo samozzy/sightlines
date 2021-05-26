@@ -1,20 +1,40 @@
 - name: Katrina Woolley
-  role: Artistic Director
+  role: Festival Director
   image: /static/img/placeholder/statue.jpg
-  bio: | 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  bio: |
+    Katrina is a theatre-maker and programmer who grew up in South London. She is now based in Sheffield after studying in Edinburgh, where she founded Big Mind Theatre and worked as Head of Programming for Bedlam Fringe. With Big Mind she has directed and produced original works based on lived experience of mental illness, created the Anxiety-Free Fringe Guide, and experimented in Zoom theatre over lockdown. She is interested in creative ways to promote wellbeing both in the arts and more broadly, and is a Support Worker for Young Minds, and a volunteer with Talk for Health and Good Chance Socials.
 - name: Lydia Harrison
   role: Producer
   image: /static/img/placeholder/statue.jpg
-- name: Lydia Harrison
-  role: Producer
-  image: /static/img/placeholder/statue.jpg
-- name: Lydia Harrison
-  role: Producer
-  image: /static/img/placeholder/statue.jpg
-- name: Lydia Harrison
-  role: Producer
-  image: /static/img/placeholder/statue.jpg
-- name: Lydia Harrison
-  role: Producer
-  image: /static/img/placeholder/statue.jpg
+  bio: |
+    Lydia is a theatre producer originally from Sheffield. After completing her MA in Creative Producing from Mountview Academy of Theatre Arts, she has produced many early-stage projects that span the Edinburgh Fringe, the Other Palace and Maiden Speech Festival.  
+- name: Julia Weingaertner
+  image: /static/img/team/julia.png
+  bio: |
+    Whilst at university, Julia was the president of the Edinburgh University Savoy Opera Group. 
+
+    Since graduating, she has produced Big Mind’s last digital production, “The Garden Party,” in July 2020. She currently serves as the Programs and Marketing Assistant for the non-profit Arts Education New Jersey and as the Marketing Coordinator for off-Broadway Shakespeare company Hamlet Isn’t Dead. 
+- name: Tom Robbins
+  role: Production Supervisor
+  image: /static/img/team/tom.png
+  bio: |
+    Tom is a Production Manager experienced in working across physical and digital spaces to provide technical solutions that facilitate authentic storytelling. Tom's work sees him working with companies and festival across the country to deliver memorable and high quality events, and he is always striving to develop new solutions to push the boundaries of what an audience might expect.
+- name: Emily Aboud
+  role: Guest Curator 
+  image: /static/img/team/emily.png
+  bio: |
+    Emily is a theatre director, writer and Artistic Director of Lagahoo Productions - an international theatre company specializing in feminist and queer work from the Caribbean and beyond. She was most recently shortlisted for the JMK Award 2021 as well as the Genesis Future Directors Award. She is a recipient of the Evening Standard Future Theatre Fund. 
+- name: Sam Osborne
+  role: Website Designer
+  image: /static/img/team/sam.jpg
+  bio: |
+    Sam Osborne is a freelance web designer and theatrical production manager. He's previously made websites for Haste Theatre, Anegada Theatre, and The Nottingham New Theatre; and in the world of theatre worked with Playing On, YESYESNONO, and Theatre Alibi. He additionally makes new theatre work as one third of Phone Box Theatre.
+- name: Guillaume Doussin
+  role: Graphic Designer 
+  image: /static/img/team/guillaume.png
+  bio: |
+    Guillaume is a theatre-maker, producer and graphic designer from Southern France, currently part of Theatre Peckham's resident company. He has designed for various arts organisations, including the Montreal Fringe Festival, Good Chance Theatre, Les Enfants Terribles and Mountview's Catalyst Festival.
+- name: Grace Dickson
+  role: Advisory Producer 
+  bio: |
+    Grace is a freelance theatre producer and General Manager. She is Company Producer for Grace Dickson Productions, THESE GIRLS and Lagahoo Productions, is the Administrator for Burn Bright, and is Assistant Producer to Ellie Claughton, with whom she works for LUNG, Breach and Barrel Organ.
