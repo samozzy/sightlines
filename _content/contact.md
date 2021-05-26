@@ -6,8 +6,8 @@ icon: paper-plane
 
 # Contact Us
 
-You can reach Sightlines Festival on Facebook, Twitter, and Instagram.
+You can contact us by filling in the form below or directly emailing producer Lydia at <info@sightlinesfestival.co.uk> or using the contact form below.
 
-You can get in touch with us directly on either <info@sightlinesfestival.co.uk> or using the contact form below.
+We’d love to hear any thoughts you have on the festival as well as any questions or queries. 
 
 {% include contact-form.html %}
