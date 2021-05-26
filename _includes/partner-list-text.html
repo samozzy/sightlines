@@ -1,0 +1,2 @@
+{% assign p = site.data.partners.size | minus: 1 %}
+{% for partner in site.data.partners %}{{ partner.name }}{% if forloop.index < p %}, {% elsif forloop.index == p %}, and {% endif %}{% endfor %}
