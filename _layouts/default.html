@@ -10,8 +10,8 @@ layout: outer
 		{% if page.toc and page.toc != empty %}
 			<div class="toc">
 				<div class="card card-body bg-sightlines-purple shadow-sm">
-					<h3 class="fs-4 text-primary">On this page</h3>
-					{% include toc.html html=content class="sightlines-toc" %}
+					<h3 class="fs-4 text-primary coming-sans">On this page</h3>
+					{% include toc.html html=content class="sightlines-toc" h_max=2 %}
 				</div>
 			</div>
 		{% endif %}

@@ -3,6 +3,22 @@
 
 @import "bootstrap_variables";
 
+@font-face {
+	font-family: 'Coming Sans';
+	src: url('{{ "/static/fonts/coming-sans/coming-sans.ttf" | prepend: site.baseurl }}');
+}
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+$coming-sans-font-family: 'Coming Sans', 'Roboto', 'Open Sans',sans-serif;
+$font-family-base: 'Oxygen','Roboto','Open Sans',Helvetica,sans-serif;
+
+h1, .h1, .nav-link, .coming-sans {
+	font-family: $coming-sans-font-family;
+}
+h1, .h1, .coming-sans {
+	font-size: 3rem !important;
+}
+
 .content-center {
 	@extend .col-12, .col-md-10, .col-lg-8;
 }
@@ -110,6 +126,7 @@ $sightlines-event-categories: (
 		margin-left: -1rem;
 		a {
 			@extend .text-decoration-none, .nav-link;
+			font-family: $font-family-base !important;
 			&:hover, &:focus, &:active {
 				color: map-get($sightlines-brand, "purple") !important;
 			}
