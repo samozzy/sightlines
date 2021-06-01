@@ -5,15 +5,8 @@ background_color: purple
 ---
 
 <div class="container-fluid">
-	<div class="row pb-4 bg-sightlines-yellow">
-		<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-3 col-xl-6">
-			<img class="img-fluid w-75 d-block text-center mx-auto mt-5" src="{{ '/static/img/logo/logo.png' | prepend: site.baseurl }}" alt="Sightlines: A festival of performance and well-being">
-			<h1 class="display-5 text-center mb-4 lh-sm">
-				{% comment %}<strong>Welcome to Sightlines Festival</strong>{% endcomment %}
-				<small class="text-muted">{{ site.festival_start_date | date: "%d" }} &ndash; {{ site.festival_end_date | date: "%d %B %Y" }}</small>
-			</h1>
-		</div>
-		<div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 lead-content text-center">
+	<div class="row py-4 bg-sightlines-yellow">
+		<div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 text-center fs-3 fw-light">
 			{{ content | markdownify }}
 		</div>
 	</div>
