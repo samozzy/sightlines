@@ -5,14 +5,18 @@ background_color: kobi
 
 <h1 class="text-center">
 	Events
-	<br>
-	<small class="text-muted fw-light">Sightlines 2021 runs from {{ site.festival_start_date | date: "%d" }}&ndash;{{ site.festival_end_date | date: "%d %B %Y" }}</small>
 </h1>
+
+<p class="lead text-center">Sightlines Festival will be full of exciting performances, workshops, panels, events, and more.</p>
 
 {% comment %}View as a Schedule
 View as a List{% endcomment %}
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 {% assign events=site.events %}
-{% include events/event-card.html events=events %}
+{% if events.size == 0 %}
+	Watch this space for the event updates and for live announcements visit our social media channels.
+{% else %}
+	{% include events/event-card.html events=events %}
+{% endif %}
 </div>
