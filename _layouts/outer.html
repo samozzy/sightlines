@@ -44,11 +44,11 @@
 			<div class="g-0 nav-content">
 				{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
 				<div class="nc--nav-mobile float-end">
-					<button class="btn btn-primary coming-sans rounded-sm shadow-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-expanded="false" aria-controls="navCollapse">
+					<button class="btn btn-primary coming-sans rounded-0 shadow-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-expanded="false" aria-controls="navCollapse">
 						Navigation
 					</button>
 					<div class="collapse" id="navCollapse">
-						<ul class="list-unstyled">
+						<ul class="list-unstyled nav-section">
 							{% for item in nav_pages %}
 								<li class="nav-item"><a class="text-dark nav-link {% if item.url == page.url %}active{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a></li>
 							{% endfor %}
@@ -66,7 +66,7 @@
 								<div class="nav-mid">
 									{% assign float = forloop.index | divided_by: 2.0 %}
 									{% assign int = forloop.index | divided_by: 2 | times: 1.0 %}
-									<img src="/static/graphics/nav/mid{% if int == float %}-flip{% endif %}.png">
+									<img src="/static/graphics/nav/mid{% if int == float %}-flip{% endif %}.png" class="{% if int!=float%}flip{% endif %}">
 								</div>
 								<div class="nav-mid-text">
 									<a class="text-dark {% if item.url == page.url %}active{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a>
@@ -76,7 +76,10 @@
 					</div>
 					<div class="row">
 						<div class="w-25 px-0 nav-bottom">
-							<img src="/static/graphics/nav/bottom-curl.png">
+							{% assign page_nums = nav_pages.size %}
+							{% assign page_nums_float = page_nums | divided_by: 2.0 %}
+							{% assign page_nums_int = page_nums | divided_by: 2 | times: 1.0 %}
+							<img src="/static/graphics/nav/bottom-curl.png" class="{% if page_nums_float != page_nums_int %}bump{% endif %}">
 						</div>
 					</div>
 				</div>
