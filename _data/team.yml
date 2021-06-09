@@ -1,11 +1,11 @@
 - name: Katrina Woolley
   role: Festival Director
-  image: /static/img/placeholder/statue.jpg
+  image: /static/img/team/katrina.png
   bio: |
     Katrina is a theatre-maker and programmer who grew up in South London. She is now based in Sheffield after studying in Edinburgh, where she founded Big Mind Theatre and worked as Head of Programming for Bedlam Fringe. With Big Mind she has directed and produced original works based on lived experience of mental illness, created the Anxiety-Free Fringe Guide, and experimented in Zoom theatre over lockdown. She is interested in creative ways to promote wellbeing both in the arts and more broadly, and is a Support Worker for Young Minds, and a volunteer with Talk for Health and Good Chance Socials.
 - name: Lydia Harrison
   role: Producer
-  image: /static/img/placeholder/statue.jpg
+  image: /static/img/team/lydia.png
   bio: |
     Lydia is a theatre producer originally from Sheffield. After completing her MA in Creative Producing from Mountview Academy of Theatre Arts, she has produced many early-stage projects that span the Edinburgh Fringe, the Other Palace and Maiden Speech Festival.  
 - name: Julia Weingaertner
@@ -19,6 +19,13 @@
   image: /static/img/team/tom.png
   bio: |
     Tom is a Production Manager experienced in working across physical and digital spaces to provide technical solutions that facilitate authentic storytelling. Tom's work sees him working with companies and festival across the country to deliver memorable and high quality events, and he is always striving to develop new solutions to push the boundaries of what an audience might expect.
+- name: Will Amott 
+  role: Production Manager 
+- name: Elske Waite 
+  role: Technical Manager 
+  image: /static/img/team/elske.png 
+  bio: |
+    Elske is a stage manager who has most recently worked for the acclaimed Not F*ckin’ Sorry (Soho Theatre), UnReal City (Battersea Arts Centre), and two rounds of Ondervinden’s The Folk Effect (online festival). Elske also works as a writer and theatre maker and is Creative Director of both Ondervinden Theatre and Gin and Tonic Productions.
 - name: Emily Aboud
   role: Guest Curator 
   image: /static/img/team/emily.png
@@ -28,7 +35,7 @@
   role: Website Designer
   image: /static/img/team/sam.jpg
   bio: |
-    Sam Osborne is a freelance web designer and theatrical production manager. He's previously made websites for Haste Theatre, Anegada Theatre, and The Nottingham New Theatre; and in the world of theatre worked with Playing On, YESYESNONO, and Theatre Alibi. He additionally makes new theatre work as one third of Phone Box Theatre.
+    Sam is a freelance web designer and theatrical production manager. He's previously made websites for Haste Theatre, Anegada Theatre, and The Nottingham New Theatre; and in the world of theatre worked with Playing On, YESYESNONO, and Theatre Alibi. He additionally makes new theatre work as one third of Phone Box Theatre.
 - name: Guillaume Doussin
   role: Graphic Designer 
   image: /static/img/team/guillaume.png
@@ -36,5 +43,6 @@
     Guillaume is a theatre-maker, producer and graphic designer from Southern France, currently part of Theatre Peckham's resident company. He has designed for various arts organisations, including the Montreal Fringe Festival, Good Chance Theatre, Les Enfants Terribles and Mountview's Catalyst Festival.
 - name: Grace Dickson
   role: Advisory Producer 
+  image: /static/img/team/grace.png 
   bio: |
     Grace is a freelance theatre producer and General Manager. She is Company Producer for Grace Dickson Productions, THESE GIRLS and Lagahoo Productions, is the Administrator for Burn Bright, and is Assistant Producer to Ellie Claughton, with whom she works for LUNG, Breach and Barrel Organ.

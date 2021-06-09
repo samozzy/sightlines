@@ -8,11 +8,13 @@ toc: true
 
 # Sightlines Festival
 
-Sightlines performance and wellbeing festival is a two week online festival. created to explore the conversation surrounding the relationship between performance and wellbeing, inspired by the thoughts and experiences of the many artists involved. Our first edition will take place 13th-25th of July 2021, with varied events including performances, workshops focused on the subject of mental health and wellbeing in its many forms. As well as investigating the process of creating performance, how positive wellbeing can be promoted through different art forms and for performers, participants, producers and audiences. 
+Sightlines is a two week online festival, exploring the conversation surrounding the relationship between performance and wellbeing, inspired by the thoughts and experiences of the many artists involved. The  first edition will take place from the 13th-25th of July 2021, with varied events including performances, workshops, talks and panels focused on the subject of mental health and wellbeing in its many forms. 
 
-This past year questions around wellbeing in the performing arts have come to the forefront as many artists had their work put on hold. We have had time to reflect, structural issues have become more clear than ever, new wellbeing issues have arisen and new forms of performance and performance outreach have developed
+Together we will dig into the  processes of creating performance, as well as how positive wellbeing can be promoted through different art forms and for performers, participants, producers and audiences. Space will be made for discussion around specific aspects of performance and intersections with personal identity, experiences and societal issues.
 
-Space will be made for discussion around specific aspect of the process and how this intersects with personal identity, experience and societal issues.
+This past year questions around wellbeing in the performing arts have come to the forefront as many artists had their work put on hold. We have had time to reflect, structural issues have become more clear than ever, new wellbeing challenges have arisen and new forms of performance and performance outreach have developed - making this a perfect time to reflect. 
+
+We can’t wait to welcome performance makers and lovers from across the UK to join us in this conversation!
 
 # The Sightlines Team
 
