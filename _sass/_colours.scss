@@ -1,14 +1,13 @@
 $sightlines-brand: (
-	"yellow": #FFD300,
-	"kobi": #B57EDC,
-	"lavendar": #B57EDC,
+	"yellow": #FEF286,
+	"kobi": #E39FF6,
 	"purple": #201A39,
-	"aquamarine": #0FA3B1,
+	"aquamarine": #63A088,
 	"white": white,
 	"transparent": transparent,
 );
 
-$primary: map-get($sightlines-brand, "yellow");
+$primary: darken(map-get($sightlines-brand, "yellow"), 20%);
 $secondary: map-get($sightlines-brand, "navy");
 
 @each $name, $color in $sightlines-brand {

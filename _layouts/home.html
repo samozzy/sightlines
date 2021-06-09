@@ -25,9 +25,9 @@ background_color: yellow
 			<a class="btn btn-primary" role="button" href="{{ '/events/' | prepend: site.baseurl }}">View All Events</a>
 		</div>
 	</div>
-	<div class="row py-5 stripe-kobi-lavendar"></div>
-	<div class="row py-4 bg-sightlines-lavendar">
-		<div class="col-12 text-center text-light">
+	<div class="row py-5 stripe-kobi-yellow"></div>
+	<div class="row py-4 bg-sightlines-yellow">
+		<div class="col-12 text-center text-dark">
 			<h2 class="display-6">Featured Articles</h2>
 		</div>
 	</div>
@@ -35,13 +35,12 @@ background_color: yellow
 		{% assign articles = site.articles | sort: date | reverse | slice: 0, 4 %}
 		{% include articles/article-card.html articles=articles %}
 	</div>
-	<div class="row bg-sightlines-lavendar pt-5">
+	<div class="row bg-sightlines-yellow pt-5">
 		<div class="block-button-wrapper pb-5">
 			<a class="btn btn-primary" role="button" href="{{ '/articles/' | prepend: site.baseurl }}">View all articles</a>
 		</div>
 	</div>
-	<div class="row py-5 stripe-lavendar-purple"></div>
-
+	<div class="row py-5 stripe-yellow-purple"></div>
 	<div class="row pt-4 row-cols-1 row-cols-md-2 bg-sightlines-purple text-light">
 		<div class="col-12 col-md-12 pb-2">
 			<h2 class="text-center">Stay in Touch</h2>
