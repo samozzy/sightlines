@@ -4,8 +4,6 @@ layout: outer
 
 <div class="container-fluid">
 
-	{% contentblock full_width_top %}
-
 	<div class="row my-auto pt-5 {% ifhascontent full_width_bottom %}pb-5{% endifhascontent %}">
 		{% if page.toc and page.toc != empty %}
 			<div class="toc">
@@ -19,7 +17,5 @@ layout: outer
 			{{ content }}
 		</div>
 	</div>
-
-	{% contentblock full_width_bottom %}
 
 </div>
