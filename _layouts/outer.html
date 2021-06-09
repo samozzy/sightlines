@@ -19,35 +19,13 @@
 	</head>
 	{% assign background_color = page.background_color | default: layout.background_color | default: 'white' | prepend: 'bg-sightlines-' %}
 	<body class="d-flex flex-column h-100 {{ background_color }}">
-		<!--
-		<div class="container-fluid p-0 bg-sightlines-yellow">
-			<nav class="navbar navbar-expand-lg navbar-light py-lg-0 shadow-sm">
-				<div class="container-fluid">
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSightlines" aria-controls="navbarSightlines" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="navbar-collapse collapse" id="navbarSightlines">
-						<ul class="nav nav-pills nav-fill navbar-nav w-100">
-							{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
-							{% for item in nav_pages %}
-								<li class="nav-item">
-									<a class="nav-link {% if item.url == page.url %}active{% endif %} py-lg-4" href="{{ item.url | prepend: site.baseurl }}">{% if item.icon and item.icon != empty %}<i class="fa fa-lg fa-{{ item.icon }}"></i><br>{% endif %}{{ item.nav_title | default: item.title }}</a>
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-		-->
-
-		<div class="container-fluid p-0 bg-sightlines-yellow {% unless page.layout == 'home' %}shadow{% endunless %}" style="z-index:10;">
+		<div class="container-fluid p-0">
 			<a href="{{ '/' | prepend: site.baseurl }}">
-				<div class="row g-0">
-					<div class="col-12 d-none d-xl-block">
-						<img class="img-fluid" src="/static/graphics/breakpoints/full_set.png">
+				<div class="header-fw row g-0 bg-sightlines-yellow {% unless page.layout == 'home' %}shadow{% endunless %}" style="z-index:10;">
+					<div class="col-11 d-none d-xl-block">
+						<img class="" src="/static/graphics/breakpoints/full_set.png">
 					</div>
-					<div class="col-12 d-none d-md-block d-xl-none">
+					<div class="col-11 d-none d-md-block d-xl-none">
 						<img class="img-fluid" src="/static/graphics/breakpoints/lg.png">
 					</div>
 					<div class="col-12 d-none d-sm-block d-md-none">
@@ -63,25 +41,34 @@
 					</div>
 				</div>
 			</a>
-			<div class="row">
-				<!--<div class="d-none d-md-block col-lg-2 col-md-3">-->
-				<!--</div>-->
-				<nav class="navbar navbar-expand">
-					<div class="container-fluid">
-						<ul class=" navbar-nav mx-auto">
-							{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
-							{% for item in nav_pages %}
-								<li class="nav-item rounded-0">
-									<a class="nav-link text-dark px-4 {% if item.url == page.url %}active{% endif %} py-lg-4" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a>
-								</li>
-							{% endfor %}
-						</ul>
+			<div class="row g-0">
+				<div class="col-12 col-md-10">
+					{{ content }}
+				</div>
+				<div class="d-none d-md-block col-2 bg-sightlines-yellow nav-section bg-transparent h-100">
+					<div class="row">
+						{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
+						{% for item in nav_pages %}
+							<div class="d-flex flex-row">
+								<div class="nav-mid">
+									{% assign float = forloop.index | divided_by: 2.0 %}
+									{% assign int = forloop.index | divided_by: 2 | times: 1.0 %}
+									<img src="/static/graphics/nav/mid{% if int == float %}-flip{% endif %}.png">
+								</div>
+								<div class="nav-mid-text">
+									<a class="text-dark {% if item.url == page.url %}active{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a>
+								</div>
+							</div>
+						{% endfor %}
 					</div>
-				</nav>
+					<div class="row">
+						<div class="w-25 px-0 nav-bottom">
+							<img src="/static/graphics/nav/bottom.png">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		{{ content }} 
 
 		<!-- Footer -->
 		<div class="container-fluid text-light footer mt-auto">

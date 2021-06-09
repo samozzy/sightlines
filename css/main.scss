@@ -152,6 +152,42 @@ $sightlines-event-categories: (
 		}
 	}
 }
+.header-fw img {
+	@media only screen and (min-width: 1200px) {
+		width: 87.1vw;
+	}
+}
+
+.nav-section {
+	overflow:hidden;
+	padding-left: 1.65rem !important;
+	a { 
+		text-decoration: none;
+		@extend .coming-sans;
+		font-size: 1.25rem !important;
+		opacity: 0.8;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.nav-mid-text {
+		@extend .my-auto;
+		float: right;
+		width: 100ch;
+	}
+	.nav-mid img {
+		@media only screen and (min-width: 1200px) {
+			height: 39px;
+			padding-left: 10px;
+		}
+	}
+	.nav-bottom img {
+		@media only screen and (min-width: 1200px) {
+			width: 66.667%;
+			margin-left: 2px;
+		}
+	}
+}
 
 
 @import "content-layout";
