@@ -18,6 +18,9 @@ h1, .h1, .coming-sans {
 h1, .h1, .coming-sans {
 	font-size: 3rem !important;
 }
+.coming-sans.btn {
+	font-size: 1.5rem !important;
+}
 
 .content-center {
 	@extend .col-12, .col-md-10, .col-lg-8;
