@@ -3,7 +3,9 @@ email: info@sightlinesfestival.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sightlinesfestival.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username: sightlinesfest
+instagram_username: sightlinesfest
+facebook_username: sightlinesfest
 github_username:  samozzy
 timezone: Europe/London
 
