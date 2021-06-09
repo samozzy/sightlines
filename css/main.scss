@@ -155,12 +155,96 @@ $sightlines-event-categories: (
 		}
 	}
 }
-.header-fw img {
-	@media only screen and (min-width: 1200px) {
-		width: 87.1vw;
+.header-fw {
+	> div {
+		display: none;
+		&.header-img-sm {
+			display: block;
+		}
+		@media only screen and (min-width: 767px) {
+			&.header-img-sm {
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width:899px) {
+			&.header-img-md {
+				display: block;
+			}
+		}
+		@media only screen and (min-width: 900px) and (max-width: 1299px) {
+			&.header-img-large {
+				display: block;
+			}
+		}
+		@media only screen and (min-width: 1300px) {
+			&.header-img-largest {
+				display: block;
+			}
+		}
+	}
+	img {
+		width: 100%;
+		@media only screen and (min-width: 900px) {
+			width: 769px;
+		}
+		@media only screen and (min-width: 1100px) {
+			width: 844.5px;
+		}
+		@media only screen and (min-width: 1300px) {
+			width: 1043px;
+		}
+		@media only screen and (min-width: 1400px) {
+			width: 1144px;
+		}
+		@media only screen and (min-width: 1600px) {
+			width: 1340px;
+		}
+		@media only screen and (min-width: 1800px) {
+			width: 1542px;
+		}
 	}
 }
-
+.nav-content { 
+	.nc--content, .nc--nav {
+		float: left;
+	}
+	.nc--nav-mobile {
+		@media only screen and (min-width: 899px) {
+			display: none;
+		}
+	}
+	.nc--nav {
+		@media only screen and (max-width: 900px) {
+			display: none;
+		}
+		float: left;
+		width: 200px;
+		@media only screen and (min-width: 1100px) {
+			width: 325px
+		}
+	}
+	.nc--content {
+		width: 100%;
+		@media only screen and (min-width: 900px) {
+			width: 700px;
+		}
+		@media only screen and (min-width: 1100px) {
+			width: 775px;
+		}
+		@media only screen and (min-width: 1300px) {
+			width: 975px;
+		}
+		@media only screen and (min-width: 1400px) {
+			width: 1075px;
+		}
+		@media only screen and (min-width: 1600px) {
+			width: 1270px;
+		}
+		@media only screen and (min-width: 1800px) {
+			width: 1470px;
+		}
+	}
+}
 .nav-section {
 	overflow:hidden;
 	padding-left: 1.65rem !important;
@@ -179,16 +263,12 @@ $sightlines-event-categories: (
 		width: 100ch;
 	}
 	.nav-mid img {
-		@media only screen and (min-width: 1200px) {
-			height: 39px;
-			padding-left: 10px;
-		}
+		height: 39px;
+		padding-left: 10px;
 	}
 	.nav-bottom img {
-		@media only screen and (min-width: 1200px) {
-			width: 66.667%;
-			margin-left: 2px;
-		}
+		width: 200px;
+		margin-left: 32px;
 	}
 }
 

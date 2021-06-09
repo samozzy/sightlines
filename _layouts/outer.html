@@ -20,18 +20,18 @@
 	{% assign background_color = page.background_color | default: layout.background_color | default: 'white' | prepend: 'bg-sightlines-' %}
 	<body class="d-flex flex-column h-100 {{ background_color }}">
 		<div class="container-fluid p-0">
-			<a href="{{ '/' | prepend: site.baseurl }}">
-				<div class="header-fw row g-0 bg-sightlines-yellow {% unless page.layout == 'home' %}shadow{% endunless %}" style="z-index:10;">
-					<div class="col-11 d-none d-xl-block">
+			<a href="{{ '/' | prepend: site.baseurl }}" class="header-fw-wrapper">
+				<div class="header-fw g-0 bg-sightlines-yellow {% unless page.layout == 'home' %}shadow{% endunless %}" style="z-index:10;">
+					<div class="header-img-largest">
 						<img class="" src="/static/graphics/breakpoints/full_set.png">
 					</div>
-					<div class="col-11 d-none d-md-block d-xl-none">
-						<img class="img-fluid" src="/static/graphics/breakpoints/lg.png">
+					<div class="header-img-large">
+						<img class="" src="/static/graphics/breakpoints/lg.png">
 					</div>
-					<div class="col-12 d-none d-sm-block d-md-none">
+					<div class="header-img-md">
 						<img class="img-fluid" src="/static/graphics/breakpoints/md.png">
 					</div>
-					<div class="d-block d-sm-none">
+					<div class="header-img-sm">
 						<div class="col-12">
 							<img class="img-fluid" src="/static/graphics/breakpoints/0-left.png">
 						</div>
@@ -41,13 +41,26 @@
 					</div>
 				</div>
 			</a>
-			<div class="row g-0">
-				<div class="col-12 col-md-10">
+			<div class="g-0 nav-content">
+				{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
+				<div class="nc--nav-mobile float-end">
+					<button class="btn btn-primary coming-sans rounded-sm shadow-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-expanded="false" aria-controls="navCollapse">
+						Navigation
+					</button>
+					<div class="collapse" id="navCollapse">
+						<ul class="list-unstyled">
+							{% for item in nav_pages %}
+								<li class="nav-item"><a class="text-dark nav-link {% if item.url == page.url %}active{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+
+				<div class="nc--content">
 					{{ content }}
 				</div>
-				<div class="d-none d-md-block col-2 bg-sightlines-yellow nav-section bg-transparent h-100">
+				<div class="nc--nav bg-sightlines-yellow nav-section bg-transparent h-100">
 					<div class="row">
-						{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
 						{% for item in nav_pages %}
 							<div class="d-flex flex-row">
 								<div class="nav-mid">
@@ -63,12 +76,19 @@
 					</div>
 					<div class="row">
 						<div class="w-25 px-0 nav-bottom">
-							<img src="/static/graphics/nav/bottom.png">
+							<img src="/static/graphics/nav/bottom-curl.png">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		{% ifhascontent full_width_bottom %}
+			<div class="container-fluid">
+				{% contentblock full_width_bottom %}
+			</div>
+		{% endifhascontent %}
+
 
 		<!-- Footer -->
 		<div class="container-fluid text-light footer mt-auto">
