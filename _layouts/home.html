@@ -14,20 +14,27 @@ background_color: yellow
 {% contentfor full_width_bottom %}
 <div class="container-fluid px-0">
 	<div class="row py-5 stripe-yellow-kobi"></div>
+	{% assign num_events = site.events.size %}
 	<div class="row pt-5 pb-1 bg-sightlines-kobi">
 		<div class="col-12 text-center">
-			<h2 class="text-center text-sightlines-white display-6">Featured Events</h2>
+			<h2 class="text-center text-sightlines-white display-6">{% unless num_events == 0 %}Featured{% endunless %} Events</h2>
 		</div>
 	</div>
 	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center bg-sightlines-kobi">
-		{% assign events = site.events | sort: "start_date" | slice: 0, 4 %}
-		{% include events/event-card.html events=events %}
+		{% unless num_events == 0 %}
+			{% assign events = site.events | sort: "start_date" | slice: 0, 4 %}
+			{% include events/event-card.html events=events %}
+		{% else %}
+			<p class="text-center mb-4">Our full events programme will be announced soon - stay tuned!</p>
+		{% endunless %}
 	</div>
-	<div class="row bg-sightlines-kobi">
-		<div class="block-button-wrapper pt-3 pb-5">
-			<a class="btn btn-primary" role="button" href="{{ '/events/' | prepend: site.baseurl }}">View All Events</a>
+	{% if num_events > 0 %}
+		<div class="row bg-sightlines-kobi">
+			<div class="block-button-wrapper pt-3 pb-5">
+				<a class="btn btn-primary" role="button" href="{{ '/events/' | prepend: site.baseurl }}">View All Events</a>
+			</div>
 		</div>
-	</div>
+	{% endif %}
 	<div class="row py-5 stripe-kobi-yellow"></div>
 	<div class="row py-4 bg-sightlines-yellow">
 		<div class="col-12 text-center text-dark">
