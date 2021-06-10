@@ -14,12 +14,17 @@ $font-family-base: 'Oxygen','Roboto','Open Sans',Helvetica,sans-serif;
 
 h1, .h1, .coming-sans {
 	font-family: $coming-sans-font-family;
-}
-h1, .h1, .coming-sans {
 	font-size: 3rem !important;
+	text-transform: uppercase;
 }
 .coming-sans.btn {
 	font-size: 1.5rem !important;
+}
+.subtle-link {
+	text-decoration: none;
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
 }
 
 .content-center {
@@ -277,7 +282,6 @@ $sightlines-event-categories: (
 		}
 	}
 }
-
 
 @import "content-layout";
 
