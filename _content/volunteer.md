@@ -55,8 +55,10 @@ new areas of interest
 
 Interested in either of these volunteer positions? Pop us an email and let us know which position you are applying for, as well as:
 
-a. What skills will you bring to the table as digital festival volunteer, and what would you most like to take away from the process?
-b. How has wellbeing impacted your work?
-c. Tell us about a time you used initiative to solve a problem.
+a) What skills will you bring to the table as digital festival volunteer, and what would you most like to take away from the process?
+
+b) How has wellbeing impacted your work?
+
+c) Tell us about a time you used initiative to solve a problem.
 
 Please submit a short paragraph response to each question. Do not include a CV or any additional materials. Please send your responses to us via email at <lydiaharrisonproducer@gmail.com> by **DUE DATE**.
