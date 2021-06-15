@@ -20,7 +20,7 @@ m<br>T:{{ p }}--
 		<div class="col-12 {% unless person.bio %}col-md-6 col-lg-4 col-xl-3{% endunless %} mb-4">
 			<div class="row">
 				{% if person.image %}
-					<div class="col-4 {% if person.bio and person.bio != empty %}col-lg-2{% endif %}">
+					<div class="col-4 {% if person.bio and person.bio != empty %}col-lg-3{% endif %}">
 						<img class="rounded-circle img-fluid" src="{{ person.image | prepend: site.baseurl }}" alt="{{ person.name }}">
 					</div>
 				{% endif %}
