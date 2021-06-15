@@ -29,15 +29,31 @@ h1, .h1, .coming-sans {
 }
 
 .content-center {
-	@extend .col-12, .col-md-10, .col-lg-8;
+	@extend .col-12, .col-md-9, .col-lg-8;
+	> p > img {
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+		}
+		width: 50%;
+		float: left; 
+		@extend .pe-3, .py-2;
+	}
 }
 .content-center-offset {
 	@extend .offset-md-1, .offset-lg-2;
 }
 .toc {
-	@extend .col-12, .col-lg-2, .sticky-top, .mb-4;
+	@extend .col-12, .col-lg-3, .mb-4;
 	.card {
 		@extend .rounded-0, .rounded-end, .shadow;
+	}
+	ul {
+		list-style:none;
+	}
+	@media only screen and (min-width: 1024px) {
+		position: sticky;
+		top: 0;
+		z-index: 1020;
 	}
 }
 
