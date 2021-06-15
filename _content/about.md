@@ -23,7 +23,11 @@ We can’t wait to welcome performance makers and lovers from across the UK to j
 
 # About Big Mind Theatre 
 
-Big Mind Theatre exists to explore the relationship between performance and personal and societal well-being. Established in 2017 by Katrina Woolley, our focus on mental health and well-being is holistic. It extends throughout our production processes to support our performers and production team members, and to impact our audiences.
+<p class="lead">Big Mind Theatre exists to explore the relationship between performance and personal and societal well-being.</p>
+
+![A photo from a show with the Big Mind logo placed on top](/static/img/bigmind/logo-image.png)
+
+Established in 2017 by Katrina Woolley, our focus on mental health and well-being is holistic. It extends throughout our production processes to support our performers and production team members, and to impact our audiences.
  
 Big Mind’s past productions include _Going Slightly Mad_, an unflinching autobiographical play about the mental health services in the United Kingdom. The show’s national tour and run at the Edinburgh Fringe took place from July to August of 2019. Our first foray into digital theatre was a production of Vaclav Havel’s absurdist classic _The Garden Party_ which streamed live in July of 2020. The company’s first production, _Mind-Full_ (2017), was a piece of verbatim theatre created by company founder Katrina Woolley on the topic of student mental health.
  
@@ -42,9 +46,14 @@ Big Mind’s work expands beyond the stage - from creating the “Anxiety-Free F
 
 ### _The Garden Party_
 
+![Poster from The Garden Party](/static/img/bigmind/bm-gp.png)
+
 Big Mind’s most recent performance was the company’s first foray into digital theatre, this Czech absurdist classic commentated on the hindrances and absurdities of online communication. It was also an experiment into how well-being in the lockdown could be supported by providing an opportunity for performers and theatre-lovers to experience a live show through pandemic-induced restraints. Bouquets and Brickbats writes, “It’s live, properly live, and I love it […] this is a bright spot in a world of dark theatres.”
  
 ### _Going Slightly Mad_
+
+![Poster from Going Slightly Mad](/static/img/bigmind/bm-gsm.png)
+
 “A palpable insight into the reality of institutionalism in the UK” – The Student. Written by Michael Hajiantonis about his time in an NHS psychiatric ward, Going Slightly Mad is an honest and unflinching account of the mental health services in the United Kingdom. The production completed a National Tour and a run at the Edinburgh Fringe from July - August 2020. The Rattlecap called it a “rare double achievement of not only tackling taboos surrounding sectioning in this country, but doing so with a warm-hearted vigour that ultimately treated its characters with kindness.” A full recording of Going Slightly Mad will be livestreamed as part of the Sightlines Festival.
  
 ### _Mind-Full_
