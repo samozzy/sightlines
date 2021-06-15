@@ -33,17 +33,6 @@ Big Mind’s past productions include _Going Slightly Mad_, an unflinching autob
  
 Big Mind’s work expands beyond the stage - from creating the “Anxiety-Free Fringe Guide” with the Edinburgh Fringe Society in 2018-19 to leading numerous “Mindfulness for Performers” workshops, we endeavour to expand the company’s reach and develop our unique directorial practices.
 
-## Praise for past performances 
-
-> “It’s live, properly live, and I love it […] this is a bright spot in a world of dark theatres.” 
--- Bouquets and Brickbats
- 
-> “rare double achievement of not only tackling taboos surrounding sectioning in this country, but doing so with a warm-hearted vigour that ultimately treated its characters with kindness.” 
--- The Rattlecap
- 
-> “Using theatre within university as a medium to remove stigma, initiate conversation, and change perception is a thing to be celebrated.”
--- The Student
-
 ### _The Garden Party_
 
 ![Poster from The Garden Party](/static/img/bigmind/bm-gp.png)
