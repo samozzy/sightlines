@@ -1,0 +1,6 @@
+Funded with support from {% include partner-list-text.html %}
+{% for partner in site.data.partners %}
+	{% if partner.footer %}
+		<p><a href="{{ partner.website }}" target="_blank"><img src="{{ partner.footer_image | default: partner.image | prepend: site.baseurl }}" alt="{{ partner.name }}" {% if partner.height and partner.height != empty %}height="{{ partner.height }}"{% else %}class="w-50"{% endif %}></a></p>
+	{% endif %}
+{% endfor %}
