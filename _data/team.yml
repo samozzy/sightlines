@@ -21,6 +21,9 @@
     Tom is a Production Manager experienced in working across physical and digital spaces to provide technical solutions that facilitate authentic storytelling. Tom's work sees him working with companies and festival across the country to deliver memorable and high quality events, and he is always striving to develop new solutions to push the boundaries of what an audience might expect.
 - name: Will Amott 
   role: Production Manager 
+  image: /static/img/team/will.png 
+  bio: | 
+    Will is an independent project manager and producer of live and digital arts who currently acts as Associate Producer at Autin Dance Theatre and has previously worked with In Good Company at Derby Theatre, Beatfreeks and SHOUT Festival. 
 - name: Elske Waite 
   role: Technical Manager 
   image: /static/img/team/elske.png 
@@ -46,3 +49,8 @@
   image: /static/img/team/grace.png 
   bio: |
     Grace is a freelance theatre producer and General Manager. She is Company Producer for Grace Dickson Productions, THESE GIRLS and Lagahoo Productions, is the Administrator for Burn Bright, and is Assistant Producer to Ellie Claughton, with whom she works for LUNG, Breach and Barrel Organ.
+- name: Nikita Kario
+  role: Festival Correspondent 
+  image: /static/img/team/nikita.png 
+  bio: | 
+    Nikita is a theatre producer and arts writer from South London. She produces fringe theatre for early-career artists. As a writer, she explores subjects within the personal, cultural and political realms as well as being a regular theatre critic for The Stage. 
