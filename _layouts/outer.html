@@ -15,50 +15,63 @@
 		<link rel="icon" type="image/png" href="{{ '/static/img/logo/favicon.png' | prepend: site.baseurl }}">
 
 		 <!-- Recaptcha -->
-	    <script src="https://www.google.com/recaptcha/api.js" async defer></script>	
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>	
 	</head>
 	{% assign background_color = page.background_color | default: layout.background_color | default: 'white' | prepend: 'bg-sightlines-' %}
 	<body class="d-flex flex-column h-100 {{ background_color }}">
-		<div class="container-fluid p-0">
-			<a href="{{ '/' | prepend: site.baseurl }}" class="header-fw-wrapper">
-				<div class="header-fw g-0 bg-sightlines-yellow {% unless page.layout == 'home' %}shadow{% endunless %}" style="z-index:10;">
-					<div class="header-img-largest">
-						<img class="" src="/static/graphics/breakpoints/full_set.png">
-					</div>
-					<div class="header-img-large">
-						<img class="" src="/static/graphics/breakpoints/lg.png">
-					</div>
-					<div class="header-img-md">
-						<img class="img-fluid" src="/static/graphics/breakpoints/md.png">
-					</div>
-					<div class="header-img-sm">
-						<div class="col-12">
-							<img class="img-fluid" src="/static/graphics/breakpoints/0-left.png">
+		<div class="container-fluid sightlines-header bg-sightlines-white {% unless page.layout == 'home' %}shadow{% endunless %}">
+			<div class="row header-image">
+				<a href="{{ '/' | prepend: site.baseurl }}" class="header-fw-wrapper p-0">
+					<div class="header-fw col-12 g-0" style="z-index:10;">
+						<div class="header-img-largest">
+							<img class="" src="/static/graphics/breakpoints/full_set-no-nav.png">
 						</div>
-						<div class="col-12">
-							<img class="img-fluid" src="/static/graphics/breakpoints/0-right.png">
+						<div class="header-img-large">
+							<img class="" src="/static/graphics/breakpoints/lg-no-nav.png">
+						</div>
+						<div class="header-img-md">
+							<img class="img-fluid" src="/static/graphics/breakpoints/md.png">
+						</div>
+						<div class="header-img-sm">
+							<div class="col-12">
+								<img class="img-fluid" src="/static/graphics/breakpoints/0-left.png">
+							</div>
+							<div class="col-12">
+								<img class="img-fluid" src="/static/graphics/breakpoints/0-right.png">
+							</div>
 						</div>
 					</div>
-				</div>
-			</a>
-			<div class="g-0 nav-content">
-				{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
-				<div class="nc--nav-mobile float-end">
-					<button class="btn btn-primary coming-sans rounded-0 shadow-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-expanded="false" aria-controls="navCollapse">
-						Navigation
-					</button>
-					<div class="collapse" id="navCollapse">
-						<ul class="list-unstyled nav-section">
-							{% for item in nav_pages %}
-								<li class="nav-item"><a class="text-dark nav-link {% if item.url == page.url %}active{% endif %}" href="{{ item.url | prepend: site.baseurl }}">{{ item.nav_title | default: item.title }}</a></li>
-							{% endfor %}
-						</ul>
+				</a>
+			</div>
+			<div class="row header-navigation">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<button type="button" data-bs-toggle="collapse" data-bs-target="#sightlinesnavbar" aria-controls="sightlinesnavbar" aria-expanded="false" aria-label="Toggle navigation" class="coming-sans btn navbar-toggler btn-primary bg-sightlines-yellow">
+							Navigation
+						</button>
+						<div class="collapse navbar-collapse" id="sightlinesnavbar">
+							{% assign nav_pages = site.content | where_exp: "item","item.nav_order != empty and item.nav_order" | sort: "nav_order" %}
+							{% if nav_pages %}
+								<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+									{% for nav_page in nav_pages %}
+										<li class="nav-item coming-sans">
+											<a class="nav-link {% if nav_page.url == page.url %}active{% endif %}"  href="{{ nav_page.url }}">{{ nav_page.nav_title | default: nav_page.title }}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</div>
 					</div>
-				</div>
-
-				<div class="nc--content">
-					{{ content }}
-				</div>
+				</nav>
+			</div>
+		</div>
+		<div class="container-fluid">
+			{{ content }}
+		</div>
+		<!-- 	
+		<div class="nc--content">
+			</div> -->
+				<!--
 				<div class="nc--nav bg-sightlines-yellow nav-section bg-transparent h-100">
 					<div class="row">
 						{% for item in nav_pages %}
@@ -74,17 +87,16 @@
 							</div>
 						{% endfor %}
 					</div>
-					<!--<div class="row">
+					<div class="row">
 						<div class="px-0 nav-bottom">
 							{% assign page_nums = nav_pages.size %}
 							{% assign page_nums_float = page_nums | divided_by: 2.0 %}
 							{% assign page_nums_int = page_nums | divided_by: 2 | times: 1.0 %}
 							<img src="/static/graphics/nav/bottom-curl.png" class="{% if page_nums_float != page_nums_int %}bump{% endif %}">
 						</div>
-					</div>-->
+					</div>
 				</div>
-			</div>
-		</div>
+			</div>-->
 
 		{% ifhascontent full_width_bottom %}
 			<div class="container-fluid">
@@ -99,12 +111,16 @@
 			<div class="row py-5 stripe-transparent-purple"></div>
 			{% endifnothascontent %}
 			<div class="row py-4 bg-sightlines-purple">
-				<div class="col text-center">
-					<p class="small fw-light">
-						<strong class="coming-sans fs-5">Sightlines Festival</strong><br>
-						{% include partner-list-footer.html %}<br>
-						<a href="https://web.samosborne.me/" class="text-decoration-none">Website by Sam Osborne</a>
-					</p>
+				<div class="squiggle-container">
+					<div class="background-squiggles" style="left: 78%;bottom: 5rem;opacity: 0.2;transform: rotate(-40deg);top: auto;"></div>
+
+					<div class="col text-center">
+						<p class="small fw-light">
+							<strong class="coming-sans fs-5">Sightlines Festival</strong><br>
+							{% include partner-list-footer.html %}<br>
+							<a href="https://web.samosborne.me/" class="text-decoration-none">Website by Sam Osborne</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
