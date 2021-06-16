@@ -154,6 +154,27 @@ $sightlines-event-categories: (
 	@extend .link-dark;
 }
 
+.footer .row {
+	overflow:hidden;
+}
+.squiggle-container {
+	position: relative;
+	> div {
+		opacity: 0.95;
+	}
+}
+.background-squiggles {
+	background-image: url('/static/graphics/squiggles/squiggle-stack.png');
+	background-size: contain;
+	background-repeat: repeat-y;
+	position: absolute;
+	top: 4rem;
+	left: -2rem;
+	width: 50%;
+	height: 70%;
+	transform: rotate(-3deg);
+}
+
 .nav-link {
 	&:hover {
 		background-color: darken(map-get($sightlines-brand, "yellow"), 7.5%) !important;
