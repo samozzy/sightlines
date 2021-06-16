@@ -12,7 +12,7 @@ $secondary: map-get($sightlines-brand, "navy");
 
 @each $name, $color in $sightlines-brand {
   .text-sightlines-#{$name} {
-    color: $color; 
+    color: $color !important; 
     &:hover, &:focus, &:active {
     	color: lighten($color, 15%);
     }
