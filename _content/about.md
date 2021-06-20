@@ -33,6 +33,8 @@ Big Mind’s past productions include _Going Slightly Mad_, an unflinching autob
  
 Big Mind’s work expands beyond the stage - from creating the “Anxiety-Free Fringe Guide” with the Edinburgh Fringe Society in 2018-19 to leading numerous “Mindfulness for Performers” workshops, we endeavour to expand the company’s reach and develop our unique directorial practices.
 
+<div class="my-5"></div>
+
 ### _The Garden Party_
 
 ![Poster from The Garden Party](/static/img/bigmind/bm-gp.png)
