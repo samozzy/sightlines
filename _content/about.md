@@ -48,6 +48,9 @@ Big Mind’s most recent performance was the company’s first foray into digita
 “A palpable insight into the reality of institutionalism in the UK” – The Student. Written by Michael Hajiantonis about his time in an NHS psychiatric ward, Going Slightly Mad is an honest and unflinching account of the mental health services in the United Kingdom. The production completed a National Tour and a run at the Edinburgh Fringe from July - August 2020. The Rattlecap called it a “rare double achievement of not only tackling taboos surrounding sectioning in this country, but doing so with a warm-hearted vigour that ultimately treated its characters with kindness.” A full recording of Going Slightly Mad will be livestreamed as part of the Sightlines Festival.
  
 ### _Mind-Full_
+
+![Poster from Mind-Full](/static/img/bigmind/bm-mf.png) 
+
 Big Mind’s first performance, “Mind-Full,” was a piece of verbatim theatre. A review from The Student reflected, “Using theatre within university as a medium to remove stigma, initiate conversation, and change perception is a thing to be celebrated.” The show was compiled by company founder and director Katrina Woolley who recorded and shared student experiences with mental health. Mind-Full launched Big Mind’s ethos to centre mental health and well-being within its shows and projects.
 
 

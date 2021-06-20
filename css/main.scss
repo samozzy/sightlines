@@ -42,7 +42,7 @@ h1, .h1, .coming-sans {
 		}
 		width: 50%;
 		float: left; 
-		@extend .pe-3, .py-2;
+		@extend .me-3, .my-2, .shadow-sm;
 	}
 }
 .content-center-offset {
