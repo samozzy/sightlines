@@ -175,7 +175,7 @@ $sightlines-event-categories: (
 	transform: rotate(-3deg);
 }
 
-.nav-link {
+.nav-link, .nav-item button {
 	&:hover {
 		background-color: darken(map-get($sightlines-brand, "yellow"), 7.5%) !important;
 	}

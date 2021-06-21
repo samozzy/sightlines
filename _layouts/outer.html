@@ -54,9 +54,25 @@
 							{% if nav_pages %}
 								<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 									{% for nav_page in nav_pages %}
-										<li class="nav-item coming-sans">
-											<a class="nav-link {% if nav_page.url == page.url %}active{% endif %}"  href="{{ nav_page.url }}">{{ nav_page.nav_title | default: nav_page.title }}</a>
-										</li>
+										{% if nav_page.children and nav_page.children != empty %}
+											<li class="btn-group nav-item coming-sans">
+												<a type="button" class="nav-link" href="{{ nav_page.url }}">
+													{{ nav_page.title }}
+												</a>
+												<button type="button" class="btn dropdown-toggle dropdown-toggle-split rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+													<span class="visually-hidden">Toggle Dropdown</span>
+												</button>
+												<ul class="dropdown-menu rounded-0">
+													{% for child_page in nav_page.children %}
+														<li><a class="dropdown-item nav-link" href="{{ child_page.link }}">{{ child_page.title }}</a></li>
+													{% endfor %}
+												</ul>
+											</li>
+										{% else %}
+											<li class="nav-item coming-sans">
+												<a class="nav-link {% if nav_page.url == page.url %}active{% endif %}"  href="{{ nav_page.url }}">{{ nav_page.nav_title | default: nav_page.title }}</a>
+											</li>
+										{% endif %}
 									{% endfor %}
 								</ul>
 							{% endif %}

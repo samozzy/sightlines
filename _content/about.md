@@ -4,6 +4,9 @@ nav_order: 4
 background_color: kobi
 icon: info-circle
 toc: true
+children:
+  - title: Big Mind Theatre 
+    link: '/about/#about-big-mind-theatre'
 ---
 
 # Sightlines Festival
