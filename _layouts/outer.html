@@ -14,8 +14,20 @@
 
 		<link rel="icon" type="image/png" href="{{ '/static/img/logo/favicon.png' | prepend: site.baseurl }}">
 
-		 <!-- Recaptcha -->
+		<!-- Recaptcha -->
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>	
+
+		<!-- Google Analytics -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGXZCXM4DF"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-KGXZCXM4DF');
+		</script>
+		
 	</head>
 	{% assign background_color = page.background_color | default: layout.background_color | default: 'white' | prepend: 'bg-sightlines-' %}
 	<body class="d-flex flex-column h-100 {{ background_color }}">
