@@ -41,6 +41,6 @@ Many of our events are **captioned**, and/or offered with a **British Sign Langu
 
 ## Comfort online 
 
-Pronouns: at some events you may be invited to actively participate but you will never be required to have your video or mic on unless this has been explicitly stated in the event description (i.e. for participatory workshops)
+At some events you may be invited to actively participate but you will never be required to have your video or mic on unless this has been explicitly stated in the event description (i.e. for participatory workshops)
 
 If cost is a prohibitive factor to your festival attendance, please email us - we can offer further concessions and free tickets. You can get in touch via the [contact page](/contact/) or <support@sightlinesfestival.co.uk>.
