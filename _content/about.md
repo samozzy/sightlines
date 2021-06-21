@@ -1,7 +1,7 @@
 ---
 title: About
 nav_order: 4
-background_color: white
+background_color: yellow
 icon: info-circle
 toc: true
 children:
