@@ -1,7 +1,7 @@
 ---
 title: About
 nav_order: 4
-background_color: kobi
+background_color: white
 icon: info-circle
 toc: true
 children:
