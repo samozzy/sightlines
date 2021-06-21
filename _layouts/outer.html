@@ -31,7 +31,7 @@
 	</head>
 	{% assign background_color = page.background_color | default: layout.background_color | default: 'white' | prepend: 'bg-sightlines-' %}
 	<body class="d-flex flex-column h-100 {{ background_color }}">
-		<div class="container-fluid sightlines-header bg-sightlines-white {% unless page.layout == 'home' %}shadow{% endunless %}">
+		<div class="container-fluid sightlines-header bg-sightlines-white {% unless page.layout == 'home' %}shadow{% else %}home-header{% endunless %}">
 			<div class="row header-image">
 				<a href="{{ '/' | prepend: site.baseurl }}" class="header-fw-wrapper p-0">
 					<div class="header-fw col-12 g-0" style="z-index:10;">

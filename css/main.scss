@@ -204,6 +204,11 @@ $sightlines-event-categories: (
 		}
 	}
 }
+.header-home {
+	height: 80vh;
+	min-height: 360px;
+}
+
 .header-fw {
 	> div {
 		display: none;
