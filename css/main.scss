@@ -153,6 +153,9 @@ $sightlines-event-categories: (
 .bg-sightlines-white .content-center a {
 	@extend .link-dark;
 }
+.bg-sightlines-aquamarine .content-center a {
+	@extend .link-light;
+}
 
 .footer .row {
 	overflow:hidden;
