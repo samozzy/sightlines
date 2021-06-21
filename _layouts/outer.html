@@ -27,7 +27,7 @@
 
 		  gtag('config', 'G-KGXZCXM4DF');
 		</script>
-		
+
 	</head>
 	{% assign background_color = page.background_color | default: layout.background_color | default: 'white' | prepend: 'bg-sightlines-' %}
 	<body class="d-flex flex-column h-100 {{ background_color }}">
@@ -68,7 +68,7 @@
 									{% for nav_page in nav_pages %}
 										{% if nav_page.children and nav_page.children != empty %}
 											<li class="btn-group nav-item coming-sans">
-												<a type="button" class="nav-link" href="{{ nav_page.url }}">
+												<a type="button" class="nav-link {% if nav_page.url == page.url %}active{% endif %}" href="{{ nav_page.url }}">
 													{{ nav_page.title }}
 												</a>
 												<button type="button" class="btn dropdown-toggle dropdown-toggle-split rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
