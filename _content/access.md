@@ -2,7 +2,7 @@
 title: Access
 nav_order: 5
 icon: universal-access
-background_color: kobi
+background_color: white
 ---
 
 # Access

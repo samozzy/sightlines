@@ -2,7 +2,7 @@
 title: Contact
 nav_order: 6
 icon: paper-plane
-background_color: kobi
+background_color: aquamarine
 ---
 
 # Contact Us
