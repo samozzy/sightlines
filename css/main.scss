@@ -3,15 +3,366 @@
 
 @import "bootstrap_variables";
 
+@font-face {
+	font-family: 'Coming Sans';
+	src: url('{{ "/static/fonts/coming-sans/coming-sans.ttf" | prepend: site.baseurl }}');
+}
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+$coming-sans-font-family: 'Coming Sans', 'Roboto', 'Open Sans',sans-serif;
+$font-family-base: 'Oxygen','Roboto','Open Sans',Helvetica,sans-serif;
+
+h1, .h1, .coming-sans {
+	font-family: $coming-sans-font-family;
+	font-size: 3rem !important;
+	@media only screen and (max-width: 768px) {
+		font-size: 2rem !important;
+	}
+	text-transform: uppercase;
+	letter-spacing: 0.5pt;
+}
+h1.header-font {
+	font-family: $font-family-base !important;
+}
+.coming-sans.btn, .coming-sans.nav-item {
+	font-size: 1.5rem !important;
+}
+.coming-sans.nav-item {
+	@extend .mx-xl-4;
+	.nav-link {
+		@extend .px-xl-2, .px-xxl-4;
+	}
+}
+.subtle-link {
+	text-decoration: none;
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
+}
+
+.content-center {
+	@extend .col-12, .col-md-9, .col-lg-8;
+	> p > img {
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+		}
+		width: 50%;
+		float: left; 
+		@extend .me-3, .my-2, .shadow-sm;
+	}
+}
+.content-center-offset {
+	@extend .offset-md-1, .offset-lg-2;
+}
+.toc {
+	@extend .col-12, .col-md-3, .mb-4;
+	.card {
+		@extend .rounded-3, .shadow;
+	}
+	ul {
+		list-style:none;
+	}
+	@media only screen and (min-width: 1024px) {
+		position: sticky;
+		top: 0;
+		z-index: 1020;
+	}
+}
+
+.lead-content p {
+	@extend .lead;
+}
+.article-content p:first-of-type {
+	@extend .lead;
+}
+
+.block-button-wrapper {
+	@extend .col-12, .col-md-8, .offset-md-2, .col-lg-6, .offset-lg-3, .col-xl-4, .offset-xl-6,
+	 .mx-auto, .my-auto, .text-center;
+
+	.btn {
+		@extend .btn-lg, .w-100, .mt-3, .shadow;
+	}
+}
+
+.event-card {
+	min-height: 20rem;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 0.8em !important;
+	overflow: hidden;
+	.card-content {
+		@extend .h-100, .d-flex, .flex-column;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		.card-body {
+			@extend .text-light;
+			transition: all;
+			transition-duration: 200ms;
+		  	background-color: #00000060;
+		}
+		.card-footer {
+			margin-top: auto;
+		}
+	}
+	&:hover, &:focus-within {
+		.card-body {
+			background-color: #00000045;
+		}
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.hero-image {
+	min-height: 20rem;
+	overflow:hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@extend .shadow;
+}
+.partner-image {
+	@extend .mx-auto;
+	display: block;
+	max-width: 80%;
+	@media only screen and (max-width: 991px) {
+		max-width: 60%;
+		margin-bottom: 2rem;
+	}
+	@media only screen and (min-width: 992px) and (max-width: 1200px) {
+		max-width: 90%;
+	}
+}
+
+.category-label {
+	@extend .small, .fw-bold, .text-uppercase, .mb-0, .text-center;
+	letter-spacing: 3px; 
+}
+
+.event-page-meta {
+	@extend .px-3, .mb-4;
+	@media only screen and (max-width: 991px) {
+		border-left: 5px solid;
+	}
+	@media only screen and (min-width: 992px) {
+		border-right: 5px solid;
+	}
+}
+
+// Category colours (below because we can't do Liquid in _colours.scss)
+$sightlines-event-categories: (
+	{% for category in site.data.event-categories %}
+	"{{ category.title | slugify }}": {{ category.color }},
+	{% endfor %}
+);
+@import "colours";
+
+.bg-sightlines-white .content-center a {
+	@extend .link-dark;
+}
+.bg-sightlines-aquamarine .content-center a {
+	@extend .link-light;
+}
+
+.article-content blockquote {
+	@extend .ps-3, .display-6;
+	border-left: 10px solid map-get($sightlines-brand, "aquamarine");
+	font-style: italic;
+}
+
+.footer .row {
+	overflow:hidden;
+}
+.squiggle-container {
+	position: relative;
+	> div {
+		opacity: 0.95;
+	}
+}
+.background-squiggles {
+	background-image: url('/static/graphics/squiggles/squiggle-stack.png');
+	background-size: contain;
+	background-repeat: repeat-y;
+	position: absolute;
+	top: 4rem;
+	left: -2rem;
+	width: 50%;
+	height: 70%;
+	transform: rotate(-3deg);
+}
+
+.nav-link, .nav-item button {
+	&:hover {
+		background-color: darken(map-get($sightlines-brand, "yellow"), 7.5%) !important;
+	}
+	&.active {
+		background-color: darken(map-get($sightlines-brand, "yellow"), 10%) !important;
+		font-weight: 500;
+	}
+}
+
+// ToC
+.sightlines-toc {
+	@extend .nav, .flex-column;
+	li {
+		@extend .nav-item, .p-0;
+		margin-left: -1rem;
+		a {
+			@extend .text-decoration-none, .nav-link;
+			font-family: $font-family-base !important;
+			&:hover, &:focus, &:active {
+				color: map-get($sightlines-brand, "purple") !important;
+			}
+		}
+		&.active {
+			margin-left: 2rem;
+			border-left: 3px solid map-get($sightlines-brand, "yellow");
+		}
+	}
+}
+.header-home {
+	height: 80vh;
+	min-height: 360px;
+}
+
+.header-fw {
+	> div {
+		display: none;
+		&.header-img-sm {
+			display: block;
+		}
+		@media only screen and (min-width: 767px) {
+			&.header-img-sm {
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width:899px) {
+			&.header-img-md {
+				display: block;
+				padding-bottom: 3rem;
+			}
+		}
+		@media only screen and (min-width: 900px) and (max-width: 1399px) {
+			&.header-img-large {
+				display: block;
+				padding-bottom: 3rem;
+			}
+		}
+		@media only screen and (min-width: 1400px) {
+			&.header-img-largest {
+				display: block;
+				padding-bottom: 4rem;
+			}
+		}
+	}
+	img {
+		width: 100%;
+		// @media only screen and (min-width: 900px) {
+		// 	width: 769px;
+		// }
+		// @media only screen and (min-width: 1100px) {
+		// 	width: 844.5px;
+		// }
+		// @media only screen and (min-width: 1280px) {
+		// 	width: 1043px;
+		// }
+		// @media only screen and (min-width: 1400px) {
+		// 	width: 1144px;
+		// }
+		// @media only screen and (min-width: 1600px) {
+		// 	width: 1340px;
+		// }
+		// @media only screen and (min-width: 1800px) {
+		// 	width: 1541px;
+		// }
+	}
+}
+.nav-content { 
+	.nc--content, .nc--nav {
+		float: left;
+	}
+	.nc--nav-mobile {
+		@media only screen and (min-width: 899px) {
+			display: none;
+		}
+	}
+	.nc--nav {
+		@media only screen and (max-width: 900px) {
+			display: none;
+		}
+		float: left;
+		width: 200px;
+		@media only screen and (min-width: 1100px) {
+			width: 245px
+		}
+		img.flip {
+			margin-left:-0.5px;
+		}
+	}
+	.nc--content {
+		width: 100%;
+		@media only screen and (min-width: 900px) {
+			width: 700px;
+		}
+		@media only screen and (min-width: 1100px) {
+			width: 775px;
+		}
+		@media only screen and (min-width: 1280px) {
+			width: 975px;
+		}
+		@media only screen and (min-width: 1400px) {
+			width: 1075px;
+		}
+		@media only screen and (min-width: 1600px) {
+			width: 1270px;
+		}
+		@media only screen and (min-width: 1800px) {
+			width: 1470px;
+		}
+	}
+}
+.nav-section {
+	overflow:hidden;
+	padding-left: 1.65rem !important;
+	a { 
+		text-decoration: none;
+		@extend .coming-sans;
+		font-size: 1.25rem !important;
+		opacity: 0.8;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.nav-mid-text {
+		@extend .my-auto;
+		float: right;
+		width: 100ch;
+	}
+	.nav-mid img {
+		height: 39px;
+		padding-left: 10px;
+	}
+	.nav-bottom img {
+		width: 30px;
+		margin-left: 44px;
+		&.bump {
+			margin-left: 42.5px;
+		}
+	}
+}
+
+@import "content-layout";
 
 /*!
  // Comment out the ones you're not using to save on render size and time 
  */
 
 /*!
- * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
+ * Bootstrap v5.0.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
@@ -52,6 +403,7 @@
 @import "bootstrap/popover";
 @import "bootstrap/carousel";
 @import "bootstrap/spinners";
+@import "bootstrap/offcanvas";
 
 // Helpers
 @import "bootstrap/helpers";

@@ -1,0 +1,59 @@
+---
+layout: outer
+background_color: kobi
+---
+
+{% assign event = page %}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 p-0">
+			<div class="hero-image" style="background-image:url({{ page.image | prepend: site.baseurl }});"></div>
+		</div>
+	</div>
+	<div class="row py-4 px-4 px-lg-0">
+		<div class="content-center content-center-offset">
+			<div class="row mb-4">
+				<div class="col-12 col-md-7 col-lg-6 col-xl-8">
+					<h1>{{ event.title }}<br><small class='fw-light'>{{ event.start_date | date: "%d %b %H:%M" }}</small></h1>
+					{% if event.company %}
+						<h2 class="fs-4 fw-light">Presented by {{ event.company }}</h2>
+					{% endif %}
+					{% if event.capacity and event.capacity != empty %}
+						<p class="lead fw-light"><i class="fa fa-users"></i>&nbsp;Capacity: {{ event.capacity }}</p>
+					{% endif %}
+				</div>
+				<div class="col-6 col-md-5 col-lg-4 offset-lg-2 offset-xl-0">
+					<div class="my-2 event-page-meta border-event-category-{{ event.category | slugify }}">
+						<p class="text-start text-lg-center"><strong>{{ event.category | upcase }}</strong></p>
+						{% include events/event-meta.html event=event %}
+						<p class="text-sm-center small fw-light"><a href="{{ '/access/' | prepend: site.baseurl }}" class="link-dark text-decoration-none">Access Information <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+			
+			{{ content | markdownify }}
+
+			{% include events/book.html event=event %}
+		</div>
+	</div>
+	{% assign events = site.events | sort: "start_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
+	{% if events.size > 0 %}
+	<div class="related-events">
+		<div class="row py-2">
+			<div class="col-12 text-center">
+				<hr class="w-75 mx-auto">
+				<h2>Related Events</h2>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+			{% include events/event-card.html events=events %}
+		</div>
+		<div class="row">
+			<div class="block-button-wrapper pt-3 pb-5">
+				<a class="btn btn-primary" role="button" href="#">View All Events</a>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+</div>

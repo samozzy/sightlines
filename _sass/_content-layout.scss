@@ -1,0 +1,12 @@
+.content-center h1 {
+	@extend .mt-5, .pt-4;
+}
+.content-center h1:first-of-type {
+	@extend .mt-0, .pt-0;
+}
+
+.bg-sightlines-lavendar {
+	.content-center {
+		@extend .text-light;
+	}
+}

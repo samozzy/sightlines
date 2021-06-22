@@ -1,0 +1,22 @@
+---
+layout: default
+background_color: kobi
+---
+
+<h1 class="text-center">
+	Events
+</h1>
+
+<p class="lead text-center">Sightlines Festival will be full of exciting performances, workshops, panels, events, and more.</p>
+
+{% comment %}View as a Schedule
+View as a List{% endcomment %}
+
+{% assign events=site.events %}
+{% if events.size == 0 %}
+	<p class="text-center">Watch this space for the event updates and for live announcements visit our social media channels.</p>
+{% else %}
+	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+		{% include events/event-card.html events=events %}
+	</div>
+{% endif %}

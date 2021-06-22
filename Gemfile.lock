@@ -28,8 +28,8 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (10.2.4.0)
-      execjs
+    autoprefixer-rails (10.2.5.0)
+      execjs (< 2.8.0)
     bootstrap (5.0.0)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.9.2, < 3)
@@ -63,6 +63,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-contentblocks (1.2.0)
+      jekyll
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-watch (2.2.1)
@@ -141,9 +143,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bootstrap (~> 5.0.0)
+  bootstrap (~> 5.0)
   http_parser.rb!
   jekyll (~> 4.2.0)
+  jekyll-contentblocks
   webrick (~> 1.7)
 
 BUNDLED WITH

@@ -1,29 +1,21 @@
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: outer
+---
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?cachebust={{ site.time | date: "%Y%m%d%H%M"}}">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<div class="container-fluid">
 
-
-    <title>{{ title | default: site.title }}</title>
-  </head>
-  <body class="d-flex flex-column h-100">
-    <div class="container-fluid h-100 d-flex flex-column">
-		<div class="row my-auto">
-			<div class="col-12 col-md-8 offset-md-2 text-center">
-				{{ content | markdownify }}
+	<div class="row my-auto pt-5 {% ifhascontent full_width_bottom %}pb-5{% endifhascontent %}">
+		{% if page.toc and page.toc != empty %}
+			<div class="toc">
+				<div class="card card-body bg-sightlines-purple shadow-sm">
+					<h3 class="fs-4 text-primary coming-sans">On this page</h3>
+					{% include toc.html html=content class="sightlines-toc" h_max=2 %}
+				</div>
 			</div>
+		{% endif %}
+		<div class="content-center {% unless page.toc %}content-center-offset{% endunless %}">
+			{{ content }}
 		</div>
 	</div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-  </body>
-</html>
-
+</div>

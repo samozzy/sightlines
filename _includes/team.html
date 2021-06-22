@@ -1,0 +1,36 @@
+{% comment %}{% assign person_wi_bio = '' | split: '' %}
+{% assign perosn_wo_bio = '' | split: '' %}
+
+{% for p in site.data.team %}
+	{% if p.bio and p.bio != empty %}
+		{% assign person_wi_bio = person_wi_bio | append: p %}
+	{% else %}
+		{% assign person_wo_bio = person_wo_bio | append: p %}
+	{% endif %}
+{% endfor %}
+
+{{ person_wi_bio }}
+{% for p in person_wi_bio %}
+m<br>T:{{ p }}--
+{% endfor %}{% endcomment %}
+{% comment %}{% assign team = person_wi_bio | concat: person_wo_bio %}{% endcomment %}
+
+<div class="row">
+	{% for person in site.data.team %}
+		<div class="col-12 {% unless person.bio %}col-md-6 col-lg-4 col-xl-3{% endunless %} mb-4">
+			<div class="row">
+				{% if person.image %}
+					<div class="col-4 {% if person.bio and person.bio != empty %}col-lg-3{% endif %}">
+						<img class="rounded-circle img-fluid" src="{{ person.image | prepend: site.baseurl }}" alt="{{ person.name }}">
+					</div>
+				{% endif %}
+				<div class="col">
+					<p class="fs-3 mb-0 coming-sans">{{ person.name }}</p>
+					<p class="lead">{{ person.role }}</p>
+					{{ person.bio | markdownify }}
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+

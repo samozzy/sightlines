@@ -1,10 +1,8 @@
 ---
-layout: default 
+layout: home
 permalink: / 
+title: Welcome
+nav_title: Home
+nav_order: 1
+icon: home
 ---
-
-# Coming Soon!
-
-Sightlines Festival is coming soon.
-
-Contact us on <info@sightlinesfestival.co.uk>

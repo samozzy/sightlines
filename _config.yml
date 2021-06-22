@@ -3,10 +3,14 @@ email: info@sightlinesfestival.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sightlinesfestival.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username: sightlinesfest
+instagram_username: sightlinesfest
+facebook_username: sightlinesfest
 github_username:  samozzy
 timezone: Europe/London
 
+festival_start_date: 2021-07-13
+festival_end_date: 2021-07-25
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -33,6 +37,7 @@ livereload: true
 
 plugins:
   - bootstrap 
+  - jekyll-contentblocks
 
 sass:
     sass_dir: _sass
@@ -47,6 +52,12 @@ collections:
   content:
     output: true
     permalink: :path/
+  events:
+    output: true 
+    permalink: events/:path/
+  articles: 
+    output: true 
+    permalink: articles/:path/
 permalink: pretty 
 
 defaults:
@@ -55,3 +66,11 @@ defaults:
       type: content
     values:
       layout: default
+  - scope:
+      type: events
+    values: 
+      layout: event 
+  - scope: 
+      type: articles
+    values: 
+      layout: article

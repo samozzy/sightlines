@@ -3,6 +3,7 @@
 vendor/
 .sass-cache/
 _site/
+unused/
 
 *DS_Store*
 
