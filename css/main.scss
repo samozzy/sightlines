@@ -15,6 +15,9 @@ $font-family-base: 'Oxygen','Roboto','Open Sans',Helvetica,sans-serif;
 h1, .h1, .coming-sans {
 	font-family: $coming-sans-font-family;
 	font-size: 3rem !important;
+	@media only screen and (max-width: 768px) {
+		font-size: 2rem !important;
+	}
 	text-transform: uppercase;
 	letter-spacing: 0.5pt;
 }
