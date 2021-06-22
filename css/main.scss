@@ -166,6 +166,12 @@ $sightlines-event-categories: (
 	@extend .link-light;
 }
 
+.article-content blockquote {
+	@extend .ps-3, .display-6;
+	border-left: 10px solid map-get($sightlines-brand, "aquamarine");
+	font-style: italic;
+}
+
 .footer .row {
 	overflow:hidden;
 }

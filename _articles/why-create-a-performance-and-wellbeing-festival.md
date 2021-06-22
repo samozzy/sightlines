@@ -4,6 +4,8 @@ author: Katrina Woolley
 publish_date: 2021-06-22
 ---
 
+> Festival Director Katrina talks about where the idea for Sightlines came from and what the festival aims to explore
+
 Mental health is so often treated as merely a side-note or a buzzword. Speaking to artists and arts journalists, I have frequently heard them complain that the conversation around wellbeing is often limited to a single question in an interview, a single paragraph in an article. Wellbeing is pivotal to everything in our lives, it is not niche or new and it needs to be afforded such significance. 
  
 The idea of a festival focusing specifically on the relationship between performance and wellbeing is something I have had in the back of my mind for a long time. I’ve seen first hand the need for a clearly defined space to facilitate conversations around mental health and the stage, which underlies the experience and work of many artists and audiences.
