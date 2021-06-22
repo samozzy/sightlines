@@ -14,9 +14,9 @@ background_color: white
 {% contentfor full_width_bottom %}
 <div class="container-fluid px-0">
 	<div class="squiggle-container">
-		<div class="background-squiggles"></div>
-		<div class="row py-5 stripe-white-kobi"></div>
 		{% assign num_events = site.events.size %}
+		{% unless num_events == 0 %}<div class="background-squiggles"></div>{% endunless %}
+		<div class="row py-5 stripe-white-kobi"></div>
 		<div class="row pt-5 pb-1 bg-sightlines-kobi">
 			<div class="col-12 text-center">
 				<h2 class="text-center text-sightlines-white display-6">{% unless num_events == 0 %}Featured{% endunless %} Events</h2>
