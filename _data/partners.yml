@@ -1,12 +1,12 @@
 - name: Arts Council England
   image: /static/img/partners/ace.png
   footer_image: /static/img/partners/ace_light.png
-  website: https://artscouncil.org.uk/
+  website: https://www.artscouncil.org.uk/
   footer: true 
   height: 70px
 - name: Theatre Deli
   image: /static/img/partners/deli.png 
-  website: https://theatredeli.co.uk/
+  website: https://www.theatredeli.co.uk/
   footer: false 
 - name: Battersea Arts Centre 
   image: /static/img/partners/bac.jpg 
