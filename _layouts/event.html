@@ -37,19 +37,23 @@ background_color: kobi
 			{% include events/book.html event=event %}
 		</div>
 	</div>
-	<div class="row py-2">
-		<div class="col-12 text-center">
-			<hr class="w-75 mx-auto">
-			<h2>Related Events</h2>
+	{% assign events = site.events | sort: "start_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
+	{% if events.size > 0 %}
+	<div class="related-events">
+		<div class="row py-2">
+			<div class="col-12 text-center">
+				<hr class="w-75 mx-auto">
+				<h2>Related Events</h2>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+			{% include events/event-card.html events=events %}
+		</div>
+		<div class="row">
+			<div class="block-button-wrapper pt-3 pb-5">
+				<a class="btn btn-primary" role="button" href="#">View All Events</a>
+			</div>
 		</div>
 	</div>
-	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
-		{% assign events = site.events | sort: "start_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
-		{% include events/event-card.html events=events %}
-	</div>
-	<div class="row">
-		<div class="block-button-wrapper pt-3 pb-5">
-			<a class="btn btn-primary" role="button" href="#">View All Events</a>
-		</div>
-	</div>
+	{% endif %}
 </div>
