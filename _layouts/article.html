@@ -2,20 +2,24 @@
 layout: default
 ---
 
-<h1 class="mb-4">{{ page.title }}</h1>
+<h1 class="mb-4 header-font">{{ page.title }}</h1>
 <h2 class="fs-4 mb-5">
-	<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.date | date: "%d %b %Y" }}
+	<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
 	{% if page.author and page.author != empty %}
 		<br><span class="my-2 d-block fw-normal"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;{{ page.author }}</span>
 	{% endif %}
 </h2>
 
-{{ content | markdownify }}
+<div class="article-content">
+	{{ content | markdownify }}
+</div>
 
 <hr class="my-5">
+{% assign other_articles = site.articles | where_exp: "article", "article.url!=page.url" %}
+{% if other_articles.size > 0 %}
 <h1 class="mt-4">Other Articles</h1>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-{% assign other_articles = site.articles | where_exp: "article", "article.url!=page.url" %}
 {% include articles/article-card.html articles=other_articles %}
 </div>
+{% endif %}

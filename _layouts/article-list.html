@@ -6,7 +6,12 @@ layout: default
 
 {{ content | markdownify }}
 
-<div class="row row-cols-1 row-cols-md-2">
 {% assign articles = site.articles %}
-{% include articles/article-card.html articles=articles %}
+
+{% if articles %}
+<div class="row row-cols-1 {% if articles.size > 1 %}row-cols-md-2{% endif %}">
+	{% include articles/article-card.html articles=articles %}
 </div>
+{% else %}
+<p>Our In Focus series of articles is coming soon - stay tuned for more!</p>
+{% endif%}

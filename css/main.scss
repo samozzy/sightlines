@@ -18,6 +18,9 @@ h1, .h1, .coming-sans {
 	text-transform: uppercase;
 	letter-spacing: 0.5pt;
 }
+h1.header-font {
+	font-family: $font-family-base !important;
+}
 .coming-sans.btn, .coming-sans.nav-item {
 	font-size: 1.5rem !important;
 }
@@ -64,6 +67,9 @@ h1, .h1, .coming-sans {
 }
 
 .lead-content p {
+	@extend .lead;
+}
+.article-content p:first-of-type {
 	@extend .lead;
 }
 
