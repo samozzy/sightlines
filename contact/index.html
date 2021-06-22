@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
-		<title>Page Not Found | Sightlines Festival</title>
+		<title>Contact | Sightlines Festival</title>
 
 		<link rel="icon" type="image/png" href="/static/img/logo/favicon.png">
 
@@ -30,7 +30,7 @@
 
 	</head>
 	
-	<body class="d-flex flex-column h-100 bg-sightlines-kobi">
+	<body class="d-flex flex-column h-100 bg-sightlines-yellow">
 		<div class="container-fluid sightlines-header bg-sightlines-white shadow">
 			<div class="row header-image">
 				<a href="/" class="header-fw-wrapper p-0">
@@ -114,7 +114,7 @@
 									
 										
 											<li class="nav-item coming-sans">
-												<a class="nav-link "  href="/contact/">Contact</a>
+												<a class="nav-link active"  href="/contact/">Contact</a>
 											</li>
 										
 									
@@ -131,9 +131,45 @@
 	<div class="row my-auto pt-5 ">
 		
 		<div class="content-center content-center-offset">
-			<h1 class="text-center">Page not found</h1>
+			<h1 id="contact-us">Contact Us</h1>
 
-<p>This page cannot be found. Try going to <a href="/">the homepage</a>, or emailing us on <a href="mailto:info@sightlinesfestival.co.uk">info@sightlinesfestival.co.uk</a> to get in touch.</p>
+<p>You can contact us by filling in the form below or directly emailing producer Lydia at <a href="mailto:info@sightlinesfestival.co.uk">info@sightlinesfestival.co.uk</a>.</p>
+
+<p>We’d love to hear any thoughts you have on the festival as well as any questions or queries.</p>
+
+<div class="card card-body text-dark border-0 mt-4">
+	<form action="https://formspree.io/f/xvodklbq" method="POST" onsubmit="return validateRecaptcha();">
+
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label class="form-label" for="replyto">Email address</label>
+			<input type="email" name="_replyto" id="replyto" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label class="form-label" for="message">Message</label>
+			<textarea name="message" class="form-control"></textarea>
+		</div>
+
+		<div class="g-recaptcha my-3" data-sitekey="6LdtvdwaAAAAANkj3dFsghTz9EWqHN5HnHZLSZNs"></div>
+
+		<button type="submit" class="btn btn-primary btn-lg w-100">Send</button>
+	</form>
+</div>
+
+<script>
+	document.body.addEventListener('keydown', function(e) {
+			if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
+					var target = e.target;
+					if(target.form) {
+							target.form.submit();
+					}
+			}
+	});
+</script>
+
 
 		</div>
 	</div>
@@ -220,7 +256,7 @@
 									<img src="/static/graphics/nav/mid.png" class="flip">
 								</div>
 								<div class="nav-mid-text">
-									<a class="text-dark " href="/contact/">Contact</a>
+									<a class="text-dark active" href="/contact/">Contact</a>
 								</div>
 							</div>
 						
