@@ -4,7 +4,7 @@ author: Katrina Woolley
 publish_date: 2021-06-22
 ---
 
-> Festival Director Katrina talks about where the idea for Sightlines came from and what the festival aims to explore
+> Festival Director Katrina talks about where the idea for Sightlines came from and what the festival aims to explore.
 
 Mental health is so often treated as merely a side-note or a buzzword. Speaking to artists and arts journalists, I have frequently heard them complain that the conversation around wellbeing is often limited to a single question in an interview, a single paragraph in an article. Wellbeing is pivotal to everything in our lives, it is not niche or new and it needs to be afforded such significance. 
  
