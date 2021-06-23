@@ -3,10 +3,27 @@ layout: default
 ---
 
 <h1 class="mb-4 header-font">{{ page.title }}</h1>
-<h2 class="fs-4 mb-5">
-	<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
+<h2 class="fs-4 mb-4">
 	{% if page.author and page.author != empty %}
-		<br><span class="my-2 d-block fw-normal"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;{{ page.author }}</span>
+		{% assign team = site.data.team %}
+		{% assign team_match = team | find: "name", page.author %}
+		<span class="my-2 d-block fw-normal">
+			{% if team_match and team_match != empty %}
+				{% if team_match.image and team_match.image != empty %}
+					<img class="rounded-circle" src="{{ team_match.image | prepend: site.baseurl }}" alt="{{ page.author }} photo" width="45px" height="auto">
+				{% else %}
+					<i class="fa fa-user" aria-hidden="true"></i>&nbsp;
+				{% endif %}
+			{% else %}
+				<i class="fa fa-user" aria-hidden="true"></i>&nbsp;
+			{% endif %}
+			{{ page.author }}
+		</span>
+	{% endif %}
+	{% if page.publish_date and page.publish_date != empty %}
+		<div class="fw-light pt-2">
+			<i class="fa fa-calendar fa-lg mx-2" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
+		</div>
 	{% endif %}
 </h2>
 
