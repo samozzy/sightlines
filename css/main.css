@@ -56,6 +56,10 @@ h1.header-font, .header-font.h1 {
   }
 }
 
+.article-content p {
+  line-height: 1.75;
+}
+
 .event-card {
   min-height: 20rem;
   text-decoration: none;
@@ -1273,7 +1277,7 @@ progress {
   content: "\2014\00A0";
 }
 
-.img-fluid {
+.img-fluid, .article-content img {
   max-width: 100%;
   height: auto;
 }
@@ -7432,7 +7436,7 @@ textarea.form-control-lg {
   width: 75% !important;
 }
 
-.w-100, .block-button-wrapper .btn {
+.w-100, .article-content img, .block-button-wrapper .btn {
   width: 100% !important;
 }
 
@@ -7738,7 +7742,7 @@ textarea.form-control-lg {
   margin-left: 3rem !important;
 }
 
-.mx-auto, .block-button-wrapper, .partner-image {
+.mx-auto, .article-content img, .block-button-wrapper, .partner-image {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -7794,7 +7798,7 @@ textarea.form-control-lg {
   margin-top: 1rem !important;
 }
 
-.mt-4 {
+.mt-4, .article-content p {
   margin-top: 1.5rem !important;
 }
 
@@ -7842,7 +7846,7 @@ textarea.form-control-lg {
   margin-bottom: 0.25rem !important;
 }
 
-.mb-2 {
+.mb-2, .article-content p:first-of-type {
   margin-bottom: 0.5rem !important;
 }
 
@@ -7939,7 +7943,7 @@ textarea.form-control-lg {
   padding-left: 1.5rem !important;
 }
 
-.px-5 {
+.px-5, .article-content img, .article-content small.caption, .article-content .caption.small, .article-content .caption.category-label {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
 }
@@ -8150,7 +8154,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center, .block-button-wrapper, .category-label {
+.text-center, .article-content small.caption, .block-button-wrapper, .category-label, .article-content .caption.small, .article-content .caption.category-label {
   text-align: center !important;
 }
 
