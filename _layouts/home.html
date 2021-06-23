@@ -27,7 +27,7 @@ background_color: white
 				{% assign events = site.events | sort: "start_date" | slice: 0, 4 %}
 				{% include events/event-card.html events=events %}
 			{% else %}
-				<p class="text-center mb-4">Our full events programme will be announced soon - stay tuned!</p>
+				<p class="text-center mb-4 text-light">Our full events programme will be announced soon - stay tuned!</p>
 			{% endunless %}
 		</div>
 		{% if num_events > 0 %}
