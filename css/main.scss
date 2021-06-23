@@ -72,8 +72,20 @@ h1.header-font {
 .lead-content p {
 	@extend .lead;
 }
-.article-content p:first-of-type {
-	@extend .lead;
+.article-content {
+	p:first-of-type {
+		@extend .lead, .mb-2;
+	}
+	p {
+		@extend .mt-4;
+		line-height: 1.75;
+	}
+	img {
+		@extend .img-fluid, .w-100, .mx-auto, .px-5;
+	}
+	small.caption {
+		@extend .px-5, .text-center;
+	}
 }
 
 .block-button-wrapper {
