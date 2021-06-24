@@ -178,8 +178,8 @@ $sightlines-event-categories: (
 	@extend .link-light;
 }
 
-.article-content blockquote {
-	@extend .ps-3, .display-6;
+.article-excerpt blockquote {
+	@extend .ps-3, .fs-4, .fw-light, .my-4;
 	border-left: 10px solid map-get($sightlines-brand, "aquamarine");
 	font-style: italic;
 }
@@ -203,6 +203,15 @@ $sightlines-event-categories: (
 	width: 50%;
 	height: 70%;
 	transform: rotate(-3deg);
+}
+
+.hr-squiggle {
+	background-image: url('/static/graphics/squiggles/squiggle-hr.png');
+	background-size: contain;
+	background-repeat: repeat-x;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .nav-link, .nav-item button {

@@ -27,11 +27,24 @@ layout: default
 	{% endif %}
 </h2>
 
+{% if page.excerpt and page.excerpt != empty %}
+	<div class="article-excerpt">
+		<blockquote>{{ page.excerpt }}</blockquote>
+	</div>
+{% endif %}
+
+<div class="squiggle-container d-block" style="width: 100%;height:20px;">
+	<div class="hr-squiggle"></div>
+</div>
+
 <div class="article-content">
 	{{ content | markdownify }}
 </div>
 
-<hr class="my-5">
+<div class="squiggle-container d-block my-5" style="width: 100%;height:20px;">
+	<div class="hr-squiggle"></div>
+</div>
+
 {% assign other_articles = site.articles | where_exp: "article", "article.url!=page.url" %}
 {% if other_articles.size > 0 %}
 <h1 class="mt-4">Other Articles</h1>
