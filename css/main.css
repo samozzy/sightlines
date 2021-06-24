@@ -489,7 +489,7 @@ h1.header-font, .header-font.h1 {
   background-color: #456123;
 }
 
-.article-content blockquote {
+.article-excerpt blockquote {
   border-left: 10px solid #93D0BF;
   font-style: italic;
 }
@@ -516,6 +516,15 @@ h1.header-font, .header-font.h1 {
   width: 50%;
   height: 70%;
   transform: rotate(-3deg);
+}
+
+.hr-squiggle {
+  background-image: url("/static/graphics/squiggles/squiggle-hr.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-link:hover, .sightlines-toc li a:hover, .nav-item button:hover, .sightlines-toc li button:hover {
@@ -1222,14 +1231,14 @@ progress {
   }
 }
 
-.display-6, .article-content blockquote {
+.display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
 
 @media (min-width: 1200px) {
-  .display-6, .article-content blockquote {
+  .display-6 {
     font-size: 2.5rem;
   }
 }
@@ -7767,7 +7776,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem !important;
 }
 
-.my-4 {
+.my-4, .article-excerpt blockquote {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
 }
@@ -8062,7 +8071,7 @@ textarea.form-control-lg {
   padding-left: 0.5rem !important;
 }
 
-.ps-3, .article-content blockquote {
+.ps-3, .article-excerpt blockquote {
   padding-left: 1rem !important;
 }
 
@@ -8090,7 +8099,7 @@ textarea.form-control-lg {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
 
-.fs-4 {
+.fs-4, .article-excerpt blockquote {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
@@ -8110,7 +8119,7 @@ textarea.form-control-lg {
   font-style: normal !important;
 }
 
-.fw-light {
+.fw-light, .article-excerpt blockquote {
   font-weight: 300 !important;
 }
 
@@ -10872,7 +10881,7 @@ textarea.form-control-lg {
   .fs-3 {
     font-size: 1.75rem !important;
   }
-  .fs-4 {
+  .fs-4, .article-excerpt blockquote {
     font-size: 1.5rem !important;
   }
 }
