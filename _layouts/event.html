@@ -5,7 +5,7 @@ background_color: kobi
 
 {% assign event = page %}
 
-<div class="container-fluid">
+<div class="container-fluid p-0">
 	<div class="row">
 		<div class="col-12 p-0">
 			<div class="hero-image" style="background-image:url({{ page.image | prepend: site.baseurl }});"></div>
@@ -15,7 +15,7 @@ background_color: kobi
 		<div class="content-center content-center-offset">
 			<div class="row mb-4">
 				<div class="col-12 col-md-7 col-lg-6 col-xl-8">
-					<h1>{{ event.title }}<br><small class='fw-light'>{{ event.start_date | date: "%d %b %H:%M" }}</small></h1>
+					<h1>{{ event.title }}<br><small class='fw-light'>{{ event.event_date | date: "%d %b" }} {% if event.start_time %}{{ event.start_time }}{% if event.end_time %}-{{ event.end_time }}{% endif %}{% endif %}</small></h1>
 					{% if event.company %}
 						<h2 class="fs-4 fw-light">Presented by {{ event.company }}</h2>
 					{% endif %}
@@ -28,21 +28,29 @@ background_color: kobi
 						<p class="text-start text-lg-center"><strong>{{ event.category | upcase }}</strong></p>
 						{% include events/event-meta.html event=event %}
 						<p class="text-sm-center small fw-light"><a href="{{ '/access/' | prepend: site.baseurl }}" class="link-dark text-decoration-none">Access Information <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+						{% if event.content_warnings and event.content_warnings != empty %}
+							<div class='text-center'>{{ event.content_warnings | markdownify }}</div>
+						{% endif %}
 					</div>
 				</div>
 			</div>
 			
-			{{ content | markdownify }}
+			<div class="event-copy">
+				{{ content | markdownify }}
+			</div>
 
 			{% include events/book.html event=event %}
 		</div>
 	</div>
-	{% assign events = site.events | sort: "start_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
+	{% assign events = site.events | sort: "event_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
 	{% if events.size > 0 %}
 	<div class="related-events">
 		<div class="row py-2">
 			<div class="col-12 text-center">
-				<hr class="w-75 mx-auto">
+				<div class="squiggle-container d-block my-4 mx-auto" style="width: 70%;height:20px;">
+					<div class="hr-squiggle"></div>
+				</div>
+
 				<h2>Related Events</h2>
 			</div>
 		</div>
@@ -51,7 +59,7 @@ background_color: kobi
 		</div>
 		<div class="row">
 			<div class="block-button-wrapper pt-3 pb-5">
-				<a class="btn btn-primary" role="button" href="#">View All Events</a>
+				<a class="btn btn-primary" role="button" href="/events/">View All Events</a>
 			</div>
 		</div>
 	</div>
