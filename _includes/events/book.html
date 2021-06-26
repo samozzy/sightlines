@@ -1,4 +1,8 @@
 {% assign event=include.event %}
 			<div class="w-50 mx-auto pt-4">
-				<a class="btn btn-primary btn{{ include.size | default: 'lg' | prepend: '-' }} w-100 shadow" href="{{ event.ticket_url }}">Book Tickets <i class="fa fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
+				{% if event.ticket_url and event.ticket_url != empty %}
+					<a class="btn btn-primary btn{{ include.size | default: 'lg' | prepend: '-' }} w-100 shadow" href="{{ event.ticket_url }}">Book Tickets <i class="fa fa-external-link-alt fa-sm" aria-hidden="true"></i></a>
+				{% else %}
+					<a class="btn btn-primary btn{{ include.size | default: 'lg' | prepend: '-' }} w-100 shadow disabled" disabled>Tickets available soon!</a>
+				{% endif %}
 			</div>
