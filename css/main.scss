@@ -72,7 +72,7 @@ h1.header-font {
 .lead-content p {
 	@extend .lead;
 }
-.article-content {
+.article-content, .event-copy {
 	p:first-of-type {
 		@extend .lead, .mb-2;
 	}
@@ -112,7 +112,10 @@ h1.header-font {
 			@extend .text-light;
 			transition: all;
 			transition-duration: 200ms;
-		  	background-color: #00000060;
+		  	background-color: #00000070;
+		  	h3 {
+		  		text-shadow: -1px 3px 3px black
+		  	}
 		}
 		.card-footer {
 			margin-top: auto;
@@ -131,7 +134,7 @@ h1.header-font {
 	min-height: 20rem;
 	overflow:hidden;
 	background-size: cover;
-	background-position: center;
+	background-position: 0% 35%;
 	background-repeat: no-repeat;
 	@extend .shadow;
 }
