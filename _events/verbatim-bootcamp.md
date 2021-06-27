@@ -1,8 +1,8 @@
 ---
 title: "Verbatim Bootcamp"
-event_date: 2021-07-21
-start_time: "17:00"
-end_time: "18:30"
+event_date: 2021-07-23
+start_time: "19:00"
+end_time: "20:30"
 category: workshop
 company: LUNG Theatre
 ticket_url: https://www.eventbrite.com/e/verbatim-bootcamp-lung-tickets-161284336793
