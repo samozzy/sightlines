@@ -1,5 +1,6 @@
 ---
 title: "Can I Touch Your Hair?"
+subtitle: Followed by Q&A 
 event_date: 2021-07-20
 start_time: "21:00"
 end_time: "22:30"
@@ -19,3 +20,5 @@ Lekhani grew up mixed race in Cumbria and she’s realised she doesn’t actuall
 Thank goodness for her hairdresser, who is in fact her longest standing relationship to date and ohh does she love getting her hair done.
 
 Trying out new hairstyles is all well and good but how do you cope with everyone's unnecessary questions and comments?
+
+_The performance will be followed by a question and answer session with with Lekhani Chirwa_

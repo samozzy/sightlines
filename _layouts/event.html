@@ -15,9 +15,16 @@ background_color: kobi
 		<div class="content-center content-center-offset">
 			<div class="row mb-4">
 				<div class="col-12 col-md-7 col-lg-6 col-xl-8">
-					<h1>{{ event.title }}<br><small class='fw-light'>{{ event.event_date | date: "%d %b" }} {% if event.start_time %}{{ event.start_time }}{% if event.end_time %}-{{ event.end_time }}{% endif %}{% endif %}</small></h1>
+					<h1>
+						{{ event.title }}<br><small class='fw-light'>{{ event.event_date | date: "%d %b" }} {% if event.start_time %}{{ event.start_time }}{% if event.end_time %}-{{ event.end_time }}{% endif %}{% endif %}</small>
+					</h1>
 					{% if event.company %}
-						<h2 class="fs-4 fw-light">Presented by {{ event.company }}</h2>
+						<h2 class="fs-4 fw-light">
+							Presented by {{ event.company }}
+							{% if event.subtitle and event.subtitle != empty %}
+								<br><small class="mt-2 d-inline-block"><em>{{ event.subtitle }}</em></small></h2>
+							{% endif %}
+						</h2>
 					{% endif %}
 					{% comment %}
 						{% if event.capacity and event.capacity != empty %}
