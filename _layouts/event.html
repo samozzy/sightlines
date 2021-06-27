@@ -19,9 +19,11 @@ background_color: kobi
 					{% if event.company %}
 						<h2 class="fs-4 fw-light">Presented by {{ event.company }}</h2>
 					{% endif %}
-					{% if event.capacity and event.capacity != empty %}
-						<p class="lead fw-light"><i class="fa fa-users"></i>&nbsp;Capacity: {{ event.capacity }}</p>
-					{% endif %}
+					{% comment %}
+						{% if event.capacity and event.capacity != empty %}
+							<p class="lead fw-light"><i class="fa fa-users"></i>&nbsp;Capacity: {{ event.capacity }}</p>
+						{% endif %}
+					{% endcomment %}
 				</div>
 				<div class="col-6 col-md-5 col-lg-4 offset-lg-2 offset-xl-0">
 					<div class="my-2 event-page-meta border-event-category-{{ event.category | slugify }}">
