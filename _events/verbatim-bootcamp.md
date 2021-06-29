@@ -9,6 +9,7 @@ ticket_url: https://www.eventbrite.com/e/verbatim-bootcamp-lung-tickets-16128433
 # captions: true 
 # bsl: true 
 image: /static/img/events/lung.jpeg
+image-position: 0% 35%;
 capacity: 100
 ---
 

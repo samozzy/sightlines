@@ -10,6 +10,7 @@ company: Lekhani Chirwa
 # captions: true 
 # bsl: true 
 image: /static/img/events/lekahni.jpeg
+image-position: 0% 25%;
 capacity: 100
 ---
 
