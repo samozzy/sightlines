@@ -98,10 +98,9 @@ h1.header-font, .header-font.h1 {
 }
 
 .hero-image {
-  min-height: 20rem;
+  min-height: 22rem;
   overflow: hidden;
   background-size: cover;
-  background-position: 0% 35%;
   background-repeat: no-repeat;
 }
 
