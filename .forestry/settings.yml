@@ -9,11 +9,15 @@ sections:
   label: Content
   create: all
   match: "**/*"
+  templates:
+  - page
 - type: directory
   path: _events
   label: Events
   create: all
   match: "**/*"
+  templates:
+  - event
 - type: directory
   path: _articles
   label: In Focus
