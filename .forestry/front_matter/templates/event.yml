@@ -83,3 +83,5 @@ fields:
   type: boolean
   label: BSL
   description: Tick if this event features BSL interpretation
+pages:
+- _events/verbatim-bootcamp.md
