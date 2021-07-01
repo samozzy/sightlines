@@ -1,6 +1,7 @@
 {% assign event = include.event %}
 <div class="row g-0 m-0 p-0">
-	{% if event.duration %}
+	{% if event.duration and event.duration != empty %}
+	{% comment %} Can we automagically calculate duration? {% endcomment %}
 	<div class="col-12 col-sm-6 col-lg-8 small">
 		<i class="fa fa-stopwatch"></i>&nbsp;{{ event.duration }}
 	</div>

@@ -19,14 +19,14 @@ m<br>T:{{ p }}--
 	{% for person in site.data.team %}
 		<div class="col-12 {% unless person.bio %}col-md-6 col-lg-4 col-xl-3{% endunless %} mb-4">
 			<div class="row">
-				{% if person.image %}
+				{% if person.image and person.image != empty %}
 					<div class="col-4 {% if person.bio and person.bio != empty %}col-lg-3{% endif %}">
 						<img class="rounded-circle img-fluid" src="{{ person.image | prepend: site.baseurl }}" alt="{{ person.name }}">
 					</div>
 				{% endif %}
 				<div class="col">
 					<p class="fs-3 mb-0 coming-sans">{{ person.name }}</p>
-					<p class="lead">{{ person.role }}</p>
+					{% if person.role and person.role != empty %}<p class="lead">{{ person.role }}</p>{% endif %}
 					{{ person.bio | markdownify }}
 				</div>
 			</div>
