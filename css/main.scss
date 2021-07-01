@@ -176,6 +176,15 @@ $sightlines-event-categories: (
 .bg-sightlines-white .content-center a {
 	@extend .link-dark;
 }
+.bg-sightlines-white .content-center .article-content a {
+	color: map-get($sightlines-brand, "purple");
+	font-weight:bold;
+	text-decoration: none;;
+	&:hover {
+		color: map-get($sightlines-brand, "purple");
+		text-decoration: underline;
+	}
+}
 .bg-sightlines-aquamarine .content-center a {
 	@extend .link-light;
 }
