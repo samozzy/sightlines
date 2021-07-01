@@ -1,0 +1,16 @@
+---
+label: In Focus
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: datetime
+  name: publish_date
+  label: publish_date
+- type: textarea
+  name: excerpt
+  label: excerpt
