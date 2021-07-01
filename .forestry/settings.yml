@@ -4,16 +4,6 @@ auto_deploy: false
 admin_path: admin
 webhook_url: 
 sections:
-- type: document
-  path: _data/team.yml
-  label: Team
-- type: directory
-  path: _content
-  label: Content
-  create: all
-  match: "**/*"
-  templates:
-  - page
 - type: directory
   path: _events
   label: Events
@@ -21,6 +11,9 @@ sections:
   match: "**/*"
   templates:
   - event
+- type: document
+  path: _data/team.yml
+  label: Team
 - type: directory
   path: _articles
   label: In Focus
@@ -28,6 +21,13 @@ sections:
   match: "**/*"
   templates:
   - in-focus
+- type: directory
+  path: _content
+  label: Content
+  create: all
+  match: "**/*"
+  templates:
+  - page
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
