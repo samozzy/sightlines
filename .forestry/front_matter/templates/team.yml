@@ -18,3 +18,5 @@ fields:
   - type: textarea
     name: bio
     label: bio
+pages:
+- _data/team.yml
