@@ -1,0 +1,40 @@
+---
+label: Event
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: datetime
+  name: event_date
+  label: event_date
+- type: text
+  name: start_time
+  label: start_time
+- type: text
+  name: end_time
+  label: end_time
+- type: text
+  name: ticket_url
+  label: ticket_url
+- type: text
+  name: category
+  label: category
+- type: text
+  name: company
+  label: company
+- type: file
+  name: image
+  label: image
+- type: text
+  name: image-position
+  label: image-position
+- type: textarea
+  name: content_warnings
+  label: content_warnings
+- type: number
+  name: capacity
+  label: capacity
