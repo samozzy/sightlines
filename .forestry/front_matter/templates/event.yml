@@ -84,6 +84,9 @@ fields:
   label: BSL
   description: Tick if this event features BSL interpretation
 pages:
-- _events/_3.md
+- _events/andro-eve.md
+- _events/can-i-touch-your-hair.md
+- _events/comedy-for-coping.md
+- _events/going-slightly-mad.md
 - _events/psyche-delight.md
 - _events/verbatim-bootcamp.md

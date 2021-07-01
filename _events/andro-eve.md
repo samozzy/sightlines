@@ -1,18 +1,20 @@
 ---
-title: "Gender Exploration Workshop"
+title: Gender Exploration Workshop
 event_date: 2021-07-20
-start_time: "19:00"
-end_time: "21:00"
+start_time: '19:00'
+end_time: '21:00'
 ticket_url: https://www.eventbrite.co.uk/e/gender-exploration-workshop-andro-eve-tickets-161284190355
 category: workshop
 company: Andro and Eve
 captions: false
 bsl: false
-image: /static/img/events/andro-eve.jpg
-content_warnings: "This event is strictly 18+"
+image: "/static/img/events/andro-eve.jpg"
+content_warnings: This event is strictly 18+
 capacity: 20
----
+image-position: top
+subtitle: ''
 
+---
 This workshop will provide a space for those questioning or wanting to explore their own gender. Andro and Eve’s Artistic Director Finn Warman will facilitate this creative and playful session helping participants with their own gender journey. 
 
 This online workshop will provide a space for those questioning or wanting to explore their own gender. Andro and Eve’s Artistic Director Finn Warman will facilitate this creative and playful session. 
