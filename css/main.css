@@ -492,6 +492,17 @@ h1.header-font, .header-font.h1 {
   background-color: #456123;
 }
 
+.bg-sightlines-white .content-center .article-content a {
+  color: #5E49A7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bg-sightlines-white .content-center .article-content a:hover {
+  color: #5E49A7;
+  text-decoration: underline;
+}
+
 .article-excerpt blockquote {
   border-left: 10px solid #93D0BF;
   font-style: italic;
