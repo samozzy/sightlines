@@ -49,7 +49,7 @@ layout: default
 {% if other_articles.size > 0 %}
 <h1 class="mt-4">Other Articles</h1>
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+<div class="row row-cols-1 row-cols-md-2 {% if other_articles.size > 1 %}row-cols-xl-3{% endif %}">
 {% include articles/article-card.html articles=other_articles alignment='left' %}
 </div>
 {% endif %}
