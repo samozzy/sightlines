@@ -84,4 +84,5 @@ fields:
   label: BSL
   description: Tick if this event features BSL interpretation
 pages:
+- _events/psyche-delight.md
 - _events/verbatim-bootcamp.md
