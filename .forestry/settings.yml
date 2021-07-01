@@ -23,6 +23,8 @@ sections:
   label: In Focus
   create: all
   match: "**/*"
+  templates:
+  - in-focus
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
