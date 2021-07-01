@@ -1,19 +1,20 @@
 ---
-title: "Can I Touch Your Hair?"
-subtitle: Followed by Q&A 
+title: Can I Touch Your Hair?
+subtitle: Followed by Q&A
 event_date: 2021-07-20
-start_time: "21:00"
-end_time: "22:30"
+start_time: '21:00'
+end_time: '22:30'
 ticket_url: https://www.eventbrite.co.uk/e/can-i-touch-your-hair-lekhani-chirwa-tickets-161283791161
 category: show
 company: Lekhani Chirwa
 captions: false
 bsl: false
-image: /static/img/events/lekahni.jpeg
+image: "/static/img/events/lekahni.jpeg"
 image-position: 0% 25%;
 capacity: 100
----
+content_warnings: ''
 
+---
 A bold yet humorous piece, Can I Touch Your Hair? explores identity, what cultural appropriation really means and personal hair struggles but more importantly, the pride learnt along the way. How do you navigate everyone's unnecessary questions and comments about your hair?
 
 Lekhani grew up mixed race in Cumbria and she’s realised she doesn’t actually know what to do about her hair. No one taught her and YouTube just isn’t helping. 99p Alberto Balsam won’t do.
