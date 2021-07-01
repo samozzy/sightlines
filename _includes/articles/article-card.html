@@ -1,5 +1,5 @@
 {% for article in include.articles %}
-<div class="col mb-4 px-4 pt-4 mx-auto" id="article-{{ article.title | slugify }}">
+<div class="col mb-4 px-4 pt-4 {% unless include.alignment=='left'%}mx-auto{% endunless %}" id="article-{{ article.title | slugify }}">
 	<div class="card shadow-sm mb-2 mb-md-0 h-100">
 		<div class="card-body">
 			<h4><a href="{{ article.url | prepend:site.baseurl }}" class="subtle-link text-dark">{{ article.title }}</a>
