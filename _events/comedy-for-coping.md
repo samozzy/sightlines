@@ -6,8 +6,8 @@ end_time: "18:30"
 ticket_url: https://www.eventbrite.co.uk/e/comedy-for-coping-dave-chawner-tickets-161678491721
 category: workshop
 company: Dave Chawner
-# captions: true 
-# bsl: true 
+captions: false
+bsl: false
 image: /static/img/events/dave-chawner.png
 image-position: 0% 15%;
 capacity: 15
