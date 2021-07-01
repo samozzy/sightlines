@@ -28,15 +28,29 @@ fields:
   description: In the 24-hour format HH:MM, eg. 21:30
   config:
     required: true
+- name: category
+  type: select
+  default: show
+  config:
+    required: true
+    options:
+    - show
+    - workshop
+    - panel
+    - talk
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: What type of event is this?
 - type: text
   name: ticket_url
   label: ticket_url
   description: Link to the Eventbrite page where this event is hosted. This will be
     the page the 'book tickets' button goes to. Leave blank to default to 'tickets
     coming soon'.
-- type: text
-  name: category
-  label: category
 - type: text
   name: company
   label: company
@@ -48,6 +62,9 @@ fields:
 - type: text
   name: image-position
   label: image-position
+  description: 'Where the ''area of interest'' in the image is. Typically pick from
+    ''top'', ''centre'', or ''bottom''. '
+  default: top
 - type: textarea
   name: content_warnings
   label: Content Warnings
