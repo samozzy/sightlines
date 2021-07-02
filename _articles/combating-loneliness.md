@@ -16,6 +16,9 @@ According to the ONS, single-person households are almost twice as likely to be 
 
 Twitch was already a huge platform pre-lockdown. From professional streamers to small influencers; from Snoop Dogg to AOC, the platform attracts thousands of streamers and millions of viewers - none more so than during lockdown. According to [Talking Influence](https://talkinginfluence.com/2020/04/07/covid-19-lockdown-leads-to-24-increase-in-twitch-viewership/), Twitch saw a 24% rise in viewership in the first month alone.
 
+![A screenshot of 'Among Us' with Ken's webcam feed below](/static/img/in-focus/twitch.png)
+<small class="caption"><em>A screenshot of 'Among Us' with Ken's webcam feed below</em></small>
+
 Is the sudden uptake just another antidote to boredom? Not necessarily. Ken explains: “It’s a form of social media, rather than an entertainment platform. […] The common misconception is that the audience wants to watch people play games: but it’s really about community.” Unlike Facebook or Instagram, where groups have to be sought out and are very rarely found, community is the heart of Twitch. The live chat is a hub of activity, and often branches out into separate Discord servers, where streamers can talk directly to their fans.
 
 The warm, communal nature of Ken’s streams makes it easy to see why people are turning to Twitch over Twitter. Thanks to an active live chat, Ken can interact with and respond to viewers’ comments and questions. Though it seems alien compared to live comedy, Ken recognises the intersection between the two. “I wanted to start [streaming] because it’s a good platform for comedians,” he says. “Lots of comedians host radio shows; the streams feel like live radio.” Unlike stand-up, “you’re not doing jokes, a script, or anything that necessitates feedback.” Although the audience enjoys watching him play games, interaction is their motive for joining - hence why the laidback, conversational streams are his most popular. 
