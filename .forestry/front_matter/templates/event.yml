@@ -11,10 +11,10 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
-- type: datetime
+- type: text
   name: event_date
   label: Event Date
-  description: The date of this event
+  description: The date of this event in the format YYYY-MM-DD
   config:
     required: true
 - type: text
