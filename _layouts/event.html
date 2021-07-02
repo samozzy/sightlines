@@ -51,7 +51,8 @@ background_color: kobi
 			{% include events/book.html event=event %}
 		</div>
 	</div>
-	{% assign events = site.events | sort: "event_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
+	{% include events/get-available-events.html %}
+	{% assign events = events | sort: "event_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
 	{% if events.size > 0 %}
 	<div class="related-events">
 		<div class="row py-2">

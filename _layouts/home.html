@@ -12,9 +12,10 @@ background_color: white
 	</div>
 </div>
 {% contentfor full_width_bottom %}
+{% include events/get-available-events.html %}
 <div class="container-fluid px-0">
 	<div class="squiggle-container">
-		{% assign num_events = site.events.size %}
+		{% assign num_events = events.size %}
 		{% unless num_events == 0 %}<div class="background-squiggles"></div>{% endunless %}
 		<div class="row py-5 stripe-white-kobi"></div>
 		<div class="row pt-5 pb-1 bg-sightlines-kobi">
@@ -24,7 +25,7 @@ background_color: white
 		</div>
 		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center bg-sightlines-kobi">
 			{% unless num_events == 0 %}
-				{% assign events = site.events | sort: "start_date" | slice: 0, 4 %}
+				{% assign events = events | sort: "start_date" | slice: 0, 4 %}
 				{% include events/event-card.html events=events %}
 			{% else %}
 				<p class="text-center mb-4 text-light">Our full events programme will be announced soon - stay tuned!</p>

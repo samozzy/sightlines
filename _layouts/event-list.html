@@ -12,7 +12,7 @@ background_color: kobi
 {% comment %}View as a Schedule
 View as a List{% endcomment %}
 
-{% assign events=site.events %}
+{% include events/get-available-events.html %}
 {% if events.size == 0 %}
 	<p class="text-center">Watch this space for the event updates and for live announcements visit our social media channels.</p>
 {% else %}

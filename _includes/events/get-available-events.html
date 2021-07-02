@@ -1,0 +1,35 @@
+{% assign all_events = site.events %}
+{% assign events = '' | split: '' %}
+{% assign today = site.test_date | default: 'now' | date: "%Y-%m-%d" %}
+{% for event in all_events %}
+
+	{% comment %} Is this event published yet? {% endcomment %}
+	{% unless event.published %}
+		{% comment %} If the variable does not exist, assume published {% endcomment %}
+		{% assign is_published = true %}
+	{% else %}
+		{% comment %} It can be a boolean or a date string, so let's check both {% endcomment %}
+		{% if event.published == 'false' or event.published == false %}
+			{% assign is_published = false %}
+		{% elsif event.published == 'true' or event.published == true %}
+			{% assign is_published = true %}
+		{% else %}
+			{% comment %} event.published can be a boolean or a date, so we must check for both {% endcomment %}
+			{% assign epublished = event.published | date: "%Y-%m-%d" %}
+			{% if epublished <= today %}
+				{% assign is_published = true %}
+			{% else %}
+				{% assign is_published = false %}
+			{% endif %}
+		{% endif %}
+	{% endunless %}
+
+	{% comment %} If the event is published, work out if it's happened yet {% endcomment %}
+	{% if is_published %}
+		{% assign edate = event.event_date | date: "%Y-%m-%d" %}
+		{% if edate >= today %}
+			{% assign events = events | push: event %}
+		{% endif %}
+	{% endif %}
+
+{% endfor %}
