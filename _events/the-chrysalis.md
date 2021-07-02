@@ -10,7 +10,7 @@ start_time: '15:00'
 end_time: '18:00'
 ticket_url: https://www.eventbrite.co.uk/e/the-chrysalis-reboot-the-roots-tickets-162115508851
 company: Reboot the Roots
-image: ''
+image: "/static/reboot-roots.jpg"
 content_warnings: ''
 captions: false
 bsl: false
