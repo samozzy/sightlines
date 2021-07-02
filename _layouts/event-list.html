@@ -16,6 +16,16 @@ View as a List{% endcomment %}
 {% if events.size == 0 %}
 	<p class="text-center">Watch this space for the event updates and for live announcements visit our social media channels.</p>
 {% else %}
+
+	{% if site.data.festival-pass %}
+		{% assign fpinfo = site.data.festival-pass[0] %}
+		{% if fpinfo.title and fpinfo.price and fpinfo.ticket_url %}
+			<div class="w-100 d-flex flex-row justify-content-center">
+				<a class="w-50 btn btn-primary shadow" href="{{ fpinfo.ticket_url }}" role="button" target="_blank"><i class="fa fa-ticket-alt" aria-hidden="true"></i>&nbsp;Access all events with our {{ fpinfo.title }}</a>
+			</div>
+		{% endif %}
+	{% endif %}
+
 	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 		{% include events/event-card.html events=events %}
 	</div>
