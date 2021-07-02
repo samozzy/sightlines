@@ -53,6 +53,11 @@ fields:
     the page the 'book tickets' button goes to. Leave blank to default to 'tickets
     coming soon'.
 - type: text
+  name: published
+  label: published
+  description: Enter 'true', 'false', or a date in the format 'YYYY-MM-DD'
+  default: 'true'
+- type: text
   name: company
   label: company
   config:
