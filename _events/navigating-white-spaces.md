@@ -8,7 +8,7 @@ category: panel
 company: ''
 captions: false
 bsl: false
-image: "/static/img/events/panels/mental-health.png"
+image: "/static/img/events/panels/navigating-white-spaces.png"
 content_warnings: ''
 capacity: 20
 image-position: center
