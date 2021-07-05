@@ -1,6 +1,6 @@
 ---
 category: workshop
-published: false
+published: true
 image-position: centre
 capacity: 15
 title: The Chrysalis
