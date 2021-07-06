@@ -8,7 +8,7 @@
 				</div>
 				<div class="card-footer bg-event-category-{{ event.category | slugify }} border-0">
 					<p class="category-label">{{ event.category }}</p>
-					{% include events/event-meta.html event=event %}
+					{% include events/event-meta.html event=event card=true %}
 				</div>
 			</div>
 		</a>

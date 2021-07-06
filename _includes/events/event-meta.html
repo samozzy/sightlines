@@ -6,7 +6,7 @@
 		<i class="fa fa-stopwatch"></i>&nbsp;{{ event.duration }}
 	</div>
 	{% endif %}
-	<div class="col-12 col-sm-6 col-lg-4 small text-start text-sm-end">
+	<div class="{% if include.card %}text-center{% else %}col-12 col-sm-6 col-lg-4 small text-start text-sm-end{% endif %}">
 		{% if event.captions %}
 		<i class="fa fa-lg fa-closed-captioning" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top" title="This event has closed captions"></i><span class="visually-hidden">This event has closed captions</span>
 		{% endif %}
