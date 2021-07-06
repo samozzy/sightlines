@@ -22,7 +22,7 @@ layout: default
 	{% endif %}
 	{% if page.publish_date and page.publish_date != empty %}
 		<div class="fw-light pt-2">
-			<i class="fa fa-calendar fa-lg mx-2" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
+			<i class="fa fa-calendar fa-lg {% if team_match and team_match != empty %}mx-2{% endif %}" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
 		</div>
 	{% endif %}
 </h2>
