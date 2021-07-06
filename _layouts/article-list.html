@@ -6,7 +6,7 @@ layout: default
 
 {{ content | markdownify }}
 
-{% assign articles = site.articles %}
+{% assign articles = site.articles | sort: "publish_date" | reverse %}
 
 {% if articles %}
 <div class="row row-cols-1 {% if articles.size > 1 %}row-cols-md-2{% endif %}">
