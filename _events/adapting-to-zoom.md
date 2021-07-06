@@ -3,7 +3,7 @@ title: Adapting Performance Engagement work to Zoom
 event_date: '2021-07-14'
 start_time: '17:00'
 end_time: '18:15'
-ticket_url: ''
+ticket_url: 'https://www.eventbrite.co.uk/e/adapting-performance-engagement-work-to-zoom-sightlines-panel-discussions-tickets-162472474545'
 category: panel
 company: Sightlines Festival
 captions: false

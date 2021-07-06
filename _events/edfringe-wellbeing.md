@@ -3,7 +3,7 @@ title: EdFringe and Performer Wellbeing
 event_date: '2021-07-21'
 start_time: '19:00'
 end_time: '20:15'
-ticket_url: ''
+ticket_url: 'https://www.eventbrite.co.uk/e/edfringe-and-performer-wellbeing-sightlines-panel-discussions-tickets-162472251879'
 category: panel
 company: Sightlines Festival
 captions: false

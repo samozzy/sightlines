@@ -3,7 +3,7 @@ title: Navigating White Spaces
 event_date: '2021-07-13'
 start_time: '19:00'
 end_time: '20:15'
-ticket_url: ''
+ticket_url: 'https://www.eventbrite.co.uk/e/navigating-white-spaces-sightlines-panel-discussions-tickets-162472841643'
 category: panel
 company: Sightlines Festival
 captions: false
