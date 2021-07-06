@@ -8,7 +8,7 @@ subtitle: ''
 event_date: '2021-07-25'
 start_time: '15:00'
 end_time: '15:45'
-ticket_url: ''
+ticket_url: https://www.eventbrite.co.uk/e/change-the-word-good-chance-tickets-162468292035
 company: Good Chance
 image: "/static/change-the-word.png"
 content_warnings: ''
