@@ -15,7 +15,7 @@ image-position: center
 subtitle: ''
 
 ---
-_To explore specific aspects of the conversation around performance and wellbeing, Sightlines 2021 will bring together performance makers and facilitators for a series of panel discussions on topics significant to the artists involved. Each will include structured discussion between the panelists, with time for the audience to ask questions._ 
+> _To explore specific aspects of the conversation around performance and wellbeing, Sightlines 2021 will bring together performance makers and facilitators for a series of panel discussions on topics significant to the artists involved. Each will include structured discussion between the panelists, with time for the audience to ask questions._ 
 
 **Edinburgh Fringe and Performer Wellbeing** - _Hosted by Katrina Woolley, former Fringe programmer, creator of the Anxiety-Free Fringe Guide and Sightlines Festival Director_ 
 

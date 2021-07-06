@@ -15,7 +15,7 @@ image-position: center
 subtitle: ''
 
 ---
-_To explore specific aspects of the conversation around performance and wellbeing, Sightlines 2021 will bring together performance makers and facilitators for a series of panel discussions on topics significant to the artists involved. Each will include structured discussion between the panelists, with time for the audience to ask questions._ 
+> _To explore specific aspects of the conversation around performance and wellbeing, Sightlines 2021 will bring together performance makers and facilitators for a series of panel discussions on topics significant to the artists involved. Each will include structured discussion between the panelists, with time for the audience to ask questions._ 
 
 **Adapting Performance Engagement to Zoom** - _Hosted by Emily Orme, Movement Director and teacher who facilitates Good Chance Social’s online outreach_ 
 

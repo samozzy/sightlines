@@ -15,7 +15,7 @@ image-position: center
 subtitle: ''
 
 ---
-_To explore specific aspects of the conversation around performance and wellbeing, Sightlines 2021 will bring together performance makers and facilitators for a series of panel discussions on topics significant to the artists involved. Each will include structured discussion between the panelists, with time for the audience to ask questions._ 
+> _To explore specific aspects of the conversation around performance and wellbeing, Sightlines 2021 will bring together performance makers and facilitators for a series of panel discussions on topics significant to the artists involved. Each will include structured discussion between the panelists, with time for the audience to ask questions._ 
 
 **Neurodiversity and Performance** - _Hosted by Heather Johnson actor and creative/access facilitator and mentor with Access All Areas Theatre Company_ 
 
