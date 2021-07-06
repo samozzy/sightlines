@@ -1,7 +1,7 @@
 ---
 category: show
 published: 'true'
-image-position: centre
+image-position: 0% 45%
 capacity: 90
 title: Change the Word
 subtitle: ''
@@ -16,7 +16,8 @@ captions: true
 bsl: false
 
 ---
-**WELCOME. HAVE YOU GOT A CUP OF HOT WATER READY? COME AND SAVOUR THE SPICES IN THE AIR. LET US SNIP FRESH MINT INTO YOUR TEA…**
+
+### **WELCOME. HAVE YOU GOT A CUP OF HOT WATER READY? COME AND SAVOUR THE SPICES IN THE AIR. LET US SNIP FRESH MINT INTO YOUR TEA…**
 
 _Change the Word: Around the Table_ is a fun and moving reflection on the stories which make us and how we meet each other through words.
 
