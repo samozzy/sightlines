@@ -8,7 +8,7 @@ subtitle: A Comedy Night
 event_date: '2021-07-18'
 start_time: '21:00'
 end_time: '22:30'
-ticket_url: ''
+ticket_url: https://www.eventbrite.co.uk/e/ceremony-of-wherever-youre-at-comedy-night-tickets-162588337093
 company: Lucy Hopkins, and a whole host of comedians
 image: "/static/ceremony_1080.jpg"
 content_warnings: ''
