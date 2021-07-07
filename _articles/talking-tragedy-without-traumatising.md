@@ -17,6 +17,10 @@ It is a form so popular that it has carved a space for itself in the landscape o
 
 Crossing into such personal terrain involves recounting, deconstructing and reflecting on often painful experiences such as trauma, grief, illness, abuse, oppression, violence or addiction, topics that might previously have been reserved for the therapy couch. 
 
+![Emily Aboud directing R&D for Lagahoo's new show Bogeyman (Photo Credit: Ali Wright)](/static/img/in-focus/bogeyman.jpg)
+
+<small><em>Emily Aboud directing R&D for Lagahoo's new show Bogeyman (Photo Credit: Ali Wright)</em></small>
+
 In a thesis written for University of Exeter, Michael Baim claims that with the proliferation of artists drawing upon lived experience, theatre can become “[a sight for radical self-exposure](https://ore.exeter.ac.uk/repository/bitstream/handle/10871/33997/BaimC.pdf?sequence=1&isAllowed=y)”. How then do we protect ourselves from the inherent risks of placing yourself in an environment where the boundaries between personal, public and professional are blurred?
 
 Autobiographical performance artist, Bryony Kimming, explains in [an interview](http://www.run-riot.com/articles/blogs/interview-lyn-gardner-talks-bryony-kimmings-about-tough-stuff) that boundaries and rules must be set: “I write out everything that happened around a time. Processing without censorship, stuff that no one will ever see or hear. Then I check what I want to keep as mine and mine alone in my locked box of life events that only I know about. I check what feels like it has come from a place of anger and try to process and rid myself of that, so I can tell the story impartially and with a kind heart. I never do this without a therapist anymore.” 
@@ -44,3 +48,7 @@ Aboud’s own show, _Splintered_, is an example of a theatre that is inherently 
 “500 years of colonialism are shattered by the highest levels of contentment”, Aboud claims. 
 
 Aboud’s mission is a ringing reminder that through satire and educational theatre-making, we can harness the retelling of tragedies to undermine problematic, oppressive structures and achieve a collective catharsis. 
+
+<hr>
+
+_Emily is Guest Curator for Sighlines Festival 2021 and has organised events including Navigating White Spaces, Creating Held Spaces in Rehearsal Rooms, Can I Touch Your Hair? and Men on the Mind_
