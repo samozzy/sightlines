@@ -51,7 +51,12 @@ background_color: kobi
 				{% endif %}
 			</div>
 
-			{% include events/book.html event=event %}
+			<div class="w-100 my-4">
+				{% include events/book.html event=event %}
+			</div>
+			<div class="w-100 my-4">
+				{% include events/festival-pass.html %}
+			</div>
 		</div>
 	</div>
 	{% include events/get-available-events.html %}
