@@ -1,7 +1,7 @@
 ---
 category: show
 published: 'true'
-image-position: center
+image-position: 0% 25%
 capacity: 90
 title: 'Kything '
 subtitle: Podcast Launch
