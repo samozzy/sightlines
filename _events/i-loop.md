@@ -19,21 +19,21 @@ bsl: false
 ---
 **_I-Loop_ a new audio theatre piece by Aminita Francis. For Sightlines she will present a work in progress showing including a Q&A session and the chance for audience to give feedback.**
 
-**  
+
 **_“When life is a broken record, your only choice is to face the music’_ Born out of the 2020 lockdowns and mental breakdowns, _I-Loop_ is a gig-theatre piece which looks at the effects of living the same day on repeat. Performed on a loop station, ‘I-Loop’ is a raw reflection of Francis’s black, female experience and contemplates the new normal that will follow this year's momentous worldwide shift _‘but I’m not sure things were even so great before all this…”_
 
 Left with her own company during the pandemic, Francis unearthed the poor foundations she had built to survive as a working class artist pre-COVID: The yes woman, constantly double booked with mental health overlooked whilst racing down the road to “success”.
 
 Her lockdown discoveries included but were not limited to:   
-\- A ‘Dormant Body Dysmorphia’,
+- A ‘Dormant Body Dysmorphia’,
 
-\- A rampant racial rage
+- A rampant racial rage
 
-\- Classic dynamic duo depression and anxiety
+- Classic dynamic duo depression and anxiety
 
-\- Surprising unsolved sexual trauma
+- Surprising unsolved sexual trauma
 
-\- And of course Tiger King.
+- And of course Tiger King.
 
 And though she can shake the shame of having been more interested in Carol Baskin’s escapades than the US election there were also many things she never wanted to confront, especially not whilst living alone, during the lockdown.
 
