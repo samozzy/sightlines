@@ -8,7 +8,7 @@ subtitle: "(Followed by Q&A)"
 event_date: '2021-07-24'
 start_time: '19:00'
 end_time: '19:45'
-ticket_url: ''
+ticket_url: https://www.eventbrite.co.uk/e/i-loop-aminita-francis-tickets-162711054143
 company: Aminita Francis
 image: "/static/iloop_1080.jpg"
 Image Attribution: ''
