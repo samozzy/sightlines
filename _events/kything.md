@@ -1,19 +1,20 @@
 ---
 category: show
-published: 'true'
 image-position: 0% 25%
 capacity: 90
 title: 'Kything '
 subtitle: Podcast Launch
-event_date: '2021-07-15'
-start_time: '19:00'
-end_time: '20:30'
+event_date: '2021-07-21'
+start_time: '17:00'
+end_time: '18:30'
 ticket_url: https://www.eventbrite.co.uk/e/kything-podcast-launch-realtalk-tickets-162588072301
 company: RealTalk
 image: "/static/kything.png"
 content_warnings: ''
 captions: false
 bsl: false
+published: ''
+Image Attribution: ''
 
 ---
 Join us for an intimate evening where we will have a listening party of the first episode of Kything, a podcast dedicated to making the everyday stories of mental health visible. This will be followed by a fishbowl conversation from past Real Talk speakers about the power of storytelling and wellbeing more widely, and finally end with a breakout discussion between audience members to encourage connection and conversation.
