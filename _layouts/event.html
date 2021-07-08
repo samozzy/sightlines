@@ -46,6 +46,9 @@ background_color: kobi
 			
 			<div class="event-copy">
 				{{ content | markdownify }}
+				{% if event.image_attribution and event.image_attribution != empty %}
+					<p class="text-end small"><em>{{ event.image_attribution }}</em></p>
+				{% endif %}
 			</div>
 
 			{% include events/book.html event=event %}

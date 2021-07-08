@@ -14,6 +14,7 @@ image: "/static/ceremony_1080.jpg"
 content_warnings: ''
 captions: false
 bsl: false
+image_attribution: "Photography: Andy Hollingworth"
 
 ---
 It's been a time. It'd be nice to just get on with it wouldn't it. Start up again. Carry on. Get back to normal. But all of that is Over There. And we're here. So we'll have to start with that.   

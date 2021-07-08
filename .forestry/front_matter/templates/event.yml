@@ -66,6 +66,10 @@ fields:
   name: image
   label: image
 - type: text
+  name: Image Attribution 
+  description: "Include the full attribution (eg 'Photography: John Smith')"
+  label: image_attribution
+- type: text
   name: image-position
   label: image-position
   description: 'Where the ''area of interest'' in the image is. Typically pick from

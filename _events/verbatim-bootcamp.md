@@ -15,6 +15,7 @@ subtitle: ''
 content_warnings: ''
 captions: false
 bsl: false
+image_attribution: "Photography: Alex Powell"
 
 ---
 Award winning theatre company LUNG explore the different techniques of verbatim theatre and the responsibility that comes with making socially engaged work. Led by co-artistic directors Matt Woodhead and Helen Monks, Verbatim Bootcamp will examine how to manage the wellbeing of the people you’re working with, your creative team and yourselves when making socially engaged, documentary theatre.
