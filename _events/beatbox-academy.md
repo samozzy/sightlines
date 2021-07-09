@@ -3,7 +3,7 @@ category: workshop
 published: 'true'
 image-position: center
 capacity: 30
-title: Beatbox Academy
+title: BAC Beatbox Academy
 subtitle: ''
 event_date: '2021-07-13'
 start_time: '17:00'
