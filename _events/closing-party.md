@@ -8,7 +8,7 @@ subtitle: ''
 event_date: '2021-07-25'
 start_time: '19:00'
 end_time: '22:00'
-ticket_url: ''
+ticket_url: https://www.eventbrite.co.uk/e/closing-party-sightlines-tickets-162821380131
 company: Sightlines Festival
 image: "/static/closing-party.jpg"
 Image Attribution: ''
