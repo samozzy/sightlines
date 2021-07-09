@@ -8,7 +8,7 @@ subtitle: ''
 event_date: '2021-07-13'
 start_time: '17:00'
 end_time: '18:00'
-ticket_url: ''
+ticket_url: https://www.eventbrite.co.uk/e/beatbox-academy-bac-tickets-162803747391
 company: BAC
 image: "/static/bac.jpeg"
 Image Attribution: ''
