@@ -8,7 +8,7 @@ subtitle: How to Look after your mental and physical health as a performer
 event_date: '2021-07-17'
 start_time: '15:00'
 end_time: '16:30'
-ticket_url: ''
+ticket_url: https://www.eventbrite.co.uk/e/wellbeing-and-creative-practice-lauren-steele-tickets-162911178721
 company: Lauren Steele
 image: "/static/lauren-steele.png"
 Image Attribution: ''
