@@ -1,10 +1,9 @@
 ---
 title: Sexual Wellbeing and Performance
 author: Harriet Corke
-publish_date: 2021-07-09 23:00:00 +0000
+publish_date: 2021-07-09T23:00:00.000+00:00
 excerpt: Harriet Corke talks to comedian and creator of the Come As You Are Podcast,
   Helen Duff, about making performance based on your sexual
-published: false
 
 ---
 “I’ll tell them what it’s like to be a frigid bitch.”
