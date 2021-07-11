@@ -4,7 +4,6 @@ author: Harriet Corke
 publish_date: 2021-07-11 11:00:00 +0000
 excerpt: Harriet Corke investigates how invisible illness impacts our experience of
   creative spaces.
-published: false
 
 ---
 “A person with trauma is welcome to work here, but your trauma isn't welcome to show up”
