@@ -1,6 +1,5 @@
 ---
 category: workshop
-published: false
 image-position: top
 capacity: 20
 title: Learning to Tell Your Story with RealTalk
@@ -10,11 +9,12 @@ start_time: '11:00'
 end_time: '13:00'
 ticket_url: ''
 company: RealTalk
-image: ''
+image: "/static/real-talk.jpg"
 Image Attribution: ''
 content_warnings: ''
 captions: true
 bsl: false
+published: ''
 
 ---
 Join us for an interactive workshop showcasing practical exercises and ideas for crafting a story. You will be invited to develop an idea that is alive within you around mental health or wellbeing and have space to share at the end.
