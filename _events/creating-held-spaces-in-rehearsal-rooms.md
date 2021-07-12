@@ -7,7 +7,7 @@ subtitle: Communication, Consent and Boundaries
 event_date: '2021-07-16'
 start_time: '17:00'
 end_time: '18:30'
-ticket_url: ''
+ticket_url: https://www.eventbrite.com/e/creating-held-spaces-in-rehearsal-rooms-sammy-glover-tickets-163105644373
 company: Sammy Glover
 image: "/static/sammy-glover.jpeg"
 Image Attribution: ''
