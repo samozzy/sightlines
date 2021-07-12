@@ -8,7 +8,7 @@ subtitle: ''
 event_date: '2021-07-22'
 start_time: '19:00'
 end_time: '20:30'
-ticket_url: ''
+ticket_url: 'https://www.eventbrite.co.uk/e/streaming-thew-new-comedy-platform-bilal-zafar-and-ken-cheng-tickets-163052938729'
 company: Bilal Zafar and Ken Cheng
 image: "/static/twitch.png"
 Image Attribution: ''

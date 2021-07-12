@@ -8,7 +8,7 @@ subtitle: ''
 event_date: '2021-07-15'
 start_time: '21:00'
 end_time: '22:00'
-ticket_url: ''
+ticket_url: 'https://www.eventbrite.co.uk/e/men-on-the-mind-drag-show-mc-emily-aboud-tickets-163051947765'
 company: Emily Aboud and friends
 image: "/static/men-on-the-mind-new.jpg"
 Image Attribution: ''

@@ -7,7 +7,7 @@ subtitle: ''
 event_date: '2021-07-25'
 start_time: '11:00'
 end_time: '13:00'
-ticket_url: ''
+ticket_url: 'https://www.eventbrite.co.uk/e/learning-to-tell-your-story-realtalk-tickets-163055067095'
 company: RealTalk
 image: "/static/real-talk.jpg"
 Image Attribution: ''
