@@ -9,38 +9,60 @@ background_color: aquamarine
 
 The Sightlines team wants to create a space where everyone can come together to celebrate and discuss the relationship between performance, theatre, and wellbeing without restrictions. As a festival focused on wellbeing accessibility is crucial. We’re collaborating with companies who make accessibility their mission and aspire to do the same. We welcome all feedback on how we could make our events even more accessible and will do all we can to help you access any of our events - so please let us know if there is anything you think we can do to improve, or any individual needs we can help with.  
 
-We have taken the following steps to promote accessibility for our festival and its various shows, panels, and workshops:
+Making our events accessible is very important to us, and we are collaborating with companies who make accessibility their mission.
 
-* Live Captioning and BSL translations will be available whenever possible
-* Detailed content warnings are available for all events.
-* Audio descriptions will be available whenever possible
-* Our core team members have undergone Mental Health First-Aid Training.
+## What have we done to make our events accessible? 
 
-The access details for each event will be on the event pages once the programme is launched. If you have any questions, suggestions, or comments, don’t hesitate to contact our team: <info@sightlinesfestival.co.uk>.
+* Automated closed captioning will be available for nearly all events
+* Some our talks and panels will have a live BSL interpreter 
+* Some pre-recorded events will be subtitled 
+* Our core team members have undergone Mental Health First-Aid Training
+
+## Where can I find the Access Details for each event? 
+
+You can find all the events on the [‘Events’](/events/) page. Then, to find the Access Details for a specific event, you can click on it to read the full details.  
 
 Many of our events are **captioned**, and/or offered with a **British Sign Language Interpreter**. These are signified by the icons: {% include icon-demo.html %}.
 
-## Events Guides
+If you have any questions before you arrive at an event, you can email us at <info@sightlinesfestival.co.uk>.
 
-* We encourage you to get ready for our events five minutes early, to allow time to get settled and make sure you don’t miss anything!
-* Please make sure that the space that you’re watching the event is suitable - if it’s a movement workshop then you may need space to move around, if it’s a discussion on some more mature topics, then you may want to use headphones
-* Some events may happen live, but then also be available for the whole festival. We encourage you to attend live to get the most out of the event and join the conversation
+## Watching events on Zoom 
 
-## Zoom Guides
+All our events are shown online, through [Zoom](https://zoom.us/). 
 
-* You will be able to check the type of event you’re booking on the programme page, and this will let you know whether you’ll be able to be seen and/or heard
-* If you’d rather not be seen or heard on a Zoom event, you can turn your camera and microphone off using the icons in the lower left corner of your screen
-* You can tell if a Zoom event is being recorded as there will be a red icon in the top left corner of your screen
-* We encourage you to add your pronouns to your name on Zoom for interactive sessions, and would ask you to use everyone else's
+If you have any questions about how to use Zoom before the event, you can email us at info@sightlinesfestival.co.uk, ortake a look at the [Zoom Getting Started guide](https://support.zoom.us/hc/en-us/articles/360034967471-Getting-started-guide-for-new-users)
 
-## Chat Guides
+If you have any questions about how to use Zoom before the event, you can email us at <info@sightlinesfestival.co.uk>.
 
-* Some events will have the option to interact using live chat, to either ask questions or talk to other audience members
-* While we encourage discussion, we ask that you respect other people on the chat
-* These chats will be moderated and any comments that are deemed to be classed as bullying, offensive or discriminatory will be removed
+If you have a question during the event, you can use the Zoom Chat function at the bottom of the screen, and our team will be there to help you. 
 
-## Comfort online 
 
-At some events you may be invited to actively participate but you will never be required to have your video or mic on unless this has been explicitly stated in the event description (i.e. for participatory workshops)
+## Will I be seen or heard during a Zoom event? 
 
-If cost is a prohibitive factor to your festival attendance, please email us - we can offer further concessions and free tickets. You can get in touch via the [contact page](/contact/) or <support@sightlinesfestival.co.uk>.
+Some events may invite you to turn your device’s video camera and microphone on. This might be for a workshop, so that you can participate. 
+
+You always have the choice to turn your device’s video camera and microphone off. You can do this using the icons in the bottom left corner of your screen.
+
+## Using the Zoom Chat 
+
+Some events will invite you to interact using the Zoom Chat function. 
+
+This might be to ask the audience a question, or to invite you to talk to other audience members. 
+
+We encourage positive discussion. Any comments that are bullying, offensive or discriminatory will be removed by our Zoom Chat moderators. 
+
+## Will Zoom events be recorded?
+ 
+* Some of our events will be recorded so other audience members can watch them later. 
+* If an event is going to be recorded, this will always be announced before the event begins. 
+* You can tell if a Zoom event is being recorded as there will be a red circle in the top left corner of your screen.
+* If you have any worries or concerns about a Zoom event being recorded, you can email us at <info@sightlinesfestival.co.uk>
+
+
+## Still have a question? 
+
+If you have a question about an event, or a personal access requirement, please let us know. We will do our best to help you. 
+
+If cost is a prohibitive factor to your festival attendance, please email us. We can offer further concessions and free tickets.
+
+You can contact our team with any question, comment or suggestion by emailing <info@sightlinesfestival.co.uk>

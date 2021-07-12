@@ -187,6 +187,11 @@ $sightlines-event-categories: (
 }
 .bg-sightlines-aquamarine .content-center a {
 	@extend .link-light;
+	text-decoration: none;
+	font-weight: bold;
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
 }
 
 .article-excerpt blockquote {
