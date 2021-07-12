@@ -12,7 +12,7 @@ ticket_url: https://www.eventbrite.co.uk/e/ceremony-of-wherever-youre-at-comedy-
 company: Lucy Hopkins, and a whole host of comedians
 image: "/static/ceremony_1080.jpg"
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 image_attribution: "Photography: Andy Hollingworth"
 

@@ -13,7 +13,7 @@ company: BAC
 image: "/static/bac.jpeg"
 Image Attribution: ''
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

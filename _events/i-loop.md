@@ -13,7 +13,7 @@ company: Aminita Francis
 image: "/static/iloop_1080.jpg"
 Image Attribution: ''
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

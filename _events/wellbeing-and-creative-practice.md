@@ -13,7 +13,7 @@ company: Lauren Steele
 image: "/static/lauren-steele.png"
 Image Attribution: ''
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

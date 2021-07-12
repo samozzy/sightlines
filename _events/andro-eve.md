@@ -6,7 +6,7 @@ end_time: '21:00'
 ticket_url: https://www.eventbrite.co.uk/e/gender-exploration-workshop-andro-eve-tickets-161284190355
 category: workshop
 company: Andro and Eve
-captions: false
+captions: true
 bsl: false
 image: "/static/img/events/andro-eve.jpg"
 content_warnings: This event is strictly 18+

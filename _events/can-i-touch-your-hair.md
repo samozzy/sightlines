@@ -7,7 +7,7 @@ end_time: '22:30'
 ticket_url: https://www.eventbrite.co.uk/e/can-i-touch-your-hair-lekhani-chirwa-tickets-161283791161
 category: show
 company: Lekhani Chirwa
-captions: false
+captions: true
 bsl: false
 image: "/static/img/events/lekahni.jpeg"
 image-position: 0% 25%;

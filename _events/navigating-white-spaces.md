@@ -6,7 +6,7 @@ end_time: '20:15'
 ticket_url: 'https://www.eventbrite.co.uk/e/navigating-white-spaces-sightlines-panel-discussions-tickets-162472841643'
 category: panel
 company: Sightlines Festival
-captions: false
+captions: true
 bsl: true
 image: "/static/img/events/panels/navigating-white-spaces.png"
 content_warnings: ''

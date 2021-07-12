@@ -12,7 +12,7 @@ ticket_url: 'https://www.eventbrite.co.uk/e/theatre-of-the-oppressed-hannah-sney
 company: Hannah Sneyd and Birgit Fritz
 image: "/static/img/events/theatre-oppressed.jpg"
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

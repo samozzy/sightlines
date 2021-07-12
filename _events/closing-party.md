@@ -13,7 +13,7 @@ company: Sightlines Festival
 image: "/static/closing-party.jpg"
 Image Attribution: ''
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

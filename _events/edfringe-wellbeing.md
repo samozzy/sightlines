@@ -6,7 +6,7 @@ end_time: '20:15'
 ticket_url: 'https://www.eventbrite.co.uk/e/edfringe-and-performer-wellbeing-sightlines-panel-discussions-tickets-162472251879'
 category: panel
 company: Sightlines Festival
-captions: false
+captions: true
 bsl: false
 image: "/static/img/events/panels/edfringe-wellbeing.png"
 content_warnings: ''

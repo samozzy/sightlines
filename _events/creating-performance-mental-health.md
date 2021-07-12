@@ -6,7 +6,7 @@ end_time: '18:15'
 ticket_url: 'https://www.eventbrite.co.uk/e/creating-performance-out-of-mental-health-experiences-sightlines-panels-tickets-162472631013'
 category: panel
 company: Sightlines Festival
-captions: false
+captions: true
 bsl: false
 image: "/static/img/events/panels/mental-health.png"
 content_warnings: ''

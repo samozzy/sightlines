@@ -6,14 +6,14 @@ end_time: '13:30'
 ticket_url: https://www.eventbrite.co.uk/e/psyche-delight-together-workshop-tickets-161284539399
 category: workshop
 company: Psyche Delight
-captions: false
+captions: true
 bsl: false
 image: /static/img/events/psyche-delight.jpg
 capacity: 20
 image-position: top
 subtitle: ''
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

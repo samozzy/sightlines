@@ -6,7 +6,7 @@ end_time: '20:15'
 ticket_url: https://www.eventbrite.co.uk/e/neurodiversity-in-performance-sightlines-panel-discussions-tickets-162471938943
 category: panel
 company: Sightlines Festival
-captions: false
+captions: true
 bsl: true
 image: "/static/img/events/panels/neurodiversity.png"
 content_warnings: ''

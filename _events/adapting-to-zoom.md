@@ -6,7 +6,7 @@ end_time: '18:15'
 ticket_url: 'https://www.eventbrite.co.uk/e/adapting-performance-engagement-work-to-zoom-sightlines-panel-discussions-tickets-162472474545'
 category: panel
 company: Sightlines Festival
-captions: false
+captions: true
 bsl: true
 image: "/static/img/events/panels/adapting-for-zoom.png"
 content_warnings: ''

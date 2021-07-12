@@ -11,7 +11,7 @@ ticket_url: https://www.eventbrite.co.uk/e/kything-podcast-launch-realtalk-ticke
 company: RealTalk
 image: "/static/kything.png"
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 published: ''
 Image Attribution: ''

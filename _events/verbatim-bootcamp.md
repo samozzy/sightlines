@@ -6,14 +6,14 @@ end_time: '20:30'
 category: workshop
 company: LUNG Theatre
 ticket_url: https://www.eventbrite.com/e/verbatim-bootcamp-lung-tickets-161284336793
-captions: false
+captions: true
 bsl: false
 image: /static/img/events/lung.jpeg
 image-position: 0% 35%;
 capacity: 100
 subtitle: ''
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 image_attribution: "Photography: Alex Powell"
 

@@ -12,7 +12,7 @@ ticket_url: https://www.eventbrite.co.uk/e/the-chrysalis-reboot-the-roots-ticket
 company: Reboot the Roots
 image: "/static/reboot-roots.jpg"
 content_warnings: ''
-captions: false
+captions: true
 bsl: false
 
 ---

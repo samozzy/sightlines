@@ -7,7 +7,7 @@ end_time: '20:30'
 ticket_url: https://www.eventbrite.co.uk/e/going-slightly-mad-big-mind-theatre-tickets-161677400457
 category: show
 company: Big Mind Theatre
-captions: false
+captions: true
 bsl: false
 image: "/static/img/events/bm-gsm.jpg"
 image-position: top
