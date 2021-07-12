@@ -409,87 +409,87 @@ h1.header-font, .header-font.h1 {
 }
 
 .text-event-category-show {
-  color: #FFFAAA;
+  color: #73e793;
 }
 
 .text-event-category-show:hover, .text-event-category-show:focus, .text-event-category-show:active {
-  color: #fffff7;
+  color: #b4f2c5;
 }
 
 .bg-event-category-show {
-  background-color: #FFFAAA !important;
+  background-color: #73e793 !important;
 }
 
 .border-event-category-show {
-  border-color: #FFFAAA !important;
+  border-color: #73e793 !important;
 }
 
 .btn-event-category-show {
-  border-color: #FFFAAA !important;
-  background-color: #FFFAAA;
+  border-color: #73e793 !important;
+  background-color: #73e793;
 }
 
 .text-event-category-workshop {
-  color: #abcdef;
+  color: #7ebee4;
 }
 
 .text-event-category-workshop:hover, .text-event-category-workshop:focus, .text-event-category-workshop:active {
-  color: #ebf3fb;
+  color: #bddef1;
 }
 
 .bg-event-category-workshop {
-  background-color: #abcdef !important;
+  background-color: #7ebee4 !important;
 }
 
 .border-event-category-workshop {
-  border-color: #abcdef !important;
+  border-color: #7ebee4 !important;
 }
 
 .btn-event-category-workshop {
-  border-color: #abcdef !important;
-  background-color: #abcdef;
+  border-color: #7ebee4 !important;
+  background-color: #7ebee4;
 }
 
 .text-event-category-panel {
-  color: #456123;
+  color: #ff89ea;
 }
 
 .text-event-category-panel:hover, .text-event-category-panel:focus, .text-event-category-panel:active {
-  color: #6d9937;
+  color: #ffd6f8;
 }
 
 .bg-event-category-panel {
-  background-color: #456123 !important;
+  background-color: #ff89ea !important;
 }
 
 .border-event-category-panel {
-  border-color: #456123 !important;
+  border-color: #ff89ea !important;
 }
 
 .btn-event-category-panel {
-  border-color: #456123 !important;
-  background-color: #456123;
+  border-color: #ff89ea !important;
+  background-color: #ff89ea;
 }
 
 .text-event-category-talk {
-  color: #456123;
+  color: #ff89ea;
 }
 
 .text-event-category-talk:hover, .text-event-category-talk:focus, .text-event-category-talk:active {
-  color: #6d9937;
+  color: #ffd6f8;
 }
 
 .bg-event-category-talk {
-  background-color: #456123 !important;
+  background-color: #ff89ea !important;
 }
 
 .border-event-category-talk {
-  border-color: #456123 !important;
+  border-color: #ff89ea !important;
 }
 
 .btn-event-category-talk {
-  border-color: #456123 !important;
-  background-color: #456123;
+  border-color: #ff89ea !important;
+  background-color: #ff89ea;
 }
 
 .bg-sightlines-white .content-center .article-content a {
