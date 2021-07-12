@@ -17,6 +17,9 @@ Helen’s honesty onstage inspired post-show honesty in her audience. Four years
   
 But the podcast isn’t merely factual: it is a piece of creative work in its own right. “I love podcasts that are really lush to listen to,” she says - a fact that is evident in _CAYA_’s carefully crafted production. Helen records and edits each episode with the integral help of two producers. Having a team of voices makes each episode strong; it also ensures that Helen isn’t “over the top or too vulnerable in a way that isn’t necessary”.
 
+![Helen Duff in publicity for the Come As You Are Podcast](/static/img/in-focus/come-as-you-are-article.jpeg)
+<small class="caption"><em>Helen Duff in publicity for the Come As You Are Podcast</em></small>
+
 Whilst autobiographical shows seem to be coming into their own in the theatre world, they are already a mainstay in stand-up. Comedy is widely acknowledged as an effective way of coping, and personal narratives are welcomed by an increasingly large audience.
 
   
