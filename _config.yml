@@ -9,7 +9,10 @@ facebook_username: sightlinesfest
 github_username:  samozzy
 timezone: Europe/London
 
+# test_date: 2021-07-19
 festival_start_date: 2021-07-13
+week_one_start_date: 2021-07-13
+week_two_start_date: 2021-07-20
 festival_end_date: 2021-07-25
 
 # Exclude from processing.
