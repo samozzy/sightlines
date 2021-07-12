@@ -2,12 +2,12 @@
 category: workshop
 image-position: top
 capacity: 20
-title: Learning to Tell Your Story with RealTalk
+title: Storytelling for Mental Wellbeing
 subtitle: ''
 event_date: '2021-07-25'
 start_time: '11:00'
 end_time: '13:00'
-ticket_url: 'https://www.eventbrite.co.uk/e/learning-to-tell-your-story-realtalk-tickets-163055067095'
+ticket_url: https://www.eventbrite.co.uk/e/learning-to-tell-your-story-realtalk-tickets-163055067095
 company: RealTalk
 image: "/static/real-talk.jpg"
 Image Attribution: ''
