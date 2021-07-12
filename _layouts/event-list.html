@@ -3,9 +3,9 @@ layout: default
 background_color: kobi
 ---
 
-<h1 class="text-center">
+<p class="display-2 coming-sans text-center">
 	Events
-</h1>
+</p>
 
 {{ content }}
 
@@ -19,7 +19,47 @@ View as a List{% endcomment %}
 
 	{% include events/festival-pass.html %}
 
+	{% assign week_one_start = site.week_one_start_date | date: "%Y-%m-%d" %}
+	{% assign week_two_start = site.week_two_start_date | date: "%Y-%m-%d" %}
+	{% assign week_one_events = '' | split: '' %}
+	{% assign week_two_events = '' | split: '' %}
+	{% for event in events %}
+		{% assign event_date = event.event_date | date: "%Y-%m-%d" %}
+		{% if event_date < week_two_start %}
+			{% assign week_one_events = week_one_events | push: event %}
+		{% else %}
+			{% assign week_two_events = week_two_events | push: event %}
+		{% endif %}
+	{% endfor %}
+	{% if week_one_events.size > 0 %}
+		{% assign week_one_events = week_one_events | group_by: "event_date" | sort: "name" %}
+		<h1 id="week1">Week One</h1>
+		<p><small><a class="btn btn-primary coming-sans fs-6" role="button" href="{{ '/static/img/events/programme/week_1.png' | prepend: site.baseurl }}" style="font-size:1rem !important;">Download the Week One programme <i class="fa fa-download" aria-hidden="true"></i></a></small></p>
+		{% for the_date in week_one_events %}
+			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+				{% include events/event-card.html events=the_date.items %}
+			</div>
+		{% endfor %}
+	{% endif %}
+	{% if week_two_events.size > 0 %}
+		{% assign week_two_events = week_two_events | group_by: "event_date" | sort: "name" %}
+		<h1 id="week1">Week Two</h1>
+		<p><small><a class="btn btn-primary coming-sans fs-6" role="button" href="{{ '/static/img/events/programme/week_2.png' | prepend: site.baseurl }}" style="font-size:1rem !important;">Download the Week Two programme <i class="fa fa-download" aria-hidden="true"></i></a></small></p>
+		{% for the_date in week_two_events %}
+			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+				{% include events/event-card.html events=the_date.items %}
+			</div>
+		{% endfor %}
+	{% endif %}
+
+
+
+{% comment %}
+
 	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 		{% include events/event-card.html events=events %}
 	</div>
+{% endcomment %}
 {% endif %}
