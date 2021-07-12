@@ -51,11 +51,14 @@ background_color: kobi
 				{% endif %}
 			</div>
 
-			<div class="w-100 my-4">
-				{% include events/book.html event=event %}
-			</div>
-			<div class="w-100 my-4">
-				{% include events/festival-pass.html %}
+			<div class="w-100">
+				<div class="my-4">
+					{% include events/book.html event=event %}
+				</div>
+				<div class="my-4">
+					{% include events/festival-pass.html %}
+				</div>
+				<p class="text-center my-2"><em>Please note online booking closes 30 minutes before the advertised start time</em></p>
 			</div>
 		</div>
 	</div>
