@@ -1,20 +1,20 @@
 ---
 category: talk
-published: 'true'
 image-position: top
 capacity: 90
-title: 'Streaming: The New Comedy Platform'
+title: 'Twitch: Community Through Comedy During Lockdown'
 subtitle: ''
 event_date: '2021-07-22'
 start_time: '19:00'
 end_time: '20:30'
-ticket_url: 'https://www.eventbrite.co.uk/e/streaming-thew-new-comedy-platform-bilal-zafar-and-ken-cheng-tickets-163052938729'
+ticket_url: https://www.eventbrite.co.uk/e/streaming-thew-new-comedy-platform-bilal-zafar-and-ken-cheng-tickets-163052938729
 company: Bilal Zafar and Ken Cheng
 image: "/static/twitch.png"
 Image Attribution: ''
 content_warnings: ''
 captions: true
 bsl: false
+published: ''
 
 ---
 Bilal Zafar and Ken Cheng are both stand-up comedians who have found a performance platform on Twitch since the start of lockdown. They will be their usual funny selves whilst showing some of their favourite moments, talking about how the platform has benefited them as performers and how it has created a sense of connection for them and their audiences.  
