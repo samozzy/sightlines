@@ -503,6 +503,15 @@ h1.header-font, .header-font.h1 {
   text-decoration: underline;
 }
 
+.bg-sightlines-aquamarine .content-center a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bg-sightlines-aquamarine .content-center a:hover, .bg-sightlines-aquamarine .content-center a:focus, .bg-sightlines-aquamarine .content-center a:active {
+  text-decoration: underline;
+}
+
 .article-excerpt blockquote {
   border-left: 10px solid #93D0BF;
   font-style: italic;
