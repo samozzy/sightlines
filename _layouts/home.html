@@ -16,25 +16,58 @@ background_color: white
 <div class="container-fluid px-0">
 	<div class="squiggle-container">
 		{% assign num_events = events.size %}
-		{% unless num_events == 0 %}<div class="background-squiggles"></div>{% endunless %}
-		<div class="row py-5 stripe-white-kobi"></div>
-		<div class="row pt-5 pb-1 bg-sightlines-kobi">
-			<div class="col-12 text-center">
-				<h2 class="text-center text-sightlines-white display-6">{% unless num_events == 0 %}Featured{% endunless %} Events</h2>
-			</div>
-		</div>
-		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center bg-sightlines-kobi">
-			{% unless num_events == 0 %}
-				{% assign events = events | sort: "start_date" | slice: 0, 4 %}
-				{% include events/event-card.html events=events %}
+		{% assign today_date = site.test_date | default: 'now' | date: "%Y-%m-%d" %}
+		{% assign festival_start_date = site.festival_start_date | date: "%Y-%m-%d" %}
+		{% unless num_events == 0 %}
+			<div class="background-squiggles"></div>
+			{% if today_date >= festival_start_date %}
+				{% assign now_next = events | sort: "event_date" | slice: 0, 4 %}
+				{% assign other_events = events | sort: "event_date" | slice: 4, num_events | sample: 4 %}
 			{% else %}
-				<p class="text-center mb-4 text-light">Our full events programme will be announced soon - stay tuned!</p>
-			{% endunless %}
-		</div>
+				{% assign other_events = events | sample: 4 %}
+			{% endif %}
+		{% endunless %}
+		<div class="row py-5 stripe-white-kobi"></div>
+		{% if now_next.size > 0 %}
+			<div class="row pt-5 pb-1 bg-sightlines-kobi">
+				<div class="col-12 text-center">
+					<h2 class="text-center text-sightlines-white display-6">Now & Next</h2>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center bg-sightlines-kobi">
+				{% include events/event-card.html events=now_next %}
+			</div>
+		{% endif %}
+		{% if other_events.size > 0 %}
+			<div class="row pt-5 pb-1 bg-sightlines-kobi">
+				<div class="col-12 text-center">
+					<h2 class="text-center text-sightlines-white display-6">{% if now_next.size > 0 %}Coming Soon{% else %}Featured Events{% endif %}</h2>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center bg-sightlines-kobi">
+				{% include events/event-card.html events=other_events %}
+			</div>
+		{% endif %}
 		{% if num_events > 0 %}
 			<div class="row bg-sightlines-kobi">
 				<div class="block-button-wrapper pt-3 pb-5">
 					<a class="btn btn-primary" role="button" href="{{ '/events/' | prepend: site.baseurl }}">View All Events</a>
+				</div>
+			</div>
+		{% endif %}
+		{% if num_events == 0 %}
+			<div class="row pt-5 bg-sightlines-kobi">
+				<div class="col-12">
+					{% assign festival_end_date = site.festival_end_date | date: "%Y-%m-%d" %}
+					<p class="text-center mb-4 text-light lead">
+						{% if today_date < festival_start_date %}
+							Our full events programme will be announced soon - stay tuned!
+						{% elsif today_date > festival_end_date %}
+							Sightlines Festival has come to an end for this time, but take a read of our In Focus series and keep an eye on our social media for updates!
+						{% else %}
+							There aren't currently any events available, check back soon!
+						{% endif %}
+					</p>
 				</div>
 			</div>
 		{% endif %}
