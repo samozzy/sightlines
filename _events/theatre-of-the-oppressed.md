@@ -1,5 +1,5 @@
 ---
-category: talk
+category: panel
 published: true
 image-position: 0% 25%
 capacity: 15

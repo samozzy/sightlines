@@ -1,5 +1,5 @@
 ---
-category: talk
+category: panel
 image-position: top
 capacity: 90
 title: 'Twitch: Community Through Comedy During Lockdown'
