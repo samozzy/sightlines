@@ -40,7 +40,8 @@ View as a List{% endcomment %}
 		{% for the_date in week_one_events %}
 			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
 			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-				{% include events/event-card.html events=the_date.items %}
+				{% assign date_events = the_date.items | sort: "start_time" %}
+				{% include events/event-card.html events=date_events %}
 			</div>
 		{% endfor %}
 	{% endif %}
@@ -51,7 +52,8 @@ View as a List{% endcomment %}
 		{% for the_date in week_two_events %}
 			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
 			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-				{% include events/event-card.html events=the_date.items %}
+				{% assign date_events = the_date.items | sort: "start_time" %}
+				{% include events/event-card.html events=date_events %}
 			</div>
 		{% endfor %}
 	{% endif %}
