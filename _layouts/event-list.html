@@ -44,7 +44,7 @@ View as a List{% endcomment %}
 	{% endif %}
 	{% if week_two_events.size > 0 %}
 		{% assign week_two_events = week_two_events | group_by: "event_date" | sort: "name" %}
-		<h1 id="week1">Week Two</h1>
+		<h1 id="week2">Week Two</h1>
 		<p><small><a class="btn btn-primary coming-sans fs-6" role="button" href="{{ '/static/img/events/programme/week_2.png' | prepend: site.baseurl }}" style="font-size:1rem !important;">Download the Week Two programme <i class="fa fa-download" aria-hidden="true"></i></a></small></p>
 		{% for the_date in week_two_events %}
 			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
