@@ -1,3 +1,14 @@
+	{% if include.event %}
+		{% assign week_one_start_date = site.week_one_start_date | date: "%Y-%m-%d" %}
+		{% assign week_two_start_date = site.week_two_start_date | date: "%Y-%m-%d" %}
+		{% assign event_date = include.event.event_date | date: "%Y-%m-%d" %}
+		{% if event_date < week_two_start_date %}
+			{% include events/week-pass.html week=1 %}
+		{% else %}
+			{% include events/week-pass.html week=2 %}
+		{% endif %}
+	{% endif %}
+
 	{% if site.data.festival-pass %}
 		{% assign fpinfo = site.data.festival-pass[0] %}
 		{% if fpinfo.title and fpinfo.price and fpinfo.ticket_url %}

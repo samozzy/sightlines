@@ -1,0 +1,21 @@
+{% if include.week %}
+	{% if include.week == 1 %}
+		{% assign link = "https://www.eventbrite.co.uk/e/163179661761" %}
+		{% assign week = "Week One" %}
+	{% elsif include.week == 2 %}
+		{% assign link = "https://www.eventbrite.co.uk/e/163180273591" %}
+		{% assign week = "Week Two" %}
+	{% endif %}
+	{% if link and week %}
+		{% if include.coming_sans %}
+			<a class="btn btn-primary coming-sans fs-6 mb-2" role="button" href="{{ link }}" style="font-size:1rem !important;">Access all {{ week }} Events with our {{ week }} Pass <i class="fa fa-ticket-alt" aria-hidden="true"></i></a>
+		{% else %}
+			<div class="w-100 d-flex flex-row justify-content-center mb-4">
+				<a class="w-50 btn btn-primary shadow d-flex justify-content-around" href="{{ link }}" role="button" target="_blank">
+					Access all {{ week }} events with our {{ week }} Pass
+					<i class="fa fa-ticket-alt my-auto" style="transform:rotate(-35deg)" aria-hidden="true"></i>
+				</a>
+			</div>
+		{% endif %}
+	{% endif %}
+{% endif %}
