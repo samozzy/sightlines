@@ -1,6 +1,5 @@
 ---
 category: show
-published: 'true'
 image-position: 0% 45%
 capacity: 90
 title: Change the Word
@@ -14,9 +13,10 @@ image: "/static/change-the-word.png"
 content_warnings: ''
 captions: true
 bsl: false
+published: ''
+Image Attribution: ''
 
 ---
-
 ### **WELCOME. HAVE YOU GOT A CUP OF HOT WATER READY? COME AND SAVOUR THE SPICES IN THE AIR. LET US SNIP FRESH MINT INTO YOUR TEA…**
 
 _Change the Word: Around the Table_ is a fun and moving reflection on the stories which make us and how we meet each other through words.
@@ -33,4 +33,6 @@ _Change the Word: Around the Table_ is brought to you by Change the Word partici
 
 Kindly supported by the Coronavirus Community Support Fund, distributed by The National Lottery Community Fund.
 
-This is the third iteration of our Change the Word community poetry project (and the first fully online!). We bring together refugees, asylum seekers and locals to connect through a shared love of writing.
+This event was created as part of the third iteration of Good Chance's Change the Word community poetry project (and the first fully online!), and was first screened in March 2021. Change the Word brings together refugees, asylum seekers and locals to connect through a shared love of writing.
+
+_This event is part of Sightlines Festival's Pay What You Can scheme, with tickets on a donation basis from £0._
