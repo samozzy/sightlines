@@ -58,7 +58,14 @@ background_color: kobi
 				<div class="my-4">
 					{% include events/festival-pass.html event=event %}
 				</div>
-				<p class="text-center my-2"><em>Please note online booking closes 30 minutes before the advertised start time</em></p>
+				{% if event.capacity >= 90 %}
+					{% assign bo_close = "at " | append: event.start_time %}
+				{% elsif event.box_office_close_time and event.box_office_close_time != empty %}
+					{% assign bo_close = "at " | append: event.box_office_close_time %}
+				{% else %}
+					{% assign bo_close = "half an hour before the advertised start time" %}
+				{% endif %}
+				<p class="text-center my-2"><em>Please note online booking closes {{ bo_close }}</em></p>
 			</div>
 		</div>
 	</div>
