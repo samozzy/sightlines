@@ -10,7 +10,7 @@ captions: true
 bsl: false
 image: "/static/img/events/panels/edfringe-wellbeing.png"
 content_warnings: ''
-capacity: 20
+capacity: 90
 image-position: center
 subtitle: ''
 

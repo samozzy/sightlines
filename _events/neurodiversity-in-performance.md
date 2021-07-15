@@ -10,7 +10,7 @@ captions: true
 bsl: true
 image: "/static/img/events/panels/neurodiversity.png"
 content_warnings: ''
-capacity: 20
+capacity: 90
 image-position: center
 subtitle: ''
 
