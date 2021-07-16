@@ -2,8 +2,7 @@
 title: 'Class Privilege in Participatory Arts '
 author: Nikita Karia
 publish_date: 2021-07-15 23:00:00 +0000
-excerpt: ''
-published: false
+excerpt: It is no hot take that privilege plays too great a role in the arts.
 
 ---
 It is no hot take that privilege plays too great a role in the arts.
