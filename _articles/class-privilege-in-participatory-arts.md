@@ -16,7 +16,6 @@ The pandemic is likely to have exacerbated class imbalances across the UK’s cr
 
 Many have slipped through the cracks of the government’s Self Employment Income Support Scheme due to having secondary sources of PAYE income in the hospitality industry, income which too has been significantly reduced with lockdown restrictions.
 
-  
 Prompted by greater pressure from funding bodies that art is not made for art’s sake but that it in some way benefits the public community or neighbourhood in which it is located, participatory theatre has become a conduit for engaging a greater number of working class people, particularly through youth theatre clubs and training schemes.
 
 Speaking to facilitators and participants of youth theatre programmes who engage underprivileged, NEET (not in education, employment or training) or at-risk young people, it became apparent that although engagement levels are high, the presence of privilege still pervades these departments and their work.
@@ -37,8 +36,7 @@ The director of the BAC Beatbox Academy, Conrad Murray, points out the flawed na
 
 “While 18 is the normalised age for graduating education and seeking employment opportunities, others who have been financially supporting their families, or who have been kicked out of their homes are usually just starting to find their feet at 25 and by this point they’ve missed out on all the free training opportunities. That’s why at the Beatbox Academy we welcome people from the age of 11 to 29.”
 
-###   
-Safe spaces
+### Safe spaces
 
 Often in participatory arts there is a disconnect between those that run the sessions and those participating in them. One participant recounted how a lead facilitator abandoned them halfway through the course with no explanation, mimicking the lack of stability in the personal lives of many participants. A replacement wasn’t found for months.
 
