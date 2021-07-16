@@ -15,5 +15,6 @@ fields:
   name: excerpt
   label: excerpt
 pages:
+- _articles/class-privilege-in-participatory-arts.md
 - _articles/reseting-the-culture-around-invisible-illness.md
 - _articles/sexual-wellbeing-and-performance.md
