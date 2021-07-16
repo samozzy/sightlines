@@ -5,8 +5,6 @@ publish_date: 2021-07-15 23:00:00 +0000
 excerpt: It is no hot take that privilege plays too great a role in the arts.
 
 ---
-It is no hot take that privilege plays too great a role in the arts.
-
 In 2016[ a study led by LSE and the University of Edinburgh](https://journals.sagepub.com/doi/full/10.1177/0038038516629917?rss=1) revealed that just 16% of actors come from a working class background whereas 51% have a privileged background. The figure has fallen by 1.4% since 2014.
 
 This prompted a flurry of activity in the industry to break barriers faced by working-class performers and creatives accessing the cultural sector, including Labour’s 2018 inquiry ‘[Acting Up - Breaking the Class Ceiling](https://d3n8a8pro7vhmx.cloudfront.net/campaigncountdown/pages/1157/attachments/original/1502725031/Acting-Up-Report.pdf?1502725031)’ and the formation of [Eastlake Productions](https://www.theatren16ltd.co.uk/), a working class theatre company originally set up to tackle the financial barrier faced by working class artists.
