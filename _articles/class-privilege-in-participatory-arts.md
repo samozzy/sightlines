@@ -28,6 +28,9 @@ One participant, involved in a well-known youth company, highlighted the lack of
 
 He adds that staff working in the building expect participants to take an interest in traditionally more high brow forms of art: “we’re always playing catch up but they never ask us about what art we might be interested in. It doesn’t always feel welcoming”.
 
+![Conrad Murray with the BAC Beatbox Academy](/static/bac.jpeg)
+<small class="caption"><em>Above: Conrad Murray with the BAC Beatbox Academy</em></small>
+
 “Thankfully, not all theatre venues are taking a backseat,” explains a theatre facilitator who works with young at-risk people. The Lyric Hammersmith currently have 15 young people and community branches and their new large scale community play _Heart of Hammersmith_ features 60 people ranging from the age of 11 to 70!
 
 Battersea Arts Centre crucially invested as much funding, space, time and resources towards their Beatbox Academy, also a Sightlines partner, as they would on any other programmed show. This has led to the creation of a smash-hit, multi award-winning show _How To Make A Monster_ which is about to embark on an international tour.
