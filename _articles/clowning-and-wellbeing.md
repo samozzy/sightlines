@@ -1,9 +1,10 @@
 ---
 title: Clowning and Wellbeing
-author: ''
+author: Nikita Karia
 publish_date: 2021-07-20 23:00:00 +0000
-excerpt: ''
-published: false
+excerpt: Sightlines spoke to a trio of clowns, Lucy Hopkins, Helen Duff and Lorna
+  Rose Treen, to find out more about how the playfulness, acceptance and mindfulness
+  of clowning has had a positive impact on their wellbeing.
 
 ---
 The word ‘clown’ is most commonly associated with red-nosed children’s entertainers, technicolour wigs at the circus and absolute terror (coulrophobia is the official term).
