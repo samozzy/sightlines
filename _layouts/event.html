@@ -51,6 +51,12 @@ background_color: kobi
 				{% endif %}
 			</div>
 
+			{% if event.production_team and event.production_team.size > 0 %}
+				<div class="production-credits">
+					<h2>{% if event.production_team_title and event.production_team_title != empty %}{{ event.production_team_title }}{% else %}Production Team{% endif %}</h2>
+					{% include team.html people=event.production_team %}
+				</div>
+			{% endif %}
 			<div class="w-100">
 				<div class="my-4">
 					{% include events/book.html event=event %}

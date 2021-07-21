@@ -14,9 +14,14 @@
 m<br>T:{{ p }}--
 {% endfor %}{% endcomment %}
 {% comment %}{% assign team = person_wi_bio | concat: person_wo_bio %}{% endcomment %}
+{% if include.people and include.people.size > 0 %}
+	{% assign the_people = include.people %}
+{% else %}
+	{% assign the_people = site.data.team %}
+{% endif %}
 
 <div class="row">
-	{% for person in site.data.team %}
+	{% for person in the_people %}
 		<div class="col-12 {% unless person.bio %}col-md-6 col-lg-4 col-xl-3{% endunless %} mb-4">
 			<div class="row">
 				{% if person.image and person.image != empty %}
