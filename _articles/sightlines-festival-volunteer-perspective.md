@@ -1,6 +1,6 @@
 ---
 title: 'Sightlines Festival: Volunteer Perspective'
-author: Marios Theocharopoulos
+author: Marios Theocharopoulos, edited by Will Amott
 publish_date: 2021-07-21 23:00:00 +0000
 excerpt: With a BA, an MSc and a PhD in Psychology and a keen interest in theatre
   and music, Marios Theocharopoulos was perfectly positioned to volunteer with us
