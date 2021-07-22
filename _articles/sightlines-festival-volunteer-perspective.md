@@ -1,12 +1,11 @@
 ---
-title: The Start of Sightlines Festival
+title: 'Sightlines Festival: Volunteer Perspective'
 author: Marios Theocharopoulos
 publish_date: 2021-07-21 23:00:00 +0000
 excerpt: With a BA, an MSc and a PhD in Psychology and a keen interest in theatre
   and music, Marios Theocharopoulos was perfectly positioned to volunteer with us
   as our Wellbeing and Mental Health Volunteer. He has written a blog based on his
   experience of the first week of the Festival
-published: false
 
 ---
 It’s not news to point out that our social fabric has been disrupted by the Covid-19 pandemic. Its associated lockdowns have had negative impacts on health and wellbeing. Almost all venues were shut. Rehearsals, teaching and other forms of artistic engagement either had to cease completely or move online. Thousands of performers and backstage workers were laid off and left uncertain about their future employment in an already unpredictable and unstable biz. Even before this time, mental health problems were pervasive in the performing arts community. The rates of suicide, sleep disturbance, high levels of drug and alcohol use, anxiety and depression are well evidenced.
