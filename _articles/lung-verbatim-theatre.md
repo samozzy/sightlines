@@ -4,7 +4,6 @@ author: Harriet Corke
 publish_date: 2021-07-22 23:00:00 +0000
 excerpt: Harriet talks to Helen Monks from LUNG Theatre as well as other theatre makers
   about the way that verbatim theatre ignites creativity, hope and a need for change
-published: false
 
 ---
 I am in awe of creative projects whose legacy can be counted in years (particularly seeing as none of my “big” theatre-making ideas survive longer than five days). One of the most impressive shows in this regard is LUNG Theatre’s _Who Cares_ - born five years ago, and still flourishing. Keen to know more, I spoke to LUNG’s co-artistic director Helen Monks, who described its origins:
