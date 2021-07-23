@@ -1,8 +1,9 @@
 ---
-title: ''
-author: ''
-publish_date: 
-excerpt: ''
+title: 'LUNG and the potential of verbatim theatre '
+author: Harriet Corke
+publish_date: 2021-07-22 23:00:00 +0000
+excerpt: Harriet talks to Helen Monks from LUNG Theatre as well as other theatre makers
+  about the way that verbatim theatre ignites creativity, hope and a need for change
 published: false
 
 ---
@@ -18,14 +19,12 @@ One in twelve young people care for someone, but not all young carers realise th
 
 Unsurprisingly, the impact of _Who Cares?_ has been “huge”, and it’s unlikely that it will slow down. Not least of all because, as Helen states, “The need for the show never goes away.” LUNG’s work exemplifies the importance of prioritising both audience and participant wellbeing. The participants are in control of the story; the audience is shaped to be both proactive and hopeful.
 
-![LUNG’s Who Cares?](/static/img/in-focus/neurodiversity-and-performance-photo.jpeg)
-<small class="caption"><em>LUNG’s Who Cares?</em></small>
+![LUNG’s Who Cares](/static/img/in-focus/neurodiversity-and-performance-photo.jpeg) <small class="caption"><em>LUNG’s Who Cares</em></small>
 
 Hearing about LUNG’s extraordinary work makes me forget, for a minute, that this isn’t the norm. A conversation with Anna*, a writer, director and performer, is a stark reminder that LUNG’s values are not shared by all.
 
 “The first time I encountered verbatim theatre (as a non-audience member) was as a director,” Anna tells me. “I was asked to work with a local Amnesty International group who wanted to make a piece of theatre, based on women’s testimonies.
 
-  
 “I was not told the race of the women who had given those testimonies - but I was sure they came from women of colour. But I was pressured to cast white actors, because that was the ‘available casting pool’.”
 
 The second time Anna participated in verbatim theatre was as a participant.
