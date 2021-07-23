@@ -18,6 +18,9 @@ One in twelve young people care for someone, but not all young carers realise th
 
 Unsurprisingly, the impact of _Who Cares?_ has been “huge”, and it’s unlikely that it will slow down. Not least of all because, as Helen states, “The need for the show never goes away.” LUNG’s work exemplifies the importance of prioritising both audience and participant wellbeing. The participants are in control of the story; the audience is shaped to be both proactive and hopeful.
 
+![LUNG’s Who Cares?](/static/img/in-focus/neurodiversity-and-performance-photo.jpeg)
+<small class="caption"><em>LUNG’s Who Cares?</em></small>
+
 Hearing about LUNG’s extraordinary work makes me forget, for a minute, that this isn’t the norm. A conversation with Anna*, a writer, director and performer, is a stark reminder that LUNG’s values are not shared by all.
 
 “The first time I encountered verbatim theatre (as a non-audience member) was as a director,” Anna tells me. “I was asked to work with a local Amnesty International group who wanted to make a piece of theatre, based on women’s testimonies.
