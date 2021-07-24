@@ -1,5 +1,5 @@
 ---
-title: Interview with Aminita Francis
+title: "Spotlight: Aminita Francis"
 author: Nikita Karia
 publish_date: 2021-07-23 23:00:00 +0000
 excerpt: Sightlines spoke to the joyous Aminita ahead of a work-in-progress performance
@@ -25,6 +25,9 @@ Beatbox Academy is a community. I, and many other of the regular attendees, coul
 A few of us were attending the sessions regularly and we became really tight. It was at this point that the producers at Battersea Arts Centre noticed we were getting good. They offered us the opportunity to make a show of our own professionally and be paid for it. It didn’t just feel like an after school club anymore!
 
 Conrad encouraged us to sing, rap, beatbox and compose. Up until then I didn’t know you could compose without sheet music or formal music lessons. We also learnt to write because we had to structure a show that we could repeat and it had to be written down. Even though originally it’s all written on scraps of paper and on notes on our phone… but that eventually became _Frankenstein: How To Make A Monster._
+
+![Aminita in BAC Beatbox Academy’s Frankenstein: How To Make a Monster](/static/img/in-focus/aminita-francis.jpeg)
+<small class="caption"><em>Aminita in BAC Beatbox Academy’s Frankenstein: How To Make a Monster</em></small>
 
 ### **Why does hip hop/beatbox/spoken word, basically the aural form, resonate so well with an audience?**
 
