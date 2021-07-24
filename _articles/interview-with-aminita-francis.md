@@ -4,11 +4,8 @@ author: Nikita Karia
 publish_date: 2021-07-23 23:00:00 +0000
 excerpt: Sightlines spoke to the joyous Aminita ahead of a work-in-progress performance
   of their brand-new show I-Loop premiering as part of the festival this Saturday!
-published: false
 
 ---
-SPOTLIGHT: Aminita Francis
-
 _Aminita Francis is an actor, vocal artist, loop station artist, beatboxer, composer and writer from London who has been working in the arts for 6 years after graduating from drama school._
 
 _Her priority is making work about equality and representing minorities. She describes her mission as “speaking out for the underdog through music, drama, soundscape and song”._
