@@ -5,10 +5,20 @@ background_color: kobi
 
 {% assign event = page %}
 
+{% assign today = site.test_date | default: 'now' | date: "%Y-%m-%d" %}
+{% assign event_date_string = event.event_date | date: "%Y-%m-%d" %}
+{% if event_date_string < today %}
+	{% assign event_past = true %}
+{% endif %}
+
 <div class="container-fluid p-0">
 	<div class="row">
 		<div class="col-12 p-0">
-			<div class="hero-image" style="background-image:url({{ page.image | prepend: site.baseurl }});background-position:{{ page.image-position | default: top }};"></div>
+			<div class="hero-image" style="background-image:url({{ page.image | prepend: site.baseurl }});background-position:{{ page.image-position | default: top }};">
+				{% if event_past %}
+					<div class="event-past-banner">This event has already occurred</div>
+				{% endif %}
+			</div>
 		</div>
 	</div>
 	<div class="row py-4 px-4 px-lg-0">
