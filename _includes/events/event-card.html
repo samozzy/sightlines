@@ -1,7 +1,7 @@
 {% assign card_events = include.events | sort: "event_date" %}
 {% assign today = site.test_date | default: 'now' | date: "%Y-%m-%d" %}
 {% for event in card_events %}
-	<div class="col mb-4 px-4 pt-4" id="event-{{i}}">
+	<div class="col-xl-4 col-sm-6 col-xs-12 mb-4 px-4 pt-4" id="event-{{include.event_id_prefix|append:'-'}}{{forloop.index}}">
 		<a class="event-card event-category-{{ event.category | slugify }} card shadow mb-2 mb-md-0 border-event-category-{{ event.category | slugify }} h-100" href="{{ event.url | prepend: site.baseurl }}">
 			<div class="card-content" style="background-image:url({{ event.image | prepend: site.baseurl }});">
 				{% assign event_date = event.event_date | date: "%Y-%m-%d" %}
