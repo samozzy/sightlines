@@ -1,0 +1,24 @@
+---
+label: In Focus
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: datetime
+  name: publish_date
+  label: publish_date
+- type: textarea
+  name: excerpt
+  label: excerpt
+pages:
+- _articles/class-privilege-in-participatory-arts.md
+- _articles/clowning-and-wellbeing.md
+- _articles/interview-with-aminita-francis.md
+- _articles/lung-verbatim-theatre.md
+- _articles/reseting-the-culture-around-invisible-illness.md
+- _articles/sexual-wellbeing-and-performance.md
+- _articles/sightlines-festival-volunteer-perspective.md

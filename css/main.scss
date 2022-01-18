@@ -131,10 +131,9 @@ h1.header-font {
 }
 
 .hero-image {
-	min-height: 20rem;
+	min-height: 22rem;
 	overflow:hidden;
 	background-size: cover;
-	background-position: 0% 35%;
 	background-repeat: no-repeat;
 	@extend .shadow;
 }
@@ -177,8 +176,22 @@ $sightlines-event-categories: (
 .bg-sightlines-white .content-center a {
 	@extend .link-dark;
 }
+.bg-sightlines-white .content-center .article-content a {
+	color: map-get($sightlines-brand, "purple");
+	font-weight:bold;
+	text-decoration: none;;
+	&:hover {
+		color: map-get($sightlines-brand, "purple");
+		text-decoration: underline;
+	}
+}
 .bg-sightlines-aquamarine .content-center a {
 	@extend .link-light;
+	text-decoration: none;
+	font-weight: bold;
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
 }
 
 .article-excerpt blockquote {

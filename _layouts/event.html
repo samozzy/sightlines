@@ -8,16 +8,23 @@ background_color: kobi
 <div class="container-fluid p-0">
 	<div class="row">
 		<div class="col-12 p-0">
-			<div class="hero-image" style="background-image:url({{ page.image | prepend: site.baseurl }});"></div>
+			<div class="hero-image" style="background-image:url({{ page.image | prepend: site.baseurl }});background-position:{{ page.image-position | default: top }};"></div>
 		</div>
 	</div>
 	<div class="row py-4 px-4 px-lg-0">
 		<div class="content-center content-center-offset">
 			<div class="row mb-4">
-				<div class="col-12 col-md-7 col-lg-6 col-xl-8">
-					<h1>{{ event.title }}<br><small class='fw-light'>{{ event.event_date | date: "%d %b" }} {% if event.start_time %}{{ event.start_time }}{% if event.end_time %}-{{ event.end_time }}{% endif %}{% endif %}</small></h1>
-					{% if event.company %}
-						<h2 class="fs-4 fw-light">Presented by {{ event.company }}</h2>
+				<div class="col-12 col-sm-6 col-md-7 col-lg-6 col-xl-8">
+					<h1>
+						{{ event.title }}<br><small class='fw-light'>{{ event.event_date | date: "%d %b" }} {% if event.start_time and event.start_time != empty %}{{ event.start_time }}{% if event.end_time and event.end_time != empty %}-{{ event.end_time }}{% endif %}{% endif %}</small>
+					</h1>
+					{% if event.company and event.company != empty %}
+						<h2 class="fs-4 fw-light">
+							Presented by {{ event.company }}
+							{% if event.subtitle and event.subtitle != empty %}
+								<br><small class="mt-2 d-inline-block"><em>{{ event.subtitle }}</em></small></h2>
+							{% endif %}
+						</h2>
 					{% endif %}
 					{% comment %}
 						{% if event.capacity and event.capacity != empty %}
@@ -25,13 +32,13 @@ background_color: kobi
 						{% endif %}
 					{% endcomment %}
 				</div>
-				<div class="col-6 col-md-5 col-lg-4 offset-lg-2 offset-xl-0">
+				<div class="col-sm-6 col-md-5 col-lg-4 offset-lg-2 offset-xl-0">
 					<div class="my-2 event-page-meta border-event-category-{{ event.category | slugify }}">
-						<p class="text-start text-lg-center"><strong>{{ event.category | upcase }}</strong></p>
+						<p class="text-start text-sm-center"><strong>{{ event.category | upcase }}</strong></p>
 						{% include events/event-meta.html event=event %}
 						<p class="text-sm-center small fw-light"><a href="{{ '/access/' | prepend: site.baseurl }}" class="link-dark text-decoration-none">Access Information <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
 						{% if event.content_warnings and event.content_warnings != empty %}
-							<div class='text-center'>{{ event.content_warnings | markdownify }}</div>
+							<div class='text-center text-md-start'>{{ event.content_warnings | markdownify }}</div>
 						{% endif %}
 					</div>
 				</div>
@@ -39,12 +46,37 @@ background_color: kobi
 			
 			<div class="event-copy">
 				{{ content | markdownify }}
+				{% if event.image_attribution and event.image_attribution != empty %}
+					<p class="text-end small"><em>{{ event.image_attribution }}</em></p>
+				{% endif %}
 			</div>
 
-			{% include events/book.html event=event %}
+			{% if event.production_team and event.production_team.size > 0 %}
+				<div class="production-credits">
+					<h2>{% if event.production_team_title and event.production_team_title != empty %}{{ event.production_team_title }}{% else %}Production Team{% endif %}</h2>
+					{% include team.html people=event.production_team %}
+				</div>
+			{% endif %}
+			<div class="w-100">
+				<div class="my-4">
+					{% include events/book.html event=event %}
+				</div>
+				<div class="my-4">
+					{% include events/festival-pass.html event=event %}
+				</div>
+				{% if event.capacity >= 90 %}
+					{% assign bo_close = "at " | append: event.start_time %}
+				{% elsif event.box_office_close_time and event.box_office_close_time != empty %}
+					{% assign bo_close = "at " | append: event.box_office_close_time %}
+				{% else %}
+					{% assign bo_close = "half an hour before the advertised start time" %}
+				{% endif %}
+				<p class="text-center my-2"><em>Please note online booking closes {{ bo_close }}</em></p>
+			</div>
 		</div>
 	</div>
-	{% assign events = site.events | sort: "event_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
+	{% include events/get-available-events.html %}
+	{% assign events = events | sort: "event_date" | where_exp: "others", "others.title != event.title" | slice: 0, 4 %}
 	{% if events.size > 0 %}
 	<div class="related-events">
 		<div class="row py-2">

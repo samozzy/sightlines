@@ -4,8 +4,9 @@ nav_order: 4
 background_color: kobi
 icon: info-circle
 toc: true
----
+published: false
 
+---
 # Volunteer with Us 
 
 ## Volunteer in Digital Theatre Production & Marketing
@@ -61,4 +62,4 @@ b) How has wellbeing impacted your work?
 
 c) Tell us about a time you used initiative to solve a problem.
 
-Please submit a short paragraph response to each question. Do not include a CV or any additional materials. Please send your responses to us via email at <lydiaharrisonproducer@gmail.com> by **Friday, 25th June**.
+Please submit a short paragraph response to each question. Do not include a CV or any additional materials. Please send your responses to us via email at <lydiaharrisonproducer@gmail.com> by **Friday, 2nd July**.

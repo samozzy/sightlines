@@ -22,7 +22,7 @@ layout: default
 	{% endif %}
 	{% if page.publish_date and page.publish_date != empty %}
 		<div class="fw-light pt-2">
-			<i class="fa fa-calendar fa-lg mx-2" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
+			<i class="fa fa-calendar fa-lg {% if team_match and team_match != empty %}mx-2{% endif %}" aria-hidden="true"></i>&nbsp;{{ page.publish_date | date: "%d %b %Y" }}
 		</div>
 	{% endif %}
 </h2>
@@ -49,7 +49,7 @@ layout: default
 {% if other_articles.size > 0 %}
 <h1 class="mt-4">Other Articles</h1>
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-{% include articles/article-card.html articles=other_articles %}
+<div class="row row-cols-1 row-cols-md-2 {% if other_articles.size > 1 %}row-cols-xl-3{% endif %}">
+{% include articles/article-card.html articles=other_articles alignment='left' %}
 </div>
 {% endif %}

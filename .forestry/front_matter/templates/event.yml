@@ -1,0 +1,113 @@
+---
+label: Event
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Event Title
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: event_date
+  label: Event Date
+  description: The date of this event in the format YYYY-MM-DD
+  config:
+    required: true
+- type: text
+  name: start_time
+  label: Start Time
+  description: In the 24-hour format HH:MM, eg. 19:30
+  config:
+    required: true
+- type: text
+  name: end_time
+  label: End Time
+  description: In the 24-hour format HH:MM, eg. 21:30
+  config:
+    required: true
+- name: category
+  type: select
+  default: show
+  config:
+    required: true
+    options:
+    - show
+    - workshop
+    - panel
+    - talk
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: What type of event is this?
+- type: text
+  name: ticket_url
+  label: ticket_url
+  description: Link to the Eventbrite page where this event is hosted. This will be
+    the page the 'book tickets' button goes to. Leave blank to default to 'tickets
+    coming soon'.
+- type: text
+  name: published
+  label: published
+  description: Enter 'true', 'false', or a date in the format 'YYYY-MM-DD'
+  default: 'true'
+- type: text
+  name: company
+  label: company
+  config:
+    required: true
+- type: file
+  name: image
+  label: image
+- type: text
+  name: Image Attribution
+  description: 'Include the full attribution (eg ''Photography: John Smith'')'
+  label: image_attribution
+- type: text
+  name: image-position
+  label: image-position
+  description: 'Where the ''area of interest'' in the image is. Typically pick from
+    ''top'', ''centre'', or ''bottom''. '
+  default: top
+- type: textarea
+  name: content_warnings
+  label: Content Warnings
+  description: Give as a full sentence, eg. "Please note this performance contains
+    strong language."
+- type: number
+  name: capacity
+  label: capacity
+  default: 90
+- name: captions
+  type: boolean
+  label: Captions
+  description: Tick if this event uses captions (closed or open)
+- name: bsl
+  type: boolean
+  label: BSL
+  description: Tick if this event features BSL interpretation
+pages:
+- _events/andro-eve.md
+- _events/beatbox-academy.md
+- _events/can-i-touch-your-hair.md
+- _events/ceremony-of-wherever-you-re-at.md
+- _events/change-the-word.md
+- _events/closing-party.md
+- _events/comedy-for-coping.md
+- _events/creating-held-spaces-in-rehearsal-rooms.md
+- _events/going-slightly-mad.md
+- _events/i-loop.md
+- _events/kything.md
+- _events/learning-to-tell-your-story-with-realtalk.md
+- _events/men-on-the-mind-drag-show.md
+- _events/psyche-delight.md
+- _events/the-chrysalis.md
+- _events/twitch-community-through-comedy.md
+- _events/verbatim-bootcamp.md
+- _events/wellbeing-and-creative-practice.md

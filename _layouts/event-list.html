@@ -3,20 +3,67 @@ layout: default
 background_color: kobi
 ---
 
-<h1 class="text-center">
+<p class="display-2 coming-sans text-center">
 	Events
-</h1>
+</p>
 
-<p class="lead text-center">Sightlines Festival will be full of exciting performances, workshops, panels, events, and more.</p>
+{{ content }}
 
 {% comment %}View as a Schedule
 View as a List{% endcomment %}
 
-{% assign events=site.events %}
+{% include events/get-available-events.html %}
 {% if events.size == 0 %}
 	<p class="text-center">Watch this space for the event updates and for live announcements visit our social media channels.</p>
 {% else %}
+
+	<div class="mt-2 mb-4">
+		{% include events/festival-pass.html %}
+	</div>
+
+	{% assign week_one_start = site.week_one_start_date | date: "%Y-%m-%d" %}
+	{% assign week_two_start = site.week_two_start_date | date: "%Y-%m-%d" %}
+	{% assign week_one_events = '' | split: '' %}
+	{% assign week_two_events = '' | split: '' %}
+	{% for event in events %}
+		{% assign event_date = event.event_date | date: "%Y-%m-%d" %}
+		{% if event_date < week_two_start %}
+			{% assign week_one_events = week_one_events | push: event %}
+		{% else %}
+			{% assign week_two_events = week_two_events | push: event %}
+		{% endif %}
+	{% endfor %}
+	{% if week_one_events.size > 0 %}
+		{% assign week_one_events = week_one_events | group_by: "event_date" | sort: "name" %}
+		<h1 id="week1">Week One</h1>
+		<p><small><a class="btn btn-primary coming-sans fs-6 mb-2" role="button" href="{{ '/static/img/events/programme/week_1.png' | prepend: site.baseurl }}" style="font-size:1rem !important;">Download the Week One programme <i class="fa fa-download" aria-hidden="true"></i></a>&nbsp;{% include events/week-pass.html week=1 coming_sans="true" %}</small></p>
+		{% for the_date in week_one_events %}
+			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+				{% assign date_events = the_date.items | sort: "start_time" %}
+				{% include events/event-card.html events=date_events %}
+			</div>
+		{% endfor %}
+	{% endif %}
+	{% if week_two_events.size > 0 %}
+		{% assign week_two_events = week_two_events | group_by: "event_date" | sort: "name" %}
+		<h1 id="week2">Week Two</h1>
+		<p><small><a class="btn btn-primary coming-sans fs-6 mb-2" role="button" href="{{ '/static/img/events/programme/week_2.png' | prepend: site.baseurl }}" style="font-size:1rem !important;">Download the Week Two programme <i class="fa fa-download" aria-hidden="true"></i></a>&nbsp;{% include events/week-pass.html week=2 coming_sans="true" %}</small></p>
+		{% for the_date in week_two_events %}
+			<h2 id="{{ the_date.name | date: "%Y-%m-%d" }}">{{ the_date.name | date_to_long_string }}</h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+				{% assign date_events = the_date.items | sort: "start_time" %}
+				{% include events/event-card.html events=date_events %}
+			</div>
+		{% endfor %}
+	{% endif %}
+
+
+
+{% comment %}
+
 	<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 		{% include events/event-card.html events=events %}
 	</div>
+{% endcomment %}
 {% endif %}

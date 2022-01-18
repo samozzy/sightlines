@@ -1,0 +1,23 @@
+---
+label: Team
+hide_body: true
+fields:
+- type: field_group_list
+  name: Team
+  label: Team
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: role
+    label: role
+  - type: file
+    name: image
+    label: image
+    description: Images <strong>must</strong> be square, and at least 500x500px.
+  - type: textarea
+    name: bio
+    label: bio
+pages:
+- _data/team.yml

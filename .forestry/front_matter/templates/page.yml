@@ -1,0 +1,27 @@
+---
+label: Page
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: number
+  name: nav_order
+  label: nav_order
+- name: nav_title
+  type: text
+  config:
+    required: false
+  label: nav_title
+  description: Title used for this page in the navigation, if it is different to the
+    page title
+- type: text
+  name: icon
+  label: icon
+- type: text
+  name: background_color
+  label: background_color
+- name: toc
+  type: boolean
+  label: Table of Contents

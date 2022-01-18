@@ -1,0 +1,22 @@
+	{% if include.event %}
+		{% assign week_one_start_date = site.week_one_start_date | date: "%Y-%m-%d" %}
+		{% assign week_two_start_date = site.week_two_start_date | date: "%Y-%m-%d" %}
+		{% assign event_date = include.event.event_date | date: "%Y-%m-%d" %}
+		{% if event_date < week_two_start_date %}
+			{% include events/week-pass.html week=1 %}
+		{% else %}
+			{% include events/week-pass.html week=2 %}
+		{% endif %}
+	{% endif %}
+
+	{% if site.data.festival-pass %}
+		{% assign fpinfo = site.data.festival-pass[0] %}
+		{% if fpinfo.title and fpinfo.price and fpinfo.ticket_url %}
+			<div class="w-100 d-flex flex-row justify-content-center">
+				<a class="w-50 btn btn-primary shadow d-flex justify-content-around" href="{{ fpinfo.ticket_url }}" role="button" target="_blank">
+					Access all events with our {{ fpinfo.title }}
+					<i class="fa fa-ticket-alt my-auto" style="transform:rotate(-35deg)" aria-hidden="true"></i>
+				</a>
+			</div>
+		{% endif %}
+	{% endif %}

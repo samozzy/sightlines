@@ -1,13 +1,16 @@
+{% assign num_articles = include.articles | size %}
 {% for article in include.articles %}
-<div class="col mb-4 px-4 pt-4 mx-auto" id="article-{{ article.title | slugify }}">
+<div class="col mb-4 px-4 pt-4 {% unless include.alignment=='left' or num_articles > 2 %}mx-auto{% endunless %}" id="article-{{ article.title | slugify }}">
 	<div class="card shadow-sm mb-2 mb-md-0 h-100">
 		<div class="card-body">
 			<h4><a href="{{ article.url | prepend:site.baseurl }}" class="subtle-link text-dark">{{ article.title }}</a>
-				<br><small class="fw-light fs-6"><i class="fa fa-calendar"></i>&nbsp;{{ article.date | date: "%d %b" }}</small>
+				<br><small class="fw-light fs-6"><i class="fa fa-calendar"></i>&nbsp;{{ article.publish_date | date: "%d %b" }}</small>
 			</h4>
 			{% if page.layout == 'home' %}{% assign excerpt_chars = 200 %}{% else %}{% assign excerpt_chars = 400 %}{% endif %}
 			<p class="fw-light mt-2">{{ article.excerpt | truncate: excerpt_chars | markdownify }}</p>
-			<a class="btn btn-secondary btn-lg w-100" href="{{ article.url | prepend:site.baseurl }}">Read more...</a>
+		</div>
+		<div class="card-footer bg-sightlines-white border-0 pb-3">
+			<a class="btn btn-secondary btn-lg w-100 text-light" href="{{ article.url | prepend:site.baseurl }}">Read more...</a>
 		</div>
 	</div>
 </div>
