@@ -67,22 +67,26 @@ background_color: kobi
 					{% include team.html people=event.production_team %}
 				</div>
 			{% endif %}
-			<div class="w-100">
-				<div class="my-4">
-					{% include events/book.html event=event %}
+			{% if event_date_string < today %}
+				<p class="text-center my-2 text-muted">This event is in the past and no longer available.</p>
+			{% else %}
+				<div class="w-100">
+					<div class="my-4">
+						{% include events/book.html event=event %}
+					</div>
+					<div class="my-4">
+						{% include events/festival-pass.html event=event %}
+					</div>
+					{% if event.capacity >= 90 %}
+						{% assign bo_close = "at " | append: event.start_time %}
+					{% elsif event.box_office_close_time and event.box_office_close_time != empty %}
+						{% assign bo_close = "at " | append: event.box_office_close_time %}
+					{% else %}
+						{% assign bo_close = "half an hour before the advertised start time" %}
+					{% endif %}
+					<p class="text-center my-2"><em>Please note online booking closes {{ bo_close }}</em></p>
 				</div>
-				<div class="my-4">
-					{% include events/festival-pass.html event=event %}
-				</div>
-				{% if event.capacity >= 90 %}
-					{% assign bo_close = "at " | append: event.start_time %}
-				{% elsif event.box_office_close_time and event.box_office_close_time != empty %}
-					{% assign bo_close = "at " | append: event.box_office_close_time %}
-				{% else %}
-					{% assign bo_close = "half an hour before the advertised start time" %}
-				{% endif %}
-				<p class="text-center my-2"><em>Please note online booking closes {{ bo_close }}</em></p>
-			</div>
+			{% endif %}
 		</div>
 	</div>
 	{% include events/get-available-events.html %}
