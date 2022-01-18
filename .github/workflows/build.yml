@@ -36,8 +36,8 @@ jobs:
         run: bundle config path vendor/bundle
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
-      - name: Install node 
-        run: npm install 
+      #- name: Install node 
+      #  run: npm install 
 
       ### BUILD ###
       - name: Build Jekyll 
