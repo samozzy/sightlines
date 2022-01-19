@@ -102,6 +102,66 @@ h1.header-font, .header-font.h1 {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.card-past-banner, .event-past-banner {
+  position: absolute;
+  background: grey;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  padding: 0.2rem 0;
+}
+
+.card-past-banner {
+  transform: rotate(-30deg);
+}
+
+@media only screen and (min-width: 577px) {
+  .card-past-banner {
+    top: 6%;
+    left: -25%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-past-banner {
+    top: 15%;
+    left: -30%;
+  }
+}
+
+.event-past-banner {
+  transform: rotate(-30deg);
+}
+
+@media only screen and (min-width: 992px) {
+  .event-past-banner {
+    top: 20%;
+    left: -40%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .event-past-banner {
+    top: 20%;
+    left: -36%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .event-past-banner {
+    top: 15%;
+    left: -33%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .event-past-banner {
+    top: 15%;
+    left: -20%;
+  }
 }
 
 .partner-image {
@@ -8165,7 +8225,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center, .article-content small.caption, .event-copy small.caption, .block-button-wrapper, .category-label, .article-content .caption.small, .article-content .caption.category-label, .event-copy .caption.small, .event-copy .caption.category-label {
+.text-center, .article-content small.caption, .event-copy small.caption, .block-button-wrapper, .card-past-banner, .event-past-banner, .category-label, .article-content .caption.small, .article-content .caption.category-label, .event-copy .caption.small, .event-copy .caption.category-label {
   text-align: center !important;
 }
 
