@@ -18,7 +18,7 @@ View as a List{% endcomment %}
 	{% if page.show_past_events %}
 		{% include events/get-past-events.html %}
 		{% if past_events.size > 0 %}
-			<h2 id="sightlines-21-list" class="coming-sans" style="font-size:2rem !important;">Sightlines 2021 Events</h2>
+			<h2 id="sightlines-21-list" class="coming-sans" style="font-size:2rem !important;">Sightlines 2021</h2>
 			<p>In the meantime, scroll through to see the sorts of events we hosted last year.</p>
 			<div class="row">
 				{% include events/event-card.html events=past_events event_id_prefix='past'%}
