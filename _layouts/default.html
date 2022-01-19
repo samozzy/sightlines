@@ -5,17 +5,23 @@ layout: outer
 <div class="container-fluid">
 
 	<div class="row my-auto pt-5 {% ifhascontent full_width_bottom %}pb-5{% endifhascontent %}">
-		{% if page.toc and page.toc != empty %}
+		{% if page.layout == 'event-list' and page.show_past_events != true %}
+			{% assign toc_disable = true %}
+		{% endif %}
+		{% if page.toc and page.toc != empty and toc_disable != true %}
 			<div class="toc">
 				<div class="card card-body bg-sightlines-purple shadow-sm">
-					<h3 class="fs-4 text-primary coming-sans">On this page</h3>
+					<h3 class="fs-4 text-primary coming-sans">On this page {{ events.size }}</h3>
 					{% include toc.html html=content class="sightlines-toc" h_max=2 %}
 				</div>
 			</div>
 		{% endif %}
-		<div class="content-center {% unless page.toc %}content-center-offset{% endunless %}">
+		{% assign offset_center = false %}
+		{% if page.toc == true and toc_disable != true %}
+			{% assign offset_center = true %}
+		{% endif %}
+		<div class="content-center {% unless offset_center %}content-center-offset{% endunless %}">
 			{{ content }}
 		</div>
 	</div>
-
 </div>

@@ -15,6 +15,16 @@ View as a List{% endcomment %}
 {% include events/get-available-events.html %}
 {% if events.size == 0 %}
 	<p class="text-center">Watch this space for the event updates and for live announcements visit our social media channels.</p>
+	{% if page.show_past_events %}
+		{% include events/get-past-events.html %}
+		{% if past_events.size > 0 %}
+			<h2 id="sightlines-21-list" class="coming-sans" style="font-size:2rem !important;">Sightlines 2021</h2>
+			<p>In the meantime, scroll through to see the sorts of events we hosted last year.</p>
+			<div class="row">
+				{% include events/event-card.html events=past_events event_id_prefix='past'%}
+			</div>
+		{% endif %}
+	{% endif %}
 {% else %}
 
 	<div class="mt-2 mb-4">

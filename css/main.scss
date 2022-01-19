@@ -135,8 +135,50 @@ h1.header-font {
 	overflow:hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
 	@extend .shadow;
 }
+
+.card-past-banner, .event-past-banner {
+	@extend .text-center;
+	position: absolute;
+	background: grey;
+	color: white;
+	opacity: 0.8;
+	width: 100%;
+	padding: 0.2rem 0;
+}
+.card-past-banner {
+	transform: rotate(-30deg);
+	@media only screen and (min-width: 577px) {
+		top: 6%;
+		left: -25%;
+	}
+	@media only screen and (max-width: 576px) {
+		top: 15%;
+		left: -30%;
+	}
+}
+.event-past-banner {
+	transform: rotate(-30deg);
+	@media only screen and (min-width: 992px) {
+		top: 20%;
+		left: -40%;
+	}
+	@media only screen and (max-width: 991px) {
+		top: 20%;
+		left: -36%;
+	}
+	@media only screen and (max-width: 768px) {
+		top: 15%;
+		left: -33%;
+	}
+	@media only screen and (max-width: 576px) {
+		top: 15%;
+		left: -20%;
+	}
+}
+
 .partner-image {
 	@extend .mx-auto;
 	display: block;
