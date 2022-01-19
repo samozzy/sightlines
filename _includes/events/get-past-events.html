@@ -1,7 +1,8 @@
-{% comment %}Get events that are ongoing or happening in the future (ie, available
-for booking){% endcomment %}
+{% comment %}Get all events that have happened into one list.
+Publication date is still relevant because we'll still ignore any explicitly unpublished events,
+or future events.{% endcomment %}
 {% assign all_events = site.events %}
-{% assign events = '' | split: '' %}
+{% assign past_events = '' | split: '' %}
 {% assign today = site.test_date | default: 'now' | date: "%Y-%m-%d" %}
 {% for event in all_events %}
 
@@ -26,11 +27,11 @@ for booking){% endcomment %}
 		{% endif %}
 	{% endunless %}
 
-	{% comment %} If the event is published, work out if it's happened yet {% endcomment %}
+	{% comment %} If the event is published, add it to the list if it has happened yet {% endcomment %}
 	{% if is_published %}
 		{% assign edate = event.event_date | date: "%Y-%m-%d" %}
-		{% if edate >= today %}
-			{% assign events = events | push: event %}
+		{% if edate <= today %}
+			{% assign past_events = past_events | push: event %}
 		{% endif %}
 	{% endif %}
 
