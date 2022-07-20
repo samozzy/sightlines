@@ -4,10 +4,6 @@
   website: https://www.artscouncil.org.uk/
   footer: true 
   height: 70px
-- name: Theatre Deli
-  image: /static/img/partners/deli.png 
-  website: https://www.theatredeli.co.uk/
-  footer: false 
 - name: Battersea Arts Centre 
   image: /static/img/partners/bac.jpg 
   website: https://bac.org.uk/
