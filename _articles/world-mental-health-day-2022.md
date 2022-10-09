@@ -16,7 +16,7 @@ excerpt: 'Today is World Mental Health Day, so we asked various performers from 
 <small class="caption"><em>Chloe Leigh Thomas - Credit: @micah_photos25</em></small>
 
 ## Sharifa Butterfly - _Dancer recently turned stand-up comic_
-[@sharifabutterfly](https://twitter.com/sharifabutterfly)
+[@sharifabutterfly](https://instagram.com/sharifabutterfly)
 
 “At the moment I’ve been mostly performing stand up comedy, which has been really good for my mental health. I like that I can talk about stuff in a funny way, I feel like that’s quite therapeutic. If I have quite a few open mics in a week I have something to work towards each day which keeps my brain ticking.
 
@@ -37,7 +37,7 @@ Although the stress surrounding performing, getting paid, finding gigs, gigs get
 “Honestly I don't know if performing helps or worsens my mental health - it varies a lot day to day. I think in the grand scheme of things it’s simply one of the many activities a person can do that greatly impacts them. The pressure can cause emotions and unresolved issues to rise to the surface, but those were always there to begin with. But sometimes making something really good makes everything just feel alright.”
 
 ## Diyo Mulopo Bopengo - Poet
-[@i_am_diyo](https://twitter.com/i_am_diyo)
+[@i_am_diyo](https://instagram.com/i_am_diyo)
 
 “I have developed a love of poetry since I migrated to the UK, as a refugee it is hard to find a solid ground to lay your feet. In Autumn of 2019 I join Good Chance’s Change the Words Collective. I have since co-published 3 Anthologies with the group and I have done performances at various events around the UK. Most, or I may say all, refugees do battle with their mental health. I use poetry and creative art as an escape and this has helped me from time to time. The boldness of knowing that you have a voice and seeing everyone listen does motivate me.”
 
