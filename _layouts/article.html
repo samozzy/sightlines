@@ -5,7 +5,7 @@ layout: default
 <h1 class="mb-4 header-font">{{ page.title }}</h1>
 <h2 class="fs-4 mb-4">
 	{% if page.author and page.author != empty %}
-		{% assign team = site.data.team %}
+		{% assign team = site.data.team.team %}
 		{% assign team_match = team | find: "name", page.author %}
 		<span class="my-2 d-block fw-normal">
 			{% if team_match and team_match != empty %}

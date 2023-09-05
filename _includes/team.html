@@ -1,7 +1,7 @@
 {% comment %}{% assign person_wi_bio = '' | split: '' %}
 {% assign perosn_wo_bio = '' | split: '' %}
 
-{% for p in site.data.team %}
+{% for p in site.data.team.team %}
 	{% if p.bio and p.bio != empty %}
 		{% assign person_wi_bio = person_wi_bio | append: p %}
 	{% else %}
@@ -17,7 +17,7 @@ m<br>T:{{ p }}--
 {% if include.people and include.people.size > 0 %}
 	{% assign the_people = include.people %}
 {% else %}
-	{% assign the_people = site.data.team %}
+	{% assign the_people = site.data.team.team %}
 {% endif %}
 
 <div class="row">
