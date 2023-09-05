@@ -8,7 +8,7 @@ collections:
     folder: '_content/'
     create: false 
     editor:
-      preview: true 
+      preview: false 
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Navigation Order', name: 'nav_order', widget: 'number', hint: 'Place this page is in the navigation menu', required: false }
@@ -19,8 +19,9 @@ collections:
   - name: 'events'
     label: 'Events'
     folder: '_events/'
+    create: true 
     editor:
-      preview: true
+      preview: false
     fields:
       - widget: string
         name: title
@@ -103,12 +104,15 @@ collections:
         label: BSL
         default: false 
         description: Tick if this event features BSL interpretation
+      - widget: markdown 
+        name: body 
+        label: Body 
   - name: 'in-focus'
     label: 'In Focus'
     folder: '_articles/'
     create: true 
     editor: 
-      preview: true 
+      preview: false 
     fields: 
       - { label: "Title", name: 'title', widget: 'string'}
       - { label: "Author", name: 'author', widget: 'string', hint: "If this matches a name in the Team, it will use their photo"}
