@@ -142,7 +142,9 @@ collections:
             - widget: 'file'
               name: 'image'
               label: 'image'
+              required: false 
               hint: Image must be square and at least 500x500px
             - widget: 'markdown'
               name: 'bio'
               label: 'Bio' 
+              required: false 
