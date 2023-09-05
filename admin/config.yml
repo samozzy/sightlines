@@ -1,0 +1,139 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: 'static'
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    folder: '_content/'
+    create: false 
+    editor:
+      preview: true 
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Navigation Order', name: 'nav_order', widget: 'number', hint: 'Place this page is in the navigation menu', required: false }
+      - { label: 'Navigation Title', name: 'nav_title', widget: 'string', hint: 'Title used for this page in the navigation, if unset uses page title', required: false } 
+      - { label: 'Background Colour', name: 'background_color', widget: 'select', options: ["yellow", "kobi", "purple", "aquamarine", "white"], hint: 'Background color for this page', required: false }
+      - { label: 'Table of Contents', name: 'toc', widget: 'boolean', default: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'events'
+    label: 'Events'
+    editor:
+      preview: true
+    fields:
+      - widget: string
+        name: title
+        label: 'Event Title'
+        required: true 
+      - widget: string 
+        name: subtitle 
+        label: "Subtitle"
+        required: false
+      - widget: string 
+        name: event_date
+        label: "Event Date"
+        hint: "The date of this event in the format YYYY-MM-DD"
+        required: true 
+      - widget: string 
+        name: start_time
+        label: "Event Start Time"
+        hint: "In the 24-hour format HH:MM, eg. 19:30"
+        required: true 
+      - widget: string 
+        name: end_time
+        label: "Event End Time" 
+        hint: "In the 24-hour format HH:MM, eg. 21:30"
+      - widget: select
+        name: category 
+        label: "Category" 
+        options: ["show", "workshop", "panel", "talk"]
+        hint: "What type of event is this?"
+        required: true 
+        default: "show"
+      - widget: string
+        name: ticket_url 
+        label: "Ticket Link"
+        required: false 
+        hint: "Link to the Eventbrite page where this event is hosted. This will be the page the 'book tickets' button goes to. Leave blank to default to 'tickets coming soon'."
+      - widget: string 
+        name: published 
+        label: "Published"
+        description: "Enter 'true', 'false', or a date in the format 'YYYY-MM-DD'"
+        default: false 
+      - widget: string
+        name: company
+        label: Company
+        required: true 
+        hint: "The company bringing the event"
+      - widget: file
+        name: image
+        required: false
+        choose_url: true 
+        label: Image
+        hint: Show image. If unset, uses a placeholder.
+      - widget: string
+        name: image_attribution
+        required: false
+        label: Image Attribution
+        hint: 'Include the full attribution (eg "Photography: John Smith")'
+      - widget: select
+        name: image-position
+        label: "Image Position" 
+        description: "Where in the image the 'area of interest' is"
+        options: ["top", "centre", "bottom"]
+        default: "top"
+      - widget: string 
+        name: content_warnings
+        required: false
+        label: Content Warning Detail
+        hint: "Give as a full sentence, eg. 'Please note this performance contains strong language.'"
+      - widget: number 
+        name: capacity 
+        label: "Capacity"
+        default: 90 
+        required: true 
+      - widget: boolean 
+        name: captions 
+        default: false 
+        label: "Captions"
+        description: "Tick if this event uses captions (closed or open)"
+      - widget: boolean
+        name: bsl 
+        label: BSL
+        default: false 
+        description: Tick if this event features BSL interpretation
+  - name: 'in-focus'
+    label: 'In Focus'
+    folder: '_articles/'
+    create: true 
+    editor: 
+      preview: true 
+    fields: 
+      - { label: "Title", name: 'title', widget: 'string'}
+      - { label: "Author", name: 'author', widget: 'string', hint: "If this matches a name in the Team, it will use their photo"}
+      - { label: "Publish Date", name: 'publish_date', widget: 'datetime', picker_utc: true }
+      - { label: "Excerpt", name: 'excerpt', widget: 'text'}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'team'
+    label: 'Team'
+    editor:
+      preview: false
+    files:
+      - label: 'Team'
+        name: 'team'
+        file: '_data/team.yml'
+        fields:
+          - widget: 'string'
+            name: 'name'
+            label: 'Name'
+          - widget: 'string'
+            name: 'role'
+            label: 'Role'
+            required: false 
+          - widget: 'file'
+            name: 'image'
+            label: 'image'
+            hint: Image must be square and at least 500x500px
+          - widget: 'markdown'
+            name: 'bio'
+            label: 'Bio' 
