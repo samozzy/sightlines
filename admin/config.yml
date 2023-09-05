@@ -128,17 +128,21 @@ collections:
         name: 'team'
         file: '_data/team.yml'
         fields:
-          - widget: 'string'
-            name: 'name'
-            label: 'Name'
-          - widget: 'string'
-            name: 'role'
-            label: 'Role'
-            required: false 
-          - widget: 'file'
-            name: 'image'
-            label: 'image'
-            hint: Image must be square and at least 500x500px
-          - widget: 'markdown'
-            name: 'bio'
-            label: 'Bio' 
+          - label: 'Team'
+            name: 'team'
+            widget: 'list'
+            fields:
+            - widget: 'string'
+              name: 'name'
+              label: 'Name'
+            - widget: 'string'
+              name: 'role'
+              label: 'Role'
+              required: false 
+            - widget: 'file'
+              name: 'image'
+              label: 'image'
+              hint: Image must be square and at least 500x500px
+            - widget: 'markdown'
+              name: 'bio'
+              label: 'Bio' 
