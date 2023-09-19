@@ -36,12 +36,12 @@ collections:
         label: "Event Date"
         hint: "The date of this event in the format YYYY-MM-DD"
         required: true 
-      - widget: string 
+      - widget: text 
         name: start_time
         label: "Event Start Time"
         hint: "In the 24-hour format HH:MM, eg. 19:30"
         required: true 
-      - widget: string 
+      - widget: text 
         name: end_time
         label: "Event End Time" 
         hint: "In the 24-hour format HH:MM, eg. 21:30"
@@ -60,7 +60,7 @@ collections:
       - widget: string 
         name: published 
         label: "Published"
-        description: "Enter 'true', 'false', or a date in the format 'YYYY-MM-DD'"
+        hint: "Enter 'true', 'false', or a date in the format 'YYYY-MM-DD'"
         default: false 
       - widget: string
         name: company
@@ -81,7 +81,7 @@ collections:
       - widget: select
         name: image-position
         label: "Image Position" 
-        description: "Where in the image the 'area of interest' is"
+        hint: "Where in the image the 'area of interest' is"
         options: ["top", "centre", "bottom"]
         default: "top"
       - widget: string 
@@ -98,12 +98,12 @@ collections:
         name: captions 
         default: false 
         label: "Captions"
-        description: "Tick if this event uses captions (closed or open)"
+        hint: "Tick if this event uses captions (closed or open)"
       - widget: boolean
         name: bsl 
         label: BSL
         default: false 
-        description: Tick if this event features BSL interpretation
+        hint: Tick if this event features BSL interpretation
       - widget: markdown 
         name: body 
         label: Body 
