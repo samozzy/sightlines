@@ -13,12 +13,16 @@ team:
   - name: Lydia Harrison
     role: Festival Producer
     image: /static/img/team/lydia.png
-    bio: Lydia is a theatre producer originally from Sheffield. After completing her
-      MA in Creative Producing from Mountview Academy of Theatre Arts, she has
-      produced many early-stage projects that span the Edinburgh Fringe, the
+    bio: >-
+      Lydia is a theatre producer originally from Sheffield. After completing
+      her MA in Creative Producing from Mountview Academy of Theatre Arts, she
+      has produced many early-stage projects that span the Edinburgh Fringe, the
       Other Palace and Maiden Speech Festival.  Throughout her work as a
       producer and her own lived experience, mental health and wellbeing has
       become very significant, particularly since COVID-19.
+
+
+      S﻿he is currently the Operations Manager at LAMDA.
   - name: Julia Weingaertner
     image: /static/img/team/julia.png
     role: Assistant Producer
