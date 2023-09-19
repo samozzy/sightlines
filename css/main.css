@@ -531,6 +531,27 @@ h1.header-font, .header-font.h1 {
   background-color: #ff89ea;
 }
 
+.text-event-category-talk {
+  color: #ff89ea;
+}
+
+.text-event-category-talk:hover, .text-event-category-talk:focus, .text-event-category-talk:active {
+  color: #ffd6f8;
+}
+
+.bg-event-category-talk {
+  background-color: #ff89ea !important;
+}
+
+.border-event-category-talk {
+  border-color: #ff89ea !important;
+}
+
+.btn-event-category-talk {
+  border-color: #ff89ea !important;
+  background-color: #ff89ea;
+}
+
 .bg-sightlines-white .content-center .article-content a {
   color: #5E49A7;
   font-weight: bold;
