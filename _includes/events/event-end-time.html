@@ -1,0 +1,17 @@
+{% assign raw_end_time = include.event.end_time %}
+{% if raw_end_time and raw_end_time != empty %}
+	{% if raw_end_time contains ':' %}
+		{% comment %} Assume it is HH:MM {% endcomment %}
+		{% assign event_end_time = raw_end_time %}
+
+	{% else %}
+		{% comment %} Assume it is a number in the format number of minutes since midnight and requires processing {% endcomment %}
+
+		{% assign the_seconds = event.end_time | times: 60 %} {% comment %} Convert to seconds {% endcomment %}
+		{% assign end_datetime = site.dates.end | date: "%s" | plus: the_seconds | split: '.' | first %} {% comment %} Add seconds between 1970 and the end date {% endcomment %}
+		{% assign event_end_time = end_datetime | date: "%R" %}
+
+	{% endif %}
+{% else %}
+	{% assign event_end_time = nil %}
+{% endif %}
