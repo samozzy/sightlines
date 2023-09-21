@@ -15,4 +15,8 @@ bsl: false
 ---
 A discussion on the intersection of neurodivergence and queerness and its exploration and significance in performance practice, with neurodivergent LGBTQ+ panellists from different art forms, led by Sammy Glover.
 
-Sammy runs a workshop looking at a number of strategies and schools of thought in all these areas, building towards more competent and safe rehearsal rooms for participants, directors and facilitators alike.
+Sammy is queer theatre director based in London specialising in Young People, at-risk Young People and community-focused theatre. Sammy works closely with young people to stage their experiences and ideas and they are committed to making the form accessible and intersectional, and seek to celebrate neurodiversity and gender-diversity within their work.
+
+Sammy was Targeted Work Associate Director at the Lyric Hammersmith, Resident Director at the Almeida, Associate Director of The Big House Theatre Company and currently work as National Theatre Mentor Director for Connections and a facilitator for Synergy Theatre Project. 
+
+They have just directed The Last Show Before We Die, for the Roundabout Theatre at Edinburgh Fringe 2023.
