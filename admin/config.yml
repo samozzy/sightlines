@@ -41,12 +41,12 @@ collections:
         label: "Event End Date"
         hint: "The end date of this event in the format YYYY-MM-DD"
         required: false 
-      - widget: text 
+      - widget: string 
         name: start_time
         label: "Event Start Time"
         hint: "In the 24-hour format HH:MM, eg. 19:30"
         required: true 
-      - widget: text 
+      - widget: string 
         name: end_time
         label: "Event End Time" 
         hint: "In the 24-hour format HH:MM, eg. 21:30"
