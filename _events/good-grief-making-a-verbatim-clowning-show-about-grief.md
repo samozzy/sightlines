@@ -14,9 +14,7 @@ bsl: false
 ---
 **G﻿ood Grief is available to stream for the week of the festival:**
 
-**Link coming soon**
-
-
+https://www.eventbrite.co.uk/e/good-grief-tickets-722180941637
 
 Join the wonderful team of Ugly Bucket to discuss their production, Good Grief, and ask them all your burning questions.  
 
