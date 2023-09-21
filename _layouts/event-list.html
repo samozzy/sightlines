@@ -27,7 +27,7 @@ View as a List{% endcomment %}
 		3. Find the events that are on that date
 	{% endcomment %}
 
-	{% assign all_dates = events | map: "event_date" | uniq %}
+	{% assign all_dates = events | map: "event_date" | uniq | sort_natural %}
 	{% for d in all_dates %}
 		<h2 class="coming-sans" id="{{ d | date: "%Y-%m-%d" }}">{{ d | date_to_long_string }}</h2>
 		{% assign d_events = events | where_exp: "event", "event.event_date == d" | sort: "start_time" %}
