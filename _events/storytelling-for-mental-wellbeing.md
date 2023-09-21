@@ -1,6 +1,7 @@
 ---
 title: Storytelling for Mental Wellbeing
-event_date: 2023-10-10 - 2023-10-14
+event_date: 2023-10-10
+event_end_date: 2023-10-14
 start_time: 17:00
 end_time: 18:30
 category: workshop
