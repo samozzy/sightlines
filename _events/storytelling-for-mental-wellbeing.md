@@ -5,7 +5,7 @@ event_end_date: 2023-10-14
 start_time: 17:00
 end_time: 18:30
 category: workshop
-ticket_url: ""
+ticket_url: Please contact us at info@sightlinesfestival.co.uk for the ticket link
 published: 2023-09-21
 company: Sightlines Festival
 image: /static/coldsville-shadow-105-copy.jpg
