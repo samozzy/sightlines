@@ -8,6 +8,7 @@ category: workshop
 ticket_url: Please contact us at info@sightlinesfestival.co.uk for the ticket link
 published: 2023-09-21
 company: Sightlines Festival
+image: /static/coldsville-shadow-105-copy.jpg
 image-position: top
 capacity: 21
 captions: false
