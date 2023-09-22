@@ -1,13 +1,12 @@
 ---
 title: Building a Supportive and Sustainable Comedy Industry
 event_date: 2023-10-15
-start_time: 13:00
-end_time: 14:30
+start_time: 15:00
+end_time: 16:30
 category: workshop
 ticket_url: https://www.eventbrite.co.uk/e/building-a-supportive-and-sustainable-comedy-industry-tickets-720881755737
 published: 2023-09-22
 company: Sightlines Festival
-image: /static/bogomil-mihaylov-ekhshvgr27k-unsplash.jpg
 image-position: top
 capacity: 25
 captions: false
