@@ -3,7 +3,7 @@ title: Neuroqueerness and Performance
 event_date: 2023-10-13
 start_time: 17:00
 end_time: 18:30
-category: workshop
+category: panel
 ticket_url: https://www.eventbrite.co.uk/e/neuroqueerness-and-performance-tickets-720877663497
 published: 2023-09-19
 company: Sightlines Festival
