@@ -3,7 +3,7 @@ title: Chronic Illness and Theatre
 event_date: 2023-10-14
 start_time: 13:00
 end_time: 14:30
-category: workshop
+category: panel
 ticket_url: https://www.eventbrite.co.uk/e/chronic-illness-and-performance-tickets-720879950337
 published: 2023-09-21
 company: Sightlines Festival
