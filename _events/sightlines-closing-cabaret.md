@@ -18,15 +18,9 @@ P﻿erformances by
 
 **DIYO BOPENGO**
 
-
-
-![](/static/diyo-bopengo.jpeg)
-
 Diyo Bopengo is a Congolese from the DRC who grew up in South Africa and lives in the UK. He volunteers with Volunteer Action Sheffield and other humanitarian organisations. He is part of Good Chance Theatre’s poetry collective Change the Word and has co-published two of their anthologies
 
 **SARAH OROLA**
-
-![](/static/sarah-orola.jpeg)
 
 Born in Ireland to parents of Nigerian and Guyanese descent has given me a beautiful yet complex insight into my diverse world and defined my identity.
 
