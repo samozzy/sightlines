@@ -2,7 +2,7 @@
 title: "Good Grief: Making a Verbatim Clowning Show about Grief"
 event_date: 2023-10-15
 start_time: 17:00
-end_time: 18:30
+end_time: 18:00
 category: talk
 ticket_url: https://www.eventbrite.co.uk/e/good-grief-qa-making-a-verbatim-clowning-show-about-grief-tickets-720886158907
 published: 2023-09-22
