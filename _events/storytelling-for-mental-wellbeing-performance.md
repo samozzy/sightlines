@@ -2,7 +2,7 @@
 title: Storytelling for Mental Wellbeing Performance
 event_date: 2023-10-14
 start_time: 15:00
-end_time: 16:30
+end_time: 18:00
 category: show
 ticket_url: https://www.eventbrite.co.uk/e/722277099247?aff=oddtdtcreator
 published: 2023-10-01
