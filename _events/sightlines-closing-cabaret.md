@@ -7,6 +7,7 @@ category: show
 ticket_url: https://www.eventbrite.co.uk/e/sightlines-closing-cabaret-tickets-720886630317
 published: 2023-09-22
 company: Sightlines Festival
+image: /static/closing-party-with-additional-squiggles.png
 image-position: top
 capacity: 25
 captions: false
